@@ -287,7 +287,7 @@ dialogContent.addEventListener("click", (event) => {
   }
   if (event.target.closest(".dialog-zoom")) {
     const image = dialogContent.querySelector(".dialog-slide-image");
-    if (image) showEnlargedImage(image, activeProject);
+    if (image) showEnlargedImage(image);
   }
 });
 
@@ -320,18 +320,11 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 const imageLightbox = document.querySelector(".image-lightbox");
 const lightboxImage = document.querySelector(".lightbox-image");
 const lightboxCaption = document.querySelector(".lightbox-caption");
-const lightboxProjectTitle = document.querySelector(".lightbox-project-title");
-const lightboxProjectSubtitle = document.querySelector(".lightbox-project-subtitle");
-const lightboxProjectDescription = document.querySelector(".lightbox-project-description");
 
-function showEnlargedImage(image, project = null) {
+function showEnlargedImage(image) {
   lightboxImage.src = image.currentSrc || image.src;
   lightboxImage.alt = image.alt || "Enlarged portfolio image";
   lightboxCaption.textContent = image.alt || "";
-  imageLightbox.classList.toggle("has-project-context", Boolean(project));
-  lightboxProjectTitle.textContent = project?.title || "";
-  lightboxProjectSubtitle.textContent = project?.subtitle || "";
-  lightboxProjectDescription.textContent = project?.description || "";
   imageLightbox.showModal();
 }
 

@@ -240,13 +240,6 @@ img { cursor: zoom-in; }
 .image-lightbox figure { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; width: 100%; height: 100%; margin: 0; padding: 38px 18px 18px; }
 .image-lightbox .lightbox-image { width: 100%; height: 100%; max-height: calc(94vh - 82px); object-fit: contain; cursor: default; }
 .lightbox-caption { max-width: 90%; color: rgba(255,255,255,.75); font-size: 11px; text-align: center; }
-.image-lightbox.has-project-context { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(250px, .8fr); align-items: center; gap: 26px; width: min(1180px, 96vw); height: min(90vh, 860px); max-height: 90vh; padding: 54px 28px 24px; }
-.image-lightbox.has-project-context figure { min-width: 0; height: 100%; padding: 0; }
-.image-lightbox.has-project-context .lightbox-image { max-height: calc(90vh - 100px); }
-.lightbox-project-info { max-height: 100%; overflow: auto; padding: 8px 6px; color: white; }
-.lightbox-project-subtitle { margin: 0 0 14px; color: rgba(255,255,255,.66); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
-.lightbox-project-title { margin: 0 0 18px; font-family: var(--serif); font-size: clamp(30px, 4vw, 48px); font-weight: 400; line-height: 1.08; }
-.lightbox-project-description { margin: 0; color: rgba(255,255,255,.82); font-size: 13px; line-height: 1.8; }
 @media (max-width: 850px) {
   
 }
@@ -261,12 +254,6 @@ img { cursor: zoom-in; }
   
   .image-lightbox { width: calc(100% - 20px); max-height: 92vh; }
   .image-lightbox .lightbox-image { max-height: calc(92vh - 80px); }
-  .image-lightbox.has-project-context { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; gap: 14px; width: calc(100% - 20px); height: 92vh; max-height: 92vh; padding: 48px 18px 18px; }
-  .image-lightbox.has-project-context figure { min-height: 0; }
-  .image-lightbox.has-project-context .lightbox-image { max-height: 100%; }
-  .lightbox-project-info { max-height: 28vh; padding: 0 2px; }
-  .lightbox-project-title { margin-bottom: 10px; font-size: 31px; }
-  .lightbox-project-description { font-size: 12px; }
 }
 
 .category-index { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 66px; }
