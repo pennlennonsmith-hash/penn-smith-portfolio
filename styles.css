@@ -54,6 +54,8 @@ h1 em, h2 em { color: var(--green); font-weight: 400; }
 .hero-image figcaption { position: absolute; right: 0; bottom: 0; left: 0; display: flex; justify-content: space-between; padding: 13px 15px; color: white; background: linear-gradient(transparent, rgba(0,0,0,.48)); font-size: 10px; letter-spacing: .03em; }
 .hero-index { position: absolute; right: calc(44% - 3px); bottom: 40px; color: rgba(37, 38, 34, .22); font-family: var(--serif); font-size: 11px; letter-spacing: .16em; writing-mode: vertical-rl; }
 .intro-strip { display: flex; justify-content: space-between; gap: 20px; padding: 21px max(48px, calc((100% - 1320px) / 2)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.intro-strip a { transition: color .2s ease; }
+.intro-strip a:hover, .intro-strip a:focus-visible { color: var(--rust); }
 .section-wrap { width: var(--content); margin-inline: auto; }
 .work-section { padding-top: 122px; padding-bottom: 138px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 47px; }
@@ -98,6 +100,21 @@ h1 em, h2 em { color: var(--green); font-weight: 400; }
 .field-note-number { color: var(--rust); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
 .field-note-card h3 { margin: 26px 0 12px; font-family: var(--serif); font-size: clamp(23px, 2.5vw, 32px); font-weight: 700; line-height: 1.13; }
 .field-note-card p { max-width: 340px; margin: 0; color: #66675f; font-size: 12px; line-height: 1.75; }
+.resume-section { padding: 108px 0 116px; background: var(--paper-deep); }
+.resume-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 48px; }
+.resume-heading .eyebrow { margin-bottom: 17px; }
+.resume-heading h2 { margin: 0; font-family: var(--serif); font-size: clamp(42px, 6vw, 74px); font-weight: 400; letter-spacing: 0; line-height: 1; }
+.resume-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 8vw; }
+.resume-block + .resume-block { margin-top: 38px; padding-top: 24px; border-top: 1px solid #c9c5bb; }
+.resume-block > h3 { margin: 0 0 20px; color: var(--muted); font-size: 10px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
+.resume-entry + .resume-entry { margin-top: 26px; padding-top: 22px; border-top: 1px solid #c9c5bb; }
+.resume-entry-heading { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+.resume-entry-heading h4 { margin: 0; font-family: var(--serif); font-size: 20px; font-weight: 600; }
+.resume-entry-heading > span { flex: 0 0 auto; color: var(--muted); font-size: 10px; letter-spacing: .05em; }
+.resume-entry p, .resume-side-column .resume-block > p { max-width: 620px; margin: 8px 0 0; color: #66675f; font-size: 12px; line-height: 1.75; }
+.resume-entry .resume-entry-place { margin-top: 3px; color: var(--rust); font-size: 11px; }
+.resume-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; margin: 0; padding: 0; list-style: none; color: var(--ink); font-size: 12px; }
+.resume-skills li::before { content: "—"; margin-right: 8px; color: var(--rust); }
 .contact-section { padding-top: 126px; padding-bottom: 120px; }
 .contact-section .eyebrow { margin-bottom: 26px; }
 .contact-section h2 { font-size: clamp(50px, 8vw, 100px); line-height: .97; }
@@ -190,6 +207,13 @@ h1 em, h2 em { color: var(--green); font-weight: 400; }
   .field-notes-grid { grid-template-columns: 1fr; gap: 26px; }
   .field-note-card { min-height: auto; padding-top: 14px; }
   .field-note-card h3 { margin-top: 16px; font-size: 29px; }
+  .resume-section { padding: 78px 0 84px; }
+  .resume-heading { align-items: start; flex-direction: column; gap: 18px; margin-bottom: 30px; }
+  .resume-heading h2 { font-size: 47px; }
+  .resume-grid { grid-template-columns: 1fr; gap: 0; }
+  .resume-block + .resume-block { margin-top: 30px; padding-top: 22px; }
+  .resume-entry-heading { align-items: start; flex-direction: column; gap: 4px; }
+  .resume-skills { font-size: 11px; }
   .contact-section { padding-top: 82px; padding-bottom: 84px; }
   .contact-section h2 { font-size: 59px; }
   .contact-links { grid-template-columns: 1fr; gap: 10px; margin-top: 30px; }
@@ -282,3 +306,7 @@ img { cursor: zoom-in; }
 
 
 
+
+
+.architecture-grid .project-card-wide .project-image-landscape { height: auto; aspect-ratio: 16 / 9; }
+.architecture-grid .project-card .project-image-square { height: auto; aspect-ratio: 1 / 1; }

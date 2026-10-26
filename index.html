@@ -18,7 +18,7 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
             <div class="nav-projects">
-        <a href="#work">Projects <span>06</span></a>
+        <a href="#work">Projects <span>09</span></a>
         <div class="nav-project-menu" aria-label="Project categories">
           <a href="#architecture">Architecture projects</a>
           <a href="#objects-craft">Objects + craft</a>
@@ -26,6 +26,7 @@
         </div>
       </div>
       <a href="#about">About</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact <span class="nav-arrow" aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -41,16 +42,16 @@
         </div>
       </div>
       <figure class="hero-image">
-        <img src="assets/gateway-garden.jpg" alt="Gateway Garden food learning center in its meadow setting" data-project="gateway">
+        <img src="assets/reframing-edge-final-render.jpg" alt="Reframing the Edge community center in its landscape setting" data-project="reframing">
         <button class="hero-arrow hero-arrow-prev" type="button" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
         <button class="hero-arrow hero-arrow-next" type="button" aria-label="Next project image"><span aria-hidden="true">→</span></button>
-        <figcaption><span id="hero-caption" aria-live="polite">Gateway Garden</span><span id="hero-count" aria-live="polite">01 / 06</span></figcaption>
+        <figcaption><span id="hero-caption" aria-live="polite">Reframing the Edge</span><span id="hero-count" aria-live="polite">01 / 09</span></figcaption>
       </figure>
       <div class="hero-index" aria-hidden="true">PS—27</div>
     </section>
 
     <div class="intro-strip" aria-label="Portfolio focus areas">
-      <span>B.Arch 2027</span><span>Architecture</span><span>Design-build</span><span>Objects &amp; material</span>
+      <a href="#architecture">Architecture</a><a href="#design-build">Design-build</a><a href="#objects-craft">Objects &amp; material</a><span>B.Arch 2027</span>
     </div>
 
     <section class="work-section section-wrap" id="work" aria-labelledby="work-title">
@@ -59,15 +60,21 @@
         <p class="section-note">From civic learning spaces to hands-on fabrication, each project begins with close attention to its context.</p>
       </div>
       <nav class="category-index" aria-label="Jump to a work category">
-        <a href="#architecture">Architecture <span>02</span></a>
-        <a href="#objects-craft">Objects + Craft <span>03</span></a>
-        <a href="#design-build">Design-build <span>01</span></a>
+        <a href="#architecture">Architecture <span>04</span></a>
+        <a href="#design-build">Design-build <span>02</span></a>
+        <a href="#objects-craft">Objects &amp; Material <span>03</span></a>
       </nav>
       <section class="work-category" id="architecture" aria-labelledby="architecture-title">
-        <div class="category-heading"><span>01</span><h3 id="architecture-title">Architecture projects</h3><span class="category-count">02 projects</span></div>
+        <div class="category-heading"><span>01</span><h3 id="architecture-title">Architecture projects</h3><span class="category-count">04 projects</span></div>
         <div class="project-grid category-grid architecture-grid">
-          <button class="project-card" type="button" data-project="gateway" aria-label="Open Gateway Garden project details">
-            <span class="project-image"><img src="assets/gateway-garden.jpg" alt="Wide architectural rendering of Gateway Garden's food learning center beside a meadow"></span>
+          <button class="project-card project-card-wide" type="button" data-project="reframing" aria-label="Open Reframing the Edge project details">
+            <span class="project-image"><img src="assets/reframing-edge-final-render.jpg" alt="Perspective rendering of Reframing the Edge community center within an open landscape"></span>
+            <span class="project-meta"><span>Team project · 2026</span><span>Community / Civic · Urban edge</span></span>
+            <span class="project-title">Reframing the Edge <span aria-hidden="true">↗</span></span>
+            <span class="project-deck">A team proposal using site analysis and civic architecture to make a city’s edge a place to gather.</span>
+          </button>
+          <button class="project-card project-card-wide" type="button" data-project="gateway" aria-label="Open Gateway Garden project details">
+            <span class="project-image project-image-landscape"><img src="assets/gateway-garden.jpg" alt="Wide architectural rendering of Gateway Garden's food learning center beside a meadow"></span>
             <span class="project-meta"><span>Civic / Learning</span><span>Springdale, Arkansas · 2025</span></span>
             <span class="project-title">Gateway Garden <span aria-hidden="true">↗</span></span>
             <span class="project-deck">A food learning center shaped by the park, its neighbors, and the rhythms of the city.</span>
@@ -77,6 +84,12 @@
             <span class="project-meta"><span>Housing</span><span>Los Angeles · 2024</span></span>
             <span class="project-title">Peakscape <span aria-hidden="true">↗</span></span>
             <span class="project-deck">A neighborhood-scale housing proposal with shared space and a stepped profile.</span>
+          </button>
+          <button class="project-card" type="button" data-project="nexus" aria-label="Open Shifted Timber Nexus project details">
+            <span class="project-image project-image-square"><img src="assets/shifted-timber-render-cover.png" alt="Street-level rendering of Shifted Timber Nexus, a terracotta-clad mass-timber building"></span>
+            <span class="project-meta"><span>Columbia Manhattanville · 2025</span><span>Architecture / Mass timber</span></span>
+            <span class="project-title">Shifted Timber Nexus <span aria-hidden="true">↗</span></span>
+            <span class="project-deck">A terraced mass timber hub bringing academic work, fabrication, and public life to Manhattanville.</span>
           </button>
         </div>
       </section>
@@ -104,8 +117,14 @@
         </div>
       </section>
       <section class="work-category" id="design-build" aria-labelledby="build-title">
-        <div class="category-heading"><span>03</span><h3 id="build-title">Design-build</h3><span class="category-count">01 project</span></div>
+        <div class="category-heading"><span>03</span><h3 id="build-title">Design-build</h3><span class="category-count">02 projects</span></div>
         <div class="project-grid category-grid build-grid">
+          <button class="project-card project-card-wide" type="button" data-project="sanctuary" aria-label="Open Sanctuary of Dreams project details">
+            <span class="project-image"><img src="assets/sanctuary-in-situ-render.jpg" alt="Sanctuary of Dreams chair, its white wings and mosaic interior shown in the neighborhood setting"></span>
+            <span class="project-meta"><span>Designed 2026 · Competition winner</span><span>Rome, Italy · Public seating</span></span>
+            <span class="project-title">Sanctuary of Dreams <span aria-hidden="true">↗</span></span>
+            <span class="project-deck">A two-seat neighborhood chair shaped as a sheltering threshold between public life and private refuge.</span>
+          </button>
           <button class="project-card project-card-wide" type="button" data-project="stickbuilt" aria-label="Open Timeless design-build project details">
             <span class="project-image"><img src="assets/stickbuilt.jpg" alt="Timber design-build installation woven through a green forest"></span>
             <span class="project-meta"><span>Stickbuilt · Birmingham, Alabama · 2025</span><span>Team project</span></span>
@@ -143,8 +162,57 @@
       </div>
     </section>
 
+    <section class="resume-section" id="resume" aria-labelledby="resume-title">
+      <div class="section-wrap">
+        <div class="resume-heading">
+          <div><p class="eyebrow">05 / Resume</p><h2 id="resume-title">Experience<br><em>and education.</em></h2></div>
+          <p class="section-note">Architecture, fabrication, and community-focused design.</p>
+        </div>
+        <div class="resume-grid">
+          <div class="resume-main-column">
+            <div class="resume-block">
+              <h3>Experience</h3>
+              <article class="resume-entry">
+                <div class="resume-entry-heading"><h4>Fabrication Lab Student Tech</h4><span>2024–Present</span></div>
+                <p class="resume-entry-place">Fay Jones School of Architecture and Design</p>
+                <p>Help students turn design concepts into built work, and maintain and calibrate laser cutters, 3D printers, CNC machines, vacuum-forming equipment, and other shop tools.</p>
+              </article>
+              <article class="resume-entry">
+                <div class="resume-entry-heading"><h4>Build Lab Assistant</h4><span>2024–Present</span></div>
+                <p class="resume-entry-place">Fay Jones School of Architecture and Design</p>
+                <p>Support CNC processes, maintain the shop, and assist design studios with fabrication needs.</p>
+              </article>
+              <article class="resume-entry">
+                <div class="resume-entry-heading"><h4>Barista</h4><span>2020–2022</span></div>
+                <p class="resume-entry-place">Starbucks · Dallas, Texas</p>
+                <p>Prepared handcrafted beverages and provided personalized service for 400+ customers daily in a high-volume café.</p>
+              </article>
+            </div>
+          </div>
+          <div class="resume-side-column">
+            <div class="resume-block">
+              <h3>Education</h3>
+              <article class="resume-entry">
+                <div class="resume-entry-heading"><h4>University of Arkansas</h4><span>2022–Present</span></div>
+                <p class="resume-entry-place">Fay Jones School of Architecture and Design</p>
+                <p>Bachelor of Architecture · Expected 2027</p>
+              </article>
+            </div>
+            <div class="resume-block">
+              <h3>Skills</h3>
+              <ul class="resume-skills"><li>Adobe Creative Suite</li><li>Rhino 8</li><li>Woodworking</li><li>3D printing</li><li>Leadership</li><li>Teamwork</li><li>Critical thinking</li><li>Multitasking</li></ul>
+            </div>
+            <div class="resume-block">
+              <h3>Community</h3>
+              <p>Bonton Farms · Heart House · For the Love of the Lake · Special Olympics · Hunger Busters · Boys &amp; Girls Club · Juliette Fowler</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow">05 / Get in touch</p>
+      <p class="eyebrow">06 / Get in touch</p>
       <h2 id="contact-title">Let’s make something<br><em>meaningful.</em></h2>
       <div class="contact-links">
         <a href="tel:+12143152521"><span class="contact-label">Phone</span><span class="contact-value">214-315-2521 <span aria-hidden="true">↗</span></span></a>

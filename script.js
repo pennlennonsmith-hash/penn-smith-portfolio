@@ -23,6 +23,132 @@ const projects = {
     galleryAlts: ["Courtyard perspective through shared housing", "Neighborhood perspective showing the stepped housing mass"],
     credits: "Team: Penn Smith + Lucia Silva"
   },
+  nexus: {
+    number: "09 / Academic + Civic",
+    title: "Shifted Timber Nexus",
+    subtitle: "Academic + community building · Columbia Manhattanville · 2025",
+    question: "How can an academic building serve both campus and city?",
+    description: "Shifted Timber Nexus proposes a mass-timber academic and community hub at Columbia University's Manhattanville campus. Its rotating, terraced grid steps between the scale of the elevated 125th Street rail line and the surrounding city, framing views toward the Hudson and creating outdoor spaces across several floors. Public galleries, a fabrication shop, workshop, auditorium, and outdoor pavilions open campus life to the neighborhood; terracotta louvers, bioswales, and planted terraces respond to sun, water, and local ecology.",
+    image: "assets/shifted-timber-render-cover.png",
+    alt: "Street-level rendering of Shifted Timber Nexus, a terracotta-clad mass-timber building",
+    gallery: [
+      "assets/shifted-timber-concept-16.jpg",
+      "assets/shifted-timber-cote-board-24.jpg",
+      "assets/shifted-timber-cote-board-26.jpg",
+      "assets/shifted-timber-cote-board-28.jpg",
+      "assets/shifted-timber-cote-board-30.jpg",
+      "assets/shifted-timber-cote-board-32.jpg",
+      "assets/shifted-timber-cote-board-34.jpg",
+      "assets/shifted-timber-model-photos-36.jpg",
+      "assets/shifted-timber-process-sketches-38.jpg",
+      "assets/shifted-timber-process-sketches-40.jpg",
+      "assets/shifted-timber-process-sketches-42.jpg",
+      "assets/shifted-timber-process-sketches-44.jpg",
+      "assets/shifted-timber-process-sketches-46.jpg",
+      "assets/shifted-timber-process-sketches-48.jpg"
+    ],
+    galleryAlts: [
+      "Alternate terracotta facade screens with horizontal and vertical louvers",
+      "Program diagrams and design strategies for discovery, integration, and change",
+      "Mass timber grid and terrace concept studies",
+      "Stacking diagrams showing the building's program and organization",
+      "Facade and massing studies for the terraced building",
+      "Project board with campus context, site plan, environmental strategies, and section",
+      "Additional project board documenting the facade, structure, and sustainability strategies",
+      "Three physical study models showing the building's stepped massing",
+      "Early process sketch exploring the building within its site",
+      "Hand-drawn massing and site studies",
+      "Early structural and circulation sketches",
+      "Iterative plans, sections, and facade studies",
+      "Additional process drawings and architectural sketches",
+      "Concept sketches for layered facade screens and louvers"
+    ],
+    credits: "Design: Penn Smith · Columbia University Manhattanville"
+  },
+  reframing: {
+    number: "08 / Civic + Community",
+    title: "Reframing the Edge",
+    subtitle: "Community + civic architecture · Team studio project · 2026",
+    question: "How can the edge of a city become a place to gather?",
+    description: "Developed with Grayson Sheffler, Reframing the Edge begins with cartographic analysis of an urban boundary and turns that reading into a community-centered site plan. The proposal organizes a community center alongside learning and gathering spaces, using angular forms to establish a civic presence within the larger landscape. The gallery traces the work from site and parti diagrams through master and site plans, precedent studies, elevations, and rendered views.",
+    image: "assets/reframing-edge-final-render.jpg",
+    alt: "Perspective rendering of the Reframing the Edge community center within its open landscape",
+    gallery: [
+      "assets/reframing-edge-context-02.jpg",
+      "assets/reframing-edge-context-03.jpg",
+      "assets/reframing-edge-analysis-04.jpg",
+      "assets/reframing-edge-cartography-parti.jpg",
+      "assets/reframing-edge-urban-edge.jpg",
+      "assets/reframing-edge-master-site-plan.jpg",
+      "assets/reframing-edge-campus-render.jpg",
+      "assets/reframing-edge-entry-render.jpg",
+      "assets/reframing-edge-precedents-studies.jpg",
+      "assets/reframing-edge-concept-diagram.jpg",
+      "assets/reframing-edge-interior-render.jpg",
+      "assets/reframing-edge-community-render.jpg",
+      "assets/reframing-edge-reference-sketches.jpg",
+      "assets/reframing-edge-perspectives.jpg",
+      "assets/reframing-edge-elevations.jpg",
+      "assets/reframing-edge-long-view.jpg",
+      "assets/reframing-edge-aerial-render.jpg"
+    ],
+    galleryAlts: [
+      "Site context and architectural image studies",
+      "Collage of the surrounding landscape and urban fabric",
+      "Urban site analysis drawing",
+      "Cartography map and parti diagram",
+      "Diagram locating the urban edge in its surrounding neighborhood",
+      "Master plan and site plan for the proposal",
+      "Aerial view locating the community center, school parking, and planned park",
+      "Perspective rendering of the community center approach",
+      "Precedent images and early structural form studies",
+      "Concept diagram marking the project's organizing axis",
+      "Interior perspective of a quiet gathering space with a cross-shaped opening",
+      "Exterior rendering showing the angular community buildings in the landscape",
+      "Architectural reference images and form sketches",
+      "Three perspective studies of the proposal",
+      "Architectural elevations of the project's folded roof and civic spaces",
+      "Long perspective view across the project grounds",
+      "Aerial rendering showing the proposal within the larger site"
+    ],
+    credits: "Team: Penn Smith + Grayson Sheffler"
+  },
+  sanctuary: {
+    number: "07 / Competition + Public Space",
+    title: "Sanctuary of Dreams",
+    subtitle: "Two-seat neighborhood chair · Designed 2026 · Competition winner · Rome, Italy",
+    question: "How can a place to sit become a place of refuge?",
+    description: "Designed with a partner in Rome, Sanctuary of Dreams is a two-seat chair whose enclosing wings create an intimate threshold for conversation, meditation, or retreat within a busy public space. Its form explores culture, religion, protection, and beauty, drawing on the image of wings as shelter and as a path toward growth. The competition-winning design is slated to be built in the neighborhood. A white ceramic-and-plaster exterior contrasts with a colorful, nature-inspired mosaic interior, making the shift between public presence and protected refuge visible in the material itself.",
+    image: "assets/sanctuary-in-situ-render.jpg",
+    alt: "Sanctuary of Dreams chair with protective wing forms and mosaic interior in its neighborhood setting",
+    gallery: [
+      "assets/sanctuary-aspects.jpg",
+      "assets/sanctuary-concept.jpg",
+      "assets/sanctuary-early-forms.jpg",
+      "assets/sanctuary-design-iterations.jpg",
+      "assets/sanctuary-transformation.jpg",
+      "assets/sanctuary-final-form.jpg",
+      "assets/sanctuary-sections-elevations.jpg",
+      "assets/sanctuary-plan.jpg",
+      "assets/sanctuary-materiality.jpg",
+      "assets/sanctuary-interior-mosaic.jpg",
+      "assets/sanctuary-material-renders.jpg"
+    ],
+    galleryAlts: [
+      "Design framework diagram identifying culture, religion, protection, and beauty",
+      "Early concept drawing of the winged two-seat chair as a threshold between earthly and divine",
+      "Early hand-drawn form studies and sketches",
+      "Three sculptural design iterations exploring the chair's wing forms",
+      "Transformation diagram showing the chair's form evolving through stages",
+      "Final chair form shown from two perspectives",
+      "Section drawings and elevations of the final chair form",
+      "Plan drawing of the two-seat chair",
+      "Materiality study describing the white exterior and colorful mosaic interior",
+      "Colorful interior mosaic pattern inspired by the natural world",
+      "Material renders showing the white exterior and patterned mosaic interior"
+    ],
+    credits: "Design: Penn Smith + partner · Competition-winning proposal · Rome, Italy"
+  },
   stickbuilt: {
     number: "03 / Design-build",
     title: "Timeless",
@@ -100,8 +226,11 @@ function showProjectSlide(index) {
 }
 
 const heroSlides = [
+  { project: "reframing", image: "assets/reframing-edge-final-render.jpg", alt: "Reframing the Edge community center in its landscape setting", title: "Reframing the Edge" },
   { project: "gateway", image: "assets/gateway-garden.jpg", alt: "Gateway Garden food learning center in its meadow setting", title: "Gateway Garden" },
   { project: "peakscape", image: "assets/peakscape.jpg", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
+  { project: "nexus", image: "assets/shifted-timber-render-cover.png", alt: "Street-level rendering of the terracotta-clad Shifted Timber Nexus", title: "Shifted Timber Nexus" },
+  { project: "sanctuary", image: "assets/sanctuary-in-situ-render.jpg", alt: "Sanctuary of Dreams chair in its neighborhood setting", title: "Sanctuary of Dreams" },
   { project: "lamp", image: "assets/composition-lamp.jpg", alt: "Composition Lamp glowing warmly in a dark room", title: "Composition Lamp" },
   { project: "board", image: "assets/cutting-board-chess.png", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
   { project: "shelf", image: "assets/tiered-shelf-in-use.jpg", alt: "Tiered wood shelf in use beside a bed", title: "Tiered Shelf" },
@@ -131,7 +260,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     lastTrigger = button;
     activeProject = project;
     projectSlideIndex = 0;
-    const horizontalProjects = ["gateway", "peakscape", "stickbuilt"];
+    const horizontalProjects = ["gateway", "peakscape", "reframing", "nexus", "sanctuary", "stickbuilt"];
     dialogContent.classList.toggle("is-horizontal-project", horizontalProjects.includes(button.dataset.project));
     const slides = getProjectSlides(project);
     dialogContent.innerHTML = `
