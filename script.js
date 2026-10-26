@@ -191,10 +191,10 @@ const projects = {
     subtitle: "Freestanding storage · Woodwork + furniture",
     question: "An open frame with shelves that shift in length.",
     description: "This freestanding shelf uses vertical wood panels and alternating shelf lengths to create an open, asymmetrical profile. Its simple planes make room for books and everyday objects while keeping the piece visually light beside a bed or wall.",
-    image: "assets/tiered-shelf-in-use.jpg",
-    alt: "Tiered wood shelf in use beside a bed",
-    gallery: ["assets/tiered-shelf-front.jpeg", "assets/tiered-shelf-angle.jpeg"],
-    galleryAlts: ["Freestanding tiered shelf against a concrete wall", "Angled view showing the shelf's alternating extensions"],
+    image: "assets/tiered-shelf-front.jpeg",
+    alt: "Pale wood tiered shelf against a concrete wall",
+    gallery: ["assets/tiered-shelf-angle.jpeg"],
+    galleryAlts: ["Angled view showing the shelf's alternating extensions"],
     credits: "Design + fabrication: Penn Smith"
   }
 };
@@ -233,7 +233,7 @@ const heroSlides = [
   { project: "sanctuary", image: "assets/sanctuary-in-situ-render.jpg", alt: "Sanctuary of Dreams chair in its neighborhood setting", title: "Sanctuary of Dreams" },
   { project: "lamp", image: "assets/composition-lamp.jpg", alt: "Composition Lamp glowing warmly in a dark room", title: "Composition Lamp" },
   { project: "board", image: "assets/cutting-board-chess.png", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
-  { project: "shelf", image: "assets/tiered-shelf-in-use.jpg", alt: "Tiered wood shelf in use beside a bed", title: "Tiered Shelf" },
+  { project: "shelf", image: "assets/tiered-shelf-front.jpeg", alt: "Pale wood tiered shelf against a concrete wall", title: "Tiered Shelf" },
   { project: "stickbuilt", image: "assets/stickbuilt.jpg", alt: "Glulam design-build installation among trees", title: "Timeless" }
 ];
 let heroSlideIndex = 0;
@@ -320,14 +320,61 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 const imageLightbox = document.querySelector(".image-lightbox");
 const lightboxImage = document.querySelector(".lightbox-image");
 const lightboxCaption = document.querySelector(".lightbox-caption");
+const lightboxPrev = document.querySelector(".lightbox-prev");
+const lightboxNext = document.querySelector(".lightbox-next");
+let lightboxGallery = [];
+let lightboxIndex = 0;
+
+function showLightboxSlide(index) {
+  if (!lightboxGallery.length) return;
+  lightboxIndex = (index + lightboxGallery.length) % lightboxGallery.length;
+  const slide = lightboxGallery[lightboxIndex];
+  lightboxImage.src = slide.image;
+  lightboxImage.alt = slide.alt || "Enlarged portfolio image";
+  lightboxCaption.textContent = slide.alt || "";
+}
+
+function getStandaloneGallery(image) {
+  const category = image.closest(".field-note-category");
+  const candidates = category
+    ? [...category.querySelectorAll(".field-note-item img")]
+    : [...document.querySelectorAll("img")].filter((candidate) =>
+        candidate !== lightboxImage &&
+        !candidate.closest(".project-card") &&
+        !candidate.closest(".hero-image") &&
+        !candidate.closest(".dialog-carousel")
+      );
+  const gallery = candidates.length ? candidates : [image];
+  return {
+    slides: gallery.map((candidate) => ({ image: candidate.currentSrc || candidate.src, alt: candidate.alt || "" })),
+    index: Math.max(0, gallery.indexOf(image))
+  };
+}
 
 function showEnlargedImage(image) {
-  lightboxImage.src = image.currentSrc || image.src;
-  lightboxImage.alt = image.alt || "Enlarged portfolio image";
-  lightboxCaption.textContent = image.alt || "";
+  if (image.closest(".dialog-carousel") && activeProject) {
+    lightboxGallery = getProjectSlides(activeProject);
+    lightboxIndex = projectSlideIndex;
+  } else {
+    const gallery = getStandaloneGallery(image);
+    lightboxGallery = gallery.slides;
+    lightboxIndex = gallery.index;
+  }
+  showLightboxSlide(lightboxIndex);
   imageLightbox.showModal();
 }
 
+lightboxPrev.addEventListener("click", () => showLightboxSlide(lightboxIndex - 1));
+lightboxNext.addEventListener("click", () => showLightboxSlide(lightboxIndex + 1));
+imageLightbox.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    showLightboxSlide(lightboxIndex - 1);
+  } else if (event.key === "ArrowRight") {
+    event.preventDefault();
+    showLightboxSlide(lightboxIndex + 1);
+  }
+});
 document.addEventListener("click", (event) => {
   const image = event.target.closest("img");
   if (!image || image === lightboxImage) return;
@@ -357,6 +404,7 @@ document.addEventListener("keydown", (event) => {
     else showEnlargedImage(image);
   }
 });
+
 
 
 
