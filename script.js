@@ -74,6 +74,7 @@ const projects = {
     image: "assets/reframing-edge-final-render.jpg",
     alt: "Perspective rendering of the Reframing the Edge community center within its open landscape",
     gallery: [
+      "assets/reframing-edge-community-render.jpg",
       "assets/reframing-edge-context-02.jpg",
       "assets/reframing-edge-context-03.jpg",
       "assets/reframing-edge-analysis-04.jpg",
@@ -85,7 +86,6 @@ const projects = {
       "assets/reframing-edge-precedents-studies.jpg",
       "assets/reframing-edge-concept-diagram.jpg",
       "assets/reframing-edge-interior-render.jpg",
-      "assets/reframing-edge-community-render.jpg",
       "assets/reframing-edge-reference-sketches.jpg",
       "assets/reframing-edge-perspectives.jpg",
       "assets/reframing-edge-elevations.jpg",
@@ -93,6 +93,7 @@ const projects = {
       "assets/reframing-edge-aerial-render.jpg"
     ],
     galleryAlts: [
+      "Exterior rendering of the community center beside a neighborhood soccer field",
       "Site context and architectural image studies",
       "Collage of the surrounding landscape and urban fabric",
       "Urban site analysis drawing",
@@ -104,7 +105,6 @@ const projects = {
       "Precedent images and early structural form studies",
       "Concept diagram marking the project's organizing axis",
       "Interior perspective of a quiet gathering space with a cross-shaped opening",
-      "Exterior rendering showing the angular community buildings in the landscape",
       "Architectural reference images and form sketches",
       "Three perspective studies of the proposal",
       "Architectural elevations of the project's folded roof and civic spaces",
