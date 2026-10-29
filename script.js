@@ -70,7 +70,7 @@ const projects = {
     title: "Reframing the Edge",
     subtitle: "Community + civic architecture · Team studio project · 2026",
     question: "How can the edge of a city become a place to gather?",
-    description: "Developed with Grayson Sheffler, Reframing the Edge begins with cartographic analysis of an urban boundary and turns that reading into a community-centered site plan. The proposal organizes a community center alongside learning and gathering spaces, using angular forms to establish a civic presence within the larger landscape. The gallery traces the work from site and parti diagrams through master and site plans, precedent studies, elevations, and rendered views.",
+    description: "Developed with Grayson Sheffler, this proposal pairs a community center with learning and gathering spaces. Angular forms give the civic program a clear presence while opening the grounds to movement, recreation, and views across the site.",
     image: "assets/reframing-edge-final-render.jpg",
     alt: "Perspective rendering of the Reframing the Edge community center within its open landscape",
     gallery: [
@@ -260,21 +260,85 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     lastTrigger = button;
     activeProject = project;
     projectSlideIndex = 0;
+    const projectId = button.dataset.project;
     const horizontalProjects = ["gateway", "peakscape", "reframing", "nexus", "sanctuary", "stickbuilt"];
-    dialogContent.classList.toggle("is-horizontal-project", horizontalProjects.includes(button.dataset.project));
+    const isReframing = projectId === "reframing";
+    dialogContent.classList.toggle("is-horizontal-project", horizontalProjects.includes(projectId));
+    dialogContent.classList.toggle("is-reframing-project", isReframing);
     const slides = getProjectSlides(project);
-    dialogContent.innerHTML = `
-      <div class="dialog-heading">
-        <p class="dialog-eyebrow">${project.number}</p>
-        <h2 id="dialog-title">${project.title}</h2>
-        <p class="dialog-subtitle">${project.subtitle}</p>
-      </div>
-      <div class="dialog-carousel" aria-label="${project.title} images">
-        <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-        <figure class="dialog-slide"><img class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗</button></figure>
-        <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
-      </div>
-      <div class="dialog-copy"><h3>${project.question}</h3><div><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>`;
+
+    if (isReframing) {
+      const developmentGroups = [
+        { title: "Roman Campagna + Rome", images: ["assets/reframing-edge-context-02.jpg", "assets/reframing-edge-context-03.jpg", "assets/reframing-edge-analysis-04.jpg"] },
+        { title: "Pienza + the urban edge", images: ["assets/reframing-edge-precedents-studies.jpg", "assets/reframing-edge-urban-edge.jpg"] },
+        { title: "Cartography + parti", images: ["assets/reframing-edge-cartography-parti.jpg", "assets/reframing-edge-concept-diagram.jpg"] },
+        { title: "Master plan + site plan", images: ["assets/reframing-edge-master-site-plan.jpg"] },
+        { title: "Developed views", images: ["assets/reframing-edge-campus-render.jpg", "assets/reframing-edge-entry-render.jpg", "assets/reframing-edge-interior-render.jpg", "assets/reframing-edge-reference-sketches.jpg", "assets/reframing-edge-perspectives.jpg", "assets/reframing-edge-elevations.jpg", "assets/reframing-edge-long-view.jpg", "assets/reframing-edge-aerial-render.jpg"] }
+      ];
+      const processGroups = developmentGroups.map((group) => {
+        const images = group.images.map((path) => {
+          const galleryIndex = project.gallery.indexOf(path);
+          if (galleryIndex < 0) return "";
+          const slideIndex = galleryIndex + 1;
+          const alt = project.galleryAlts[galleryIndex];
+          return `<figure class="reframing-process-image"><img src="${path}" alt="${alt}" data-project-slide-index="${slideIndex}" tabindex="0" role="button" aria-label="Enlarge image: ${alt}"><figcaption>${alt}</figcaption></figure>`;
+        }).join("");
+        return `<section class="reframing-process-group"><h4>${group.title}</h4><div class="reframing-process-images">${images}</div></section>`;
+      }).join("");
+
+      dialogContent.innerHTML = `
+        <div class="dialog-heading">
+          <p class="dialog-eyebrow">${project.number}</p>
+          <h2 id="dialog-title">${project.title}</h2>
+          <p class="dialog-subtitle">${project.subtitle}</p>
+        </div>
+        <div class="reframing-project-layout">
+          <div class="reframing-project-main">
+            <p class="eyebrow">01 / Main project representation</p>
+            <div class="dialog-carousel" aria-label="${project.title} images">
+              <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
+              <figure class="dialog-slide"><img class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗</button></figure>
+              <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
+            </div>
+            <div class="dialog-copy">
+              <h3>${project.question}</h3>
+              <div><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div>
+            </div>
+          </div>
+          <aside class="reframing-project-story">
+            <section class="reframing-story-intro">
+              <p class="eyebrow">Main project representation</p>
+              <p>A community center and gathering landscape turn the urban edge into a place to connect, learn, and play.</p>
+            </section>
+            <section class="reframing-story-development">
+              <p class="eyebrow">How it developed</p>
+              <ol>
+                <li><h3>Roman Campagna + Rome</h3><p>We developed collages depicting Italy’s Roman Campagna and its relationship to the city of Rome.</p></li>
+                <li><h3>Pienza + the edge</h3><p>We studied Pienza as a precedent for how a city can meet its edges, then brought that reading into our site and context.</p></li>
+                <li><h3>Cartography + parti</h3><p>We mapped edges and views at a larger scale, then translated those observations into a parti for the site.</p></li>
+                <li><h3>Master plan + site plan</h3><p>Those readings informed the master plan and site plan.</p></li>
+              </ol>
+            </section>
+          </aside>
+        </div>
+        <section class="reframing-process">
+          <div class="reframing-process-heading"><p class="eyebrow">02 / Process</p><h3>From context to plan.</h3></div>
+          <div class="reframing-process-groups">${processGroups}</div>
+        </section>`;
+    } else {
+      dialogContent.innerHTML = `
+        <div class="dialog-heading">
+          <p class="dialog-eyebrow">${project.number}</p>
+          <h2 id="dialog-title">${project.title}</h2>
+          <p class="dialog-subtitle">${project.subtitle}</p>
+        </div>
+        <div class="dialog-carousel" aria-label="${project.title} images">
+          <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
+          <figure class="dialog-slide"><img class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗</button></figure>
+          <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="dialog-copy"><h3>${project.question}</h3><div><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>`;
+    }
     dialog.showModal();
   });
 });
@@ -352,7 +416,10 @@ function getStandaloneGallery(image) {
 }
 
 function showEnlargedImage(image) {
-  if (image.closest(".dialog-carousel") && activeProject) {
+  if (activeProject && image.dataset.projectSlideIndex) {
+    lightboxGallery = getProjectSlides(activeProject);
+    lightboxIndex = Number(image.dataset.projectSlideIndex);
+  } else if (image.closest(".dialog-carousel") && activeProject) {
     lightboxGallery = getProjectSlides(activeProject);
     lightboxIndex = projectSlideIndex;
   } else {
