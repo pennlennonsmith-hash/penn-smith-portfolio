@@ -331,3 +331,57 @@ img { cursor: zoom-in; }
   .architecture-grid .project-card .project-image-square { height: 75vw; max-height: 430px; aspect-ratio: auto; }
 }
 
+
+
+/* Reframing the Edge project presentation */
+.dialog-content.is-reframing-project { display: block; }
+.dialog-content.is-reframing-project .dialog-heading { margin-bottom: 24px; }
+.reframing-project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr);
+  gap: clamp(26px, 4vw, 48px);
+  align-items: start;
+}
+.reframing-project-main > .eyebrow { margin: 0 0 10px; }
+.reframing-project-main .dialog-carousel { height: min(56vh, 470px); margin-top: 0; }
+.reframing-project-main .dialog-copy { grid-template-columns: minmax(140px, .72fr) minmax(0, 1fr); gap: 24px; margin-top: 22px; }
+.reframing-project-main .dialog-copy h3 { font-size: clamp(20px, 2vw, 26px); }
+.reframing-project-story { position: sticky; top: 68px; align-self: start; }
+.reframing-project-story section { padding: 16px 0 20px; border-top: 1px solid var(--line); }
+.reframing-project-story .eyebrow { margin: 0 0 12px; }
+.reframing-story-intro > p:last-child,
+.reframing-story-development li p { margin: 0; color: #65665e; font-size: 12px; line-height: 1.75; }
+.reframing-story-development ol { margin: 0; padding: 0; list-style: none; }
+.reframing-story-development li { padding: 0 0 16px 14px; border-left: 1px solid var(--line); }
+.reframing-story-development li:last-child { padding-bottom: 0; }
+.reframing-story-development li h3 { margin: 0 0 5px; font-size: 14px; font-weight: 600; }
+.reframing-process { margin-top: 50px; border-top: 1px solid var(--line); padding-top: 18px; }
+.reframing-process-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; margin-bottom: 22px; }
+.reframing-process-heading .eyebrow { margin: 0; }
+.reframing-process-heading h3 { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 400; }
+.reframing-process-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
+.reframing-process-group { min-width: 0; padding-top: 14px; border-top: 1px solid var(--line); }
+.reframing-process-group:last-child { grid-column: 1 / -1; }
+.reframing-process-group h4 { margin: 0 0 12px; font-size: 13px; font-weight: 600; }
+.reframing-process-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.reframing-process-image { min-width: 0; margin: 0; }
+.reframing-process-image img { display: block; width: 100%; height: 180px; object-fit: contain; background: var(--paper-deep); cursor: zoom-in; }
+.reframing-process-image figcaption { padding-top: 7px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.reframing-process-image img:focus-visible { outline: 2px solid var(--rust); outline-offset: 3px; }
+@media (max-width: 850px) {
+  .reframing-project-layout { grid-template-columns: minmax(0, 1fr); }
+  .reframing-project-story { position: static; }
+  .reframing-project-story section { padding-top: 14px; }
+  .reframing-process { margin-top: 34px; }
+}
+@media (max-width: 620px) {
+  .dialog-content.is-reframing-project .dialog-heading { margin-bottom: 20px; }
+  .reframing-project-main .dialog-copy { display: block; }
+  .reframing-project-main .dialog-copy h3 { margin-bottom: 12px; }
+  .reframing-process-heading { display: block; }
+  .reframing-process-heading h3 { margin-top: 8px; font-size: 22px; }
+  .reframing-process-groups { grid-template-columns: minmax(0, 1fr); }
+  .reframing-process-group:last-child { grid-column: auto; }
+  .reframing-process-images { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reframing-process-image img { height: 135px; }
+}
