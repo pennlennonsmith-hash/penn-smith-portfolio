@@ -18,6 +18,7 @@ const projects = {
     question: "A neighborhood scale response to a citywide need.",
     description: "Peakscape proposes compact homes with access to shared outdoor social and work spaces, alongside ground-floor retail that can offer neighborhood amenities and jobs. The massing steps down toward the surrounding Mar Vista homes, taking cues from the San Gabriel Mountain Range and easing the transition between denser housing and its lower-scale context.",
     image: "assets/peakscape.jpg",
+    captions: ["The project’s tallest corner establishes an urban face along the street.", "A view into one of the shared outdoor communal spaces.", "A view from the adjacent neighborhood shows how the project steps down to respect the scale of nearby homes without dominating them."],
     alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background",
     gallery: [
       "assets/peakscape-courtyard.jpg",
@@ -146,47 +147,52 @@ const projects = {
     title: "Sanctuary of Dreams",
     subtitle: "Two-seat neighborhood chair · Designed 2026 · Competition winner · Rome, Italy",
     question: "How can a place to sit become a place of refuge?",
-    description: "Designed with a partner in Rome, Sanctuary of Dreams is a two-seat chair whose enclosing wings create an intimate threshold for conversation, meditation, or retreat within a busy public space. Its form explores culture, religion, protection, and beauty, drawing on the image of wings as shelter and as a path toward growth. The competition-winning design is slated to be built in the neighborhood. A white ceramic-and-plaster exterior contrasts with a colorful, nature-inspired mosaic interior, making the shift between public presence and protected refuge visible in the material itself.",
-    image: "assets/sanctuary-in-situ-render.jpg",
+    description: "Designed with Savannah List in Rome, Sanctuary of Dreams is a two-seat public chair that offers a sheltered place for conversation, meditation, and reflection. Its enclosing wings connect the idea of protection with the freedom to grow: a moment of safety becomes a starting point for imagination and aspiration. The chair balances an open invitation to enter with the intimacy of a small refuge. Inspired by Antoni Gaudí’s Park Güell, the proposed ceramic-and-plaster exterior remains white, while a colorful mosaic interior translates natural landscapes into tile. The competition-winning proposal was selected to be built in the neighborhood.",
+    image: "assets/sanctuary-main-collage.png",
     alt: "Sanctuary of Dreams chair with protective wing forms and mosaic interior in its neighborhood setting",
     gallery: [
-      "assets/sanctuary-aspects.jpg",
-      "assets/sanctuary-concept.jpg",
-      "assets/sanctuary-early-forms.jpg",
-      "assets/sanctuary-design-iterations.jpg",
-      "assets/sanctuary-transformation.jpg",
-      "assets/sanctuary-final-form.jpg",
-      "assets/sanctuary-sections-elevations.jpg",
-      "assets/sanctuary-plan.jpg",
-      "assets/sanctuary-materiality.jpg",
-      "assets/sanctuary-interior-mosaic.jpg",
-      "assets/sanctuary-material-renders.jpg"
-    ],
+      "assets/sanctuary-material-axon-render.png",
+      "assets/sanctuary-material-front-render.png",
+      "assets/sanctuary-source-mosaic-elevation.png",
+      "assets/sanctuary-source-four-aspects.png",
+      "assets/sanctuary-source-sketch-curves.png",
+      "assets/sanctuary-source-sketch-enclosure.png",
+      "assets/sanctuary-source-sketch-wings.png",
+      "assets/sanctuary-source-transformation.jpg",
+      "assets/sanctuary-source-ai-explorations.png",
+      "assets/sanctuary-dimensioned-plan.png",
+      "assets/sanctuary-dimensioned-section-01.png",
+      "assets/sanctuary-dimensioned-section-02.png"
+],
     galleryAlts: [
-      "Design framework diagram identifying culture, religion, protection, and beauty",
-      "Early concept drawing of the winged two-seat chair as a threshold between earthly and divine",
-      "Early hand-drawn form studies and sketches",
-      "Three sculptural design iterations exploring the chair's wing forms",
-      "Transformation diagram showing the chair's form evolving through stages",
-      "Final chair form shown from two perspectives",
-      "Section drawings and elevations of the final chair form",
-      "Plan drawing of the two-seat chair",
-      "Materiality study describing the white exterior and colorful mosaic interior",
-      "Colorful interior mosaic pattern inspired by the natural world",
-      "Material renders showing the white exterior and patterned mosaic interior"
-    ],
-    credits: "Design: Penn Smith + partner · Competition-winning proposal · Rome, Italy"
+      "Angled material render showing the white chair shell and colorful mosaic interior",
+      "Front material render showing the paired seats and rising protective wings",
+      "Unfolded interior elevation showing the nature-inspired mosaic",
+      "Culture, religion, protection, and beauty formed the four pillars of the design, connecting the experience of public seating with symbolic shelter and aspiration.",
+      "Early curved studies explored how a sweeping structural line could suggest wings, bringing movement and a sense of enclosure into the chair.",
+      "The enclosing two-seat sketch tests closeness and refuge: a shared place to sit that remains connected to the public setting.",
+      "Rising wings refine the balance between an open, inviting entrance and a protected space for conversation or meditation.",
+      "The transformation diagram traces the wing metaphor into the chair: protective sweeps become the enclosing shell, then resolve into the final sculptural form.",
+      "AI-assisted visual studies explore how the sculptural chair might meet public life in different settings and lighting conditions.",
+      "Dimensioned plan: the compact, paired-seat footprint supports closeness and a shared sense of refuge.",
+      "Dimensioned section through the taller wing: the rising profile gives the chair a symbolic presence while preserving an intimate seated space.",
+      "Second dimensioned section: the relationship between seat height and the enclosing wings gives scale to the sheltered interior."
+],
+    captions: ["The chair sits within everyday public life while offering a quiet, protected place to pause.", "The bright exterior shell and richly patterned interior express two complementary experiences: protection from outside and warmth within. The material approach draws on the mosaics of Antoni Gaudí’s Park Güell.", "The final form balances openness and enclosure. Two seats bring people close, while the rising wings create a sheltered space for conversation or reflection.", "The unfolded interior translates a natural landscape into mosaic. Color and intricate tile patterns give the protected interior a sense of life, rhythm, and imagination."],
+    processIntro: "The design began with wings as a metaphor for transition—from earth to sky and from the present toward the future. Guardian-angel imagery and Psalm 91:4 informed the idea of shelter beneath wings. A mother bird offered a second reading: the wings that protect its young also make flight possible. From this came the central thought that safety supports growth. Culture, religion, protection, and beauty guided the sketches as we balanced an inviting opening with a secluded interior.",
+    dimensionImages: ["assets/sanctuary-dimensioned-plan.png", "assets/sanctuary-dimensioned-section-01.png", "assets/sanctuary-dimensioned-section-02.png"],
+    credits: "Design: Penn Smith + Savannah List · Competition-winning proposal · Rome, Italy"
   },
   stickbuilt: {
     number: "03 / Design-build",
     title: "Timeless",
     subtitle: "Full-scale glulam installation · Birmingham, Alabama · 2025",
     question: "How do you build what you draw?",
-    description: "Created during a summer design-build with the architecture firm Stickbuilt, this team project explored the idea of timelessness through the life cycle of a tree. After testing the concept with a small model, the team developed a full-scale glulam structure whose members connect with dowels rather than metal fasteners, tracing a curve through the forest.",
+    description: "Created during a summer design-build with the architecture firm Stickbuilt, this team project explored the idea of timelessness through the life cycle of a tree. After testing the concept with a small model, the team developed a full scale glulam structure whose members connect with dowels rather than metal fasteners, tracing a curve through the forest.",
     image: "assets/timeless-002.jpg",
     alt: "Glulam design-build installation among trees",
-    gallery: ["assets/timeless-048.jpg","assets/timeless-052.jpg","assets/timeless-006.jpg","assets/timeless-build-044.jpg","assets/timeless-build-033.jpg","assets/timeless-build-011.jpg","assets/timeless-build-056.jpg","assets/timeless-build-059.jpg","assets/timeless-build-087.jpg","assets/timeless-build-088.jpg","assets/timeless-build-101.jpg","assets/timeless-build-135.jpg","assets/timeless-build-144.jpg","assets/timeless-061.jpg","assets/timeless-065.jpg","assets/timeless-064.jpg","assets/timeless-060.jpg","assets/timeless-063.jpg"],
-    galleryAlts: ["The installation rising beside a tree, seen at human scale","Penn Smith presenting Timeless and explaining its timber members","The Timeless team beside the completed installation","Discussing hand tools and timber preparation with the team","Hand-planing a timber member before assembly","Carrying and positioning a prepared timber member","Team members raising and aligning the tall timber members","Checking the assembly as the timber sequence takes shape","Installing and temporarily bracing the upright members","Drilling connection holes with the members supported in place","Driving timber dowels into the connections with a mallet","Coordinating alignment and bracing during assembly","Trimming a projecting dowel with a hand saw","Recessed dowel connections along the sloping timber members","Stepped ends and laminated grain of the timber members","Angled timber members meeting the forest floor","Close-up of timber dowels within recessed connections","Rhythm and changing angles of the completed timber assembly"],
+    gallery: ["assets/timeless-048.jpg", "assets/timeless-052.jpg", "assets/timeless-061.jpg", "assets/timeless-065.jpg", "assets/timeless-064.jpg", "assets/timeless-060.jpg", "assets/timeless-063.jpg", "assets/timeless-build-044.jpg", "assets/timeless-build-033.jpg", "assets/timeless-build-011.jpg", "assets/timeless-build-056.jpg", "assets/timeless-build-059.jpg", "assets/timeless-build-087.jpg", "assets/timeless-build-088.jpg", "assets/timeless-build-101.jpg", "assets/timeless-build-135.jpg", "assets/timeless-build-144.jpg", "assets/timeless-006.jpg"],
+    galleryAlts: ["The installation rising beside a tree, seen at human scale", "Penn Smith presenting Timeless and explaining its timber members", "Recessed dowel connections along the sloping timber members", "Stepped ends and laminated grain of the timber members", "Angled timber members meeting the forest floor", "Close-up of timber dowels within recessed connections", "Rhythm and changing angles of the completed timber assembly", "Discussing hand tools and timber preparation with the team", "Hand-planing a timber member before assembly", "Carrying and positioning a prepared timber member", "Team members raising and aligning the tall timber members", "Checking the assembly as the timber sequence takes shape", "Installing and temporarily bracing the upright members", "Drilling connection holes with the members supported in place", "Driving timber dowels into the connections with a mallet", "Coordinating alignment and bracing during assembly", "Trimming a projecting dowel with a hand saw", "Timeless team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain, and Jeff Jeong."],
     detailImages: ["assets/timeless-061.jpg", "assets/timeless-065.jpg", "assets/timeless-064.jpg", "assets/timeless-060.jpg", "assets/timeless-063.jpg"],
     teamImages: ["assets/timeless-006.jpg"],
     credits: "Organization: Stickbuilt · Team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain + Jeff Jeong"
@@ -197,10 +203,10 @@ const projects = {
     subtitle: "Bedside light · 2025",
     question: "A small object built from a study of color and frame.",
     description: "Inspired by Piet Mondrian’s Composition with Red, Blue, and Yellow, the lamp pairs a beech-wood outer frame with a 3D-printed inner frame made from filament mixed with oak. Sanded acrylic panels soften the light and make the grid legible from every side.",
-    image: "assets/lamp-edited-axon-on.png",
-    alt: "Edited angled view of Composition Lamp illuminated",
-    gallery: ["assets/lamp-edited-axon-off.png", "assets/lamp-edited-elevation-on.png", "assets/lamp-edited-elevation-off.png", "assets/lamp-edited-interior.png", "assets/lamp-edited-skeleton.png", "assets/lamp-edited-clamped.png"],
-    galleryAlts: ["Angled view of the finished lamp with the light off", "Elevation of the finished lamp illuminated", "Elevation of the finished lamp with the light off", "Interior view of the lamp", "The lamp's exposed frame and construction", "Wood frame held in clamps during assembly"],
+    image: "assets/lamp-edited-axon-off.png",
+    alt: "Angled view of Composition Lamp with the light off",
+    gallery: ["assets/lamp-edited-elevation-off.png", "assets/lamp-edited-elevation-on.png", "assets/lamp-edited-axon-on.png", "assets/lamp-edited-interior.png", "assets/lamp-edited-skeleton.png", "assets/lamp-edited-clamped.png"],
+    galleryAlts: ["Elevation of the finished lamp with the light off", "Elevation of the finished lamp illuminated", "Angled view of the finished lamp illuminated", "Interior view of the lamp", "The lamp's exposed frame and construction", "Wood frame held in clamps during assembly"],
     credits: "Materials: Beech, oak-mixed filament + sanded acrylic"
   },
   board: {
@@ -208,11 +214,11 @@ const projects = {
     title: "Chessboard Cutting Board",
     subtitle: "Two-sided object · Woodwork + metal",
     question: "One board, two ways to use it.",
-    description: "This two-sided piece pairs an end-grain hardwood cutting surface with a metal chessboard epoxied into the reverse. Contrasting inlay lines and a routed perimeter groove give the cutting face its own pattern and working edge. The reverse turns the same object into a board for play.",
+    description: "This two sided piece pairs an end grain hardwood cutting surface with a metal chessboard epoxied into the reverse. Contrasting inlay lines and a routed perimeter groove give the cutting face its own pattern and working edge. The reverse turns the same object into a board for play.",
     image: "assets/cutting-board-chess.png",
     alt: "End-grain cutting board with a metal chessboard inset and chess pieces",
-    gallery: ["assets/cutting-board-wood.png", "assets/cutting-board-metal.png", "assets/cutting-board-engraving.png", "assets/cutting-board-glueup.jpeg"],
-    galleryAlts: ["End-grain cutting face with contrasting inlay and a routed groove", "Overhead view of the metal chessboard insert", "Routing work underway on the chessboard pattern", "Wood strips and pale inlays held in clamps during glue-up"],
+    gallery: ["assets/cutting-board-wood.png", "assets/ai-board-top-after.png", "assets/cutting-board-metal.png", "assets/cutting-board-engraving.png", "assets/cutting-board-glueup.jpeg"],
+    galleryAlts: ["End-grain cutting face with contrasting inlay and a routed groove", "Overhead view of the finished cutting face against a concrete background", "Overhead view of the metal chessboard insert", "Routing work underway on the chessboard pattern", "Wood strips and pale inlays held in clamps during glue-up"],
     credits: "Design + fabrication: Penn Smith"
   },
   shelf: {
@@ -223,8 +229,8 @@ const projects = {
     description: "This freestanding shelf uses vertical wood panels and alternating shelf lengths to create an open, asymmetrical profile. Its simple planes make room for books and everyday objects while keeping the piece visually light beside a bed or wall.",
     image: "assets/tiered-shelf-front.jpeg",
     alt: "Pale wood tiered shelf against a concrete wall",
-    gallery: ["assets/tiered-shelf-hero-wide.png", "assets/tiered-shelf-angle.jpeg"],
-    galleryAlts: ["Full view of the tiered shelf against a concrete wall", "Angled view showing the shelf's alternating extensions"],
+    gallery: ["assets/tiered-shelf-angle.jpeg", "assets/tiered-shelf-in-use-edited.png"],
+    galleryAlts: ["Angled view showing the shelf's alternating extensions", "Tiered Shelf beside a bed, holding a lamp, books, and everyday objects"],
     credits: "Design + fabrication: Penn Smith"
   }
 };
@@ -249,12 +255,12 @@ const finalImageNames = {
   gateway: ["gateway-cafe-render.png", "gateway-kitchen-render.png", "gateway-classroom-render.png", "gateway-greenhouse-render.png", "gateway-event.jpg", "gateway-final-perspectives.jpg"],
   peakscape: ["peakscape-courtyard.jpg", "peakscape-neighborhood.jpg"],
   nexus: [],
-  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-campus-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg"],
-  sanctuary: ["sanctuary-final-form.jpg", "sanctuary-sections-elevations.jpg", "sanctuary-plan.jpg", "sanctuary-material-renders.jpg"],
+  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg"],
+  sanctuary: ["sanctuary-material-axon-render.png", "sanctuary-material-front-render.png", "sanctuary-source-mosaic-elevation.png"],
   stickbuilt: ["timeless-048.jpg", "timeless-052.jpg"],
-  lamp: ["lamp-edited-axon-off.png", "lamp-edited-elevation-on.png", "lamp-edited-elevation-off.png"],
-  board: ["cutting-board-wood.png", "cutting-board-metal.png"],
-  shelf: ["tiered-shelf-hero-wide.png", "tiered-shelf-angle.jpeg"]
+  lamp: ["lamp-edited-elevation-off.png", "lamp-edited-elevation-on.png", "lamp-edited-axon-on.png", "lamp-edited-interior.png"],
+  board: ["cutting-board-wood.png", "ai-board-top-after.png", "cutting-board-metal.png"],
+  shelf: ["tiered-shelf-angle.jpeg", "tiered-shelf-in-use-edited.png"]
 };
 Object.entries(projects).forEach(([id, project]) => {
   project.finalImages = new Set((finalImageNames[id] || []).map(name => "assets/" + name));
@@ -264,9 +270,9 @@ function getFinalSlides(project) {
 }
 function renderProcess(project) {
   const images = getProjectSlides(project).map((slide, index) => ({...slide, index}))
-    .filter(slide => slide.image !== project.image && !project.finalImages.has(slide.image) && !(project.detailImages || []).includes(slide.image) && !(project.teamImages || []).includes(slide.image));
+    .filter(slide => slide.image !== project.image && !project.finalImages.has(slide.image) && !(project.detailImages || []).includes(slide.image) && !(project.teamImages || []).includes(slide.image) && !(project.dimensionImages || []).includes(slide.image));
   if (!images.length) return "";
-  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">02 / How it developed</p><h3>Process + studies</h3></div><div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
+  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
 }
 
 function renderSupportingImages(project, paths, label, title) {
@@ -287,17 +293,19 @@ function showProjectSlide(index) {
   const image = dialogContent.querySelector(".dialog-slide-image");
   image.src = slide.image;
   image.alt = slide.alt;
+  const caption = dialogContent.querySelector(".dialog-image-caption");
+  if (caption) caption.textContent = activeProject.captions?.[projectSlideIndex] || "";
   dialogContent.querySelector(".dialog-slide-count").textContent = `${String(projectSlideIndex + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
 }
 
 const heroSlides = [
-  { project: "reframing", image: "assets/reframing-edge-aerial-render.jpg", alt: "Aerial view of Reframing the Edge showing the community center and its site", title: "Reframing the Edge" },
-  { project: "gateway", image: "assets/gateway-event.jpg", alt: "Evening gathering at Gateway Garden beside the illuminated outdoor pavilion", title: "Gateway Garden" },
-  { project: "peakscape", image: "assets/peakscape.jpg", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
-  { project: "sanctuary", image: "assets/sanctuary-in-situ-render.jpg", alt: "Sanctuary of Dreams chair in its neighborhood setting", title: "Sanctuary of Dreams" },
+  { project: "stickbuilt", image: "assets/timeless-052.jpg", alt: "Penn Smith presenting the Timeless timber installation to visitors", title: "Timeless" },
   { project: "board", image: "assets/cutting-board-chess.png", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
+  { project: "sanctuary", image: "assets/sanctuary-highlight-front.png", alt: "Front elevation render of Sanctuary of Dreams with the full chair visible", title: "Sanctuary of Dreams" },
   { project: "shelf", image: "assets/tiered-shelf-hero-wide.png", alt: "Full view of the tiered shelf against a concrete wall", title: "Tiered Shelf" },
-  { project: "stickbuilt", image: "assets/timeless-052.jpg", alt: "Penn Smith presenting the Timeless timber installation to visitors", title: "Timeless" }
+  { project: "peakscape", image: "assets/peakscape.jpg", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
+  { project: "reframing", image: "assets/reframing-edge-aerial-render.jpg", alt: "Aerial view of Reframing the Edge showing the community center and its site", title: "Reframing the Edge" },
+  { project: "gateway", image: "assets/gateway-event.jpg", alt: "Evening gathering at Gateway Garden beside the illuminated outdoor pavilion", title: "Gateway Garden" }
 ];
 let heroSlideIndex = 0;
 const heroImage = document.querySelector(".hero-image img");
@@ -328,8 +336,9 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     const isReframing = projectId === "reframing";
     dialogContent.classList.toggle("is-gateway-project", projectId === "gateway");
     dialogContent.classList.toggle("is-horizontal-project", horizontalProjects.includes(projectId));
+    dialogContent.classList.toggle("is-sanctuary-project", projectId === "sanctuary");
     dialogContent.classList.toggle("is-reframing-project", isReframing);
-    const slides = getProjectSlides(project);
+    const slides = getFinalSlides(project);
     if (isReframing) {
       const developmentGroups = [
         {
@@ -375,11 +384,11 @@ document.querySelectorAll("[data-project]").forEach((button) => {
         </div>
         <div class="dialog-carousel" aria-label="${project.title} images">
           <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-          <figure class="dialog-slide"><img class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗</button></figure>
+          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗︎</button></figure>
           <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
         </div>
         <div class="dialog-copy"><h3>${project.question}</h3><div><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>
-        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">02 / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
+        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt ? "03" : "02"} / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
     } else {
       dialogContent.innerHTML = `
       <div class="dialog-heading">
@@ -389,20 +398,25 @@ document.querySelectorAll("[data-project]").forEach((button) => {
       </div>
       <div class="dialog-carousel" aria-label="${project.title} images">
         <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-        <figure class="dialog-slide"><img class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗</button></figure>
+        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗︎</button></figure>
         <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
       </div>
       <div class="dialog-copy"><h3>${project.question}</h3><div><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>`;
     }
+    if (projectId === "stickbuilt") dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.detailImages, "02 / Details", "Timber + connections"));
     if (!isReframing) dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
+    if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.dimensionImages, "03 / Drawings", "Dimensioned drawings"));
     if (projectId === "stickbuilt") {
-      dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.detailImages, "03 / Details", "Timber + connections"));
       dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.teamImages, "04 / Team", "The people behind Timeless"));
     }
+    showProjectSlide(0);
     if (button.closest(".hero-image")) {
       const clickedSource = button.getAttribute("src");
       const clickedIndex = slides.findIndex(slide => slide.image === clickedSource);
       showProjectSlide(Math.max(0, clickedIndex));
+    }
+    if (project.captions) {
+      dialogContent.querySelector(".dialog-carousel").insertAdjacentHTML("afterend", `<p class="dialog-image-caption" aria-live="polite">${project.captions[projectSlideIndex]}</p>`);
     }
     dialog.showModal();
   });
@@ -414,7 +428,7 @@ dialogContent.addEventListener("click", (event) => {
     showProjectSlide(projectSlideIndex + Number(arrow.dataset.slideStep));
     return;
   }
-  if (event.target.closest(".dialog-zoom")) {
+  if (event.target.closest(".dialog-zoom, .dialog-slide-image")) {
     const image = dialogContent.querySelector(".dialog-slide-image");
     if (image) showEnlargedImage(image);
   }
@@ -465,7 +479,7 @@ function showLightboxSlide(index) {
 
 document.querySelectorAll("#field-notes .ai-study").forEach((study) => {
   const title = study.querySelector("h4").textContent;
-  const categoryLabel = study.dataset.category || "AI post-production + diagrams";
+  const categoryLabel = study.dataset.category || "AI postproduction + diagrams";
   const content = study.cloneNode(true);
   content.querySelector("h4").remove();
   const button = document.createElement("button");
@@ -475,7 +489,7 @@ document.querySelectorAll("#field-notes .ai-study").forEach((study) => {
   const heading = document.createElement("span");
   heading.textContent = title;
   const arrow = document.createElement("span");
-  arrow.textContent = "↗";
+  arrow.textContent = "↗︎";
   arrow.setAttribute("aria-hidden", "true");
   button.append(heading, arrow);
   study.classList.remove("ai-study");
