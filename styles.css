@@ -590,3 +590,48 @@ img { cursor: zoom-in; }
   }
 }
 .project-process-intro { max-width: 760px; margin: 0 0 30px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+
+/* Project briefs consistently introduce the challenge before the response. */
+.dialog-copy.project-brief .brief-label { margin: 0 0 12px; color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.dialog-copy.project-brief h3 { margin-bottom: 16px; }
+.dialog-copy.project-brief .dialog-subtitle { margin-top: 18px; }
+@media (max-width: 620px) { .project-brief > div + div { margin-top: 26px; } }
+
+.process-video-grid { margin-top: 24px; }
+.process-video { display: block; width: 100%; height: auto; max-height: 420px; object-fit: contain; background: #fff; }
+
+/* Independent process image stacks and side-by-side model/output studies. */
+.process-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin: 28px 0; }
+.process-comparison > .reframing-process-group:last-child { grid-column: auto; }
+.process-stack { margin: 24px 0 32px; min-width: 0; }
+.process-stack > img { display: block; width: 100%; height: clamp(230px, 34vw, 420px); object-fit: contain; background: #fff; cursor: zoom-in; }
+.process-stack-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
+.process-stack-controls button { width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: inherit; font: inherit; cursor: pointer; }
+.process-stack-controls button:hover { background: #eee; }
+.process-stack-count, .process-stack figcaption { font-size: 12px; line-height: 1.6; }
+.process-stack figcaption { color: var(--muted); }
+@media(max-width: 620px) { .process-comparison { grid-template-columns: 1fr; } }
+
+/* Gateway: full-width context research, followed by compact study pairs. */
+.gateway-context-studies { margin-bottom: 28px; }
+.gateway-context-studies .project-process-grid { grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+.gateway-context-studies .reframing-process-image img { height: auto; }
+.gateway-process-studies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.gateway-process-studies > .reframing-process-group:last-child { grid-column: 2; grid-row: 2; }
+.gateway-process-studies > .process-comparison { grid-column: 1 / -1; margin: 0; align-items: start; }
+.gateway-process-studies .process-stack { margin: 18px 0 0; }
+.gateway-process-studies .process-stack > img { height: clamp(180px, 23vw, 280px); }
+.gateway-process-studies .reframing-process-group > .project-process-grid:not(.process-video-grid) { grid-template-columns: 1fr; margin-top: 18px; }
+.gateway-process-studies .project-process-grid .reframing-process-image img { height: clamp(180px, 23vw, 280px); }
+.gateway-process-studies .process-video-grid { gap: 12px; margin-top: 18px; }
+@media (max-width: 620px) {
+  .gateway-process-studies { grid-template-columns: 1fr; gap: 24px; }
+  .gateway-process-studies > .reframing-process-group:last-child { grid-column: auto; grid-row: auto; }
+  .gateway-process-studies > .process-comparison { grid-column: auto; gap: 24px; }
+}
+
+/* Preserve the complete portrait of the visitor looking up at Timeless. */
+.dialog-content .dialog-slide-image[src="assets/timeless-048.jpg"] {
+  width: 100%; height: 100%; max-width: 100%; max-height: min(56vh, 480px);
+  object-fit: contain; object-position: center; transform: none;
+}
