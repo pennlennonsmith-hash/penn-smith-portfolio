@@ -27,7 +27,7 @@ const projects = {
       "assets/gateway-midjourney-concept-16.png",
       "assets/gateway-midjourney-concept-15.png",
       "assets/gateway-massing-diagram-horizontal.png",
-      "assets/gateway-site-roof-plan-source.jpg",
+      "assets/gateway-site-roof-plan-updated.jpg",
       "assets/gateway-park-perspective.png",
       "assets/gateway-site-section-perspective.png",
       "assets/gateway-final-zoning-axon.jpg",
@@ -370,15 +370,15 @@ const projects = {
     "subtitle": "Bedside light · 2025",
     "question": "A small object built from a study of color and frame.",
     "description": "Inspired by Piet Mondrian’s Composition with Red, Blue, and Yellow, the lamp pairs a beech-wood outer frame with a 3D-printed inner frame made from filament mixed with oak. Sanded acrylic panels soften the light and make the grid legible from every side.",
-    "image": "assets/lamp-edited-axon-off.png",
+    "image": "assets/lamp-edited-axon-off-web.jpg",
     "alt": "Angled view of Composition Lamp with the light off",
     "gallery": [
-      "assets/lamp-edited-elevation-off.png",
-      "assets/lamp-edited-elevation-on.png",
-      "assets/lamp-edited-axon-on.png",
-      "assets/lamp-edited-interior.png",
-      "assets/lamp-edited-skeleton.png",
-      "assets/lamp-edited-clamped.png"
+      "assets/lamp-edited-elevation-off-web.jpg",
+      "assets/lamp-edited-elevation-on-web.jpg",
+      "assets/lamp-edited-axon-on-web.jpg",
+      "assets/lamp-edited-interior-web.jpg",
+      "assets/lamp-edited-skeleton-web.jpg",
+      "assets/lamp-edited-clamped-web.jpg"
     ],
     "galleryAlts": [
       "Elevation of the finished lamp with the light off",
@@ -390,22 +390,34 @@ const projects = {
     ],
     "credits": "Materials: Beech, oak-mixed filament + sanded acrylic",
     "nightImages": [
-      "assets/lamp-edited-elevation-on.png",
-      "assets/lamp-edited-axon-on.png"
+      "assets/lamp-edited-elevation-on-web.jpg",
+      "assets/lamp-edited-axon-on-web.jpg"
     ]
   },
   board: {
-    problem: "Bring a cutting surface and a chessboard together in one handmade object, giving each function a clear working face.",
-    number: "05 / Wood + Metal",
-    title: "Chessboard Cutting Board",
-    subtitle: "Two-sided object · Woodwork + metal",
-    question: "One board, two ways to use it.",
-    description: "This two sided piece pairs an end grain hardwood cutting surface with a metal chessboard epoxied into the reverse. Contrasting inlay lines and a routed perimeter groove give the cutting face its own pattern and working edge. The reverse turns the same object into a board for play.",
-    image: "assets/cutting-board-chess.png",
-    alt: "End-grain cutting board with a metal chessboard inset and chess pieces",
-    gallery: ["assets/cutting-board-wood.png", "assets/ai-board-top-after.png", "assets/cutting-board-metal.png", "assets/cutting-board-engraving.png", "assets/cutting-board-glueup.jpeg"],
-    galleryAlts: ["End-grain cutting face with contrasting inlay and a routed groove", "Overhead view of the finished cutting face against a concrete background", "Overhead view of the metal chessboard insert", "Routing work underway on the chessboard pattern", "Wood strips and pale inlays held in clamps during glue-up"],
-    credits: "Design + fabrication: Penn Smith"
+    "problem": "Bring a cutting surface and a chessboard together in one handmade object, giving each function a clear working face.",
+    "number": "05 / Wood + metal + epoxy",
+    "title": "Chessboard Cutting Board",
+    "subtitle": "Two-sided object · Wood, metal + epoxy",
+    "question": "One board, two ways to use it.",
+    "description": "This two sided wood, metal, and epoxy piece pairs an end grain hardwood cutting surface with a metal chessboard epoxied into the reverse. Contrasting inlay lines and a routed perimeter groove give the cutting face its own pattern and working edge. The reverse turns the same object into a board for play.",
+    "image": "assets/cutting-board-chess-web.jpg",
+    "alt": "End-grain cutting board with a metal chessboard inset and chess pieces",
+    "gallery": [
+      "assets/cutting-board-wood.png",
+      "assets/ai-board-top-after.png",
+      "assets/cutting-board-metal.png",
+      "assets/cutting-board-glueup.jpeg",
+      "assets/cutting-board-engraving.png"
+    ],
+    "galleryAlts": [
+      "End-grain cutting face with contrasting inlay and a routed groove",
+      "Overhead view of the finished cutting face against a concrete background",
+      "Overhead view of the metal chessboard insert",
+      "Wood strips and pale inlays held in clamps during glue-up",
+      "Routing the chessboard pattern using the Shaper"
+    ],
+    "credits": "Materials: Wood, metal + epoxy<br>Design + fabrication: Penn Smith"
   },
   shelf: {
     problem: "Create freestanding storage for books and everyday objects that remains visually light beside a bed or wall.",
@@ -414,9 +426,9 @@ const projects = {
     subtitle: "Freestanding storage · Woodwork + furniture",
     question: "An open frame with shelves that shift in length.",
     description: "This freestanding shelf uses vertical wood panels and alternating shelf lengths to create an open, asymmetrical profile. Its simple planes make room for books and everyday objects while keeping the piece visually light beside a bed or wall.",
-    image: "assets/tiered-shelf-front.jpeg",
+    image: "assets/tiered-shelf-front-web.jpg",
     alt: "Pale wood tiered shelf against a concrete wall",
-    gallery: ["assets/tiered-shelf-angle.jpeg", "assets/tiered-shelf-in-use-edited.png"],
+    gallery: ["assets/tiered-shelf-angle-web.jpg", "assets/tiered-shelf-in-use-edited-web.jpg"],
     galleryAlts: ["Angled view showing the shelf's alternating extensions", "Tiered Shelf beside a bed, holding a lamp, books, and everyday objects"],
     credits: "Design + fabrication: Penn Smith"
   }
@@ -426,7 +438,7 @@ const projects = {
 // Explicit drawing layouts keep related sheets together without changing gallery sources.
 projects.gateway.finishedDrawingGroups = [
   {title:'Massing development', layout:'full', images:['assets/gateway-massing-diagram-horizontal.png']},
-  {title:'Site + roof plan', layout:'full', images:['assets/gateway-site-roof-plan-source.jpg']},
+  {title:'Site + roof plan', layout:'full', images:['assets/gateway-site-roof-plan-updated.jpg']},
   {title:'South + west building elevations', layout:'full', images:['assets/gateway-final-elevations.jpg']}
 ];
 projects.gateway.drawingGroups = [
@@ -444,8 +456,8 @@ projects.peakscape.numberedStudies = [
   'assets/peakscape-building-code.jpg','assets/peakscape-accessibility.jpg'
 ];
 projects.lamp.comparisonGroups = [
-  {title:'Elevations · light off + light on', layout:'row', images:['assets/lamp-edited-elevation-off.png','assets/lamp-edited-elevation-on.png']},
-  {title:'Axonometric views · light off + light on', layout:'row', images:['assets/lamp-edited-axon-off.png','assets/lamp-edited-axon-on.png']}
+  {title:'Elevations · light off + light on', layout:'row', images:['assets/lamp-edited-elevation-off-web.jpg','assets/lamp-edited-elevation-on-web.jpg']},
+  {title:'Axonometric views · light off + light on', layout:'row', images:['assets/lamp-edited-axon-off-web.jpg','assets/lamp-edited-axon-on-web.jpg']}
 ];
 
 
@@ -461,6 +473,29 @@ projects.sanctuary.processStudyGroups = [{
   images:['assets/sanctuary-source-sketch-curves.png','assets/sanctuary-source-sketch-enclosure.png','assets/sanctuary-source-sketch-wings.png'],
   stack:true
 }];
+
+
+projects.peakscape.introDrawingGroups = [
+  {title:'Form development',layout:'full',images:['assets/peakscape-concept-original.jpg']},
+  {title:'Ground + upper-floor plans',layout:'full',images:['assets/peakscape-plans-original.jpg']}
+];
+projects.sanctuary.processStudyGroups[0].comparison = {
+  title:'AI iterations',
+  description:'AI-assisted visual studies explore the chair in public settings and different lighting conditions.',
+  images:['assets/sanctuary-source-ai-explorations.png']
+};
+
+// Finished physical model photographs, in the supplied order.
+const gatewayModelPhotos = [[12,"Physical model · overall view of the building and site"],[14,"Physical model · roof edge and timber supports"],[16,"Physical model · glazed gable and exposed roof structure"],[17,"Physical model · long elevation beneath the folded roof"],[13,"Physical model · overhead view of roof forms and site layout"],[11,"Physical model · courtyard and connected building wings"],[10,"Physical model · oblique view across the courtyard and site"]];
+projects.gateway.modelImages = gatewayModelPhotos.map(([number]) => 'assets/gateway-final-model-'+number+'.jpg');
+projects.gateway.gallery.push(...projects.gateway.modelImages);
+projects.gateway.galleryAlts.push(...gatewayModelPhotos.map(([,caption]) => caption));
+
+// Large model photographs, ordered by the supplied file numbers.
+const gatewayLargeModelCaptions = ["Large model · oblique view of the timber frame and roof","Large model · reverse oblique view with translucent roof panels","Large model · sectional elevation of the gabled frame","Large model · central column, roof frame, and suspended fixtures","Large model · translucent wall panel and column connection","Large model · end view of the translucent enclosure","Large model · end view of the metal roof","Large model · column, glazing edge, and foundation detail","Large model · roof overhang, column, and base connection"];
+projects.gateway.largeModelImages = gatewayLargeModelCaptions.map((_, index) => 'assets/gateway-large-model-'+(index+1)+'.jpg');
+projects.gateway.gallery.push(...projects.gateway.largeModelImages);
+projects.gateway.galleryAlts.push(...gatewayLargeModelCaptions);
 
 const dialog = document.querySelector(".project-dialog");
 const dialogContent = document.querySelector(".dialog-content");
@@ -489,9 +524,9 @@ const finalImageNames = {
   reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg", "reframing-edge-analysis-04.jpg", "reframing-edge-cartography-parti.jpg", "reframing-edge-master-site-plan.jpg"],
   sanctuary: ["sanctuary-material-axon-render.png", "sanctuary-material-front-render.png", "sanctuary-source-mosaic-elevation.png"],
   stickbuilt: ["stickbuilt.jpg", "timeless-052.jpg", "timeless-048.jpg"],
-  lamp: ["lamp-edited-elevation-off.png", "lamp-edited-interior.png"],
+  lamp: ["lamp-edited-elevation-off-web.jpg", "lamp-edited-interior-web.jpg"],
   board: ["cutting-board-wood.png", "ai-board-top-after.png", "cutting-board-metal.png"],
-  shelf: ["tiered-shelf-angle.jpeg", "tiered-shelf-in-use-edited.png"]
+  shelf: ["tiered-shelf-angle-web.jpg", "tiered-shelf-in-use-edited-web.jpg"]
 };
 Object.entries(projects).forEach(([id, project]) => {
   project.finalImages = new Set((finalImageNames[id] || []).map(name => "assets/" + name));
@@ -552,8 +587,10 @@ function renderProcessStack(project, group) {
 function renderProcess(project) {
   const studyPaths = new Set((project.processStudyGroups || []).flatMap(group => [...group.images, ...(group.comparison?.images || [])]));
   const arrangedPaths = new Set([
-    ...[...(project.finishedDrawingGroups || []), ...(project.drawingGroups || []), ...(project.comparisonGroups || []), ...(project.conceptGroups || [])].flatMap(group => group.images),
+    ...[...(project.finishedDrawingGroups || []), ...(project.drawingGroups || []), ...(project.comparisonGroups || []), ...(project.conceptGroups || []), ...(project.introDrawingGroups || [])].flatMap(group => group.images),
     ...(project.numberedStudies || []),
+    ...(project.modelImages || []),
+    ...(project.largeModelImages || []),
     ...(project === projects.peakscape ? ['assets/peakscape-section-original.jpg'] : [])
   ]);
   const images = getProjectSlides(project).map((slide, index) => ({...slide, index}))
@@ -566,7 +603,7 @@ function renderProcess(project) {
       const slide = allSlides[index];
       return `<figure class="reframing-process-image"><img src="${path}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
     }).join("")}</div>`}${item.videos?.length ? `<details class="process-motion-studies"><summary>View the two motion studies</summary><div class="project-process-grid process-video-grid">${item.videos.map(video => `<figure class="reframing-process-image"><video class="process-video" controls playsinline preload="metadata" aria-label="${video.caption}"><source src="${video.source}" type="video/mp4">Your browser does not support this video. <a href="${video.source}">Open video</a></video><figcaption>${video.caption}</figcaption></figure>`).join("")}</div></details>` : ""}</section>`;
-    return group.comparison ? `<div class="process-comparison">${renderGroup(group)}${renderGroup(group.comparison)}</div>` : renderGroup(group);
+    return group.comparison ? `<div class="process-comparison ${project === projects.sanctuary ? "sanctuary-sketch-comparison" : ""}">${renderGroup(group)}${renderGroup(group.comparison)}</div>` : renderGroup(group);
   });
   const studyGroups = project === projects.gateway
     ? `<div class="gateway-context-studies">${renderedStudyGroups[0]}</div><div class="gateway-process-studies">${renderedStudyGroups.slice(1).join("")}</div>`
@@ -574,10 +611,10 @@ function renderProcess(project) {
   return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp || project === projects.gateway || project === projects.sanctuary ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
 }
 
-function renderSupportingImages(project, paths, label, title) {
+function renderSupportingImages(project, paths, label, title, extraClass = "") {
   if (!paths?.length) return "";
   const slides = getProjectSlides(project);
-  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${label}</p><h3>${title}</h3></div><div class="project-process-grid">${paths.map(path => {
+  return `<section class="reframing-process ${extraClass}"><div class="reframing-process-heading"><p class="eyebrow">${label}</p><h3>${title}</h3></div><div class="project-process-grid">${paths.map(path => {
     const index = slides.findIndex(slide => slide.image === path);
     const slide = slides[index];
     return `<figure class="reframing-process-image"><img src="${path}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
@@ -618,18 +655,33 @@ const imageSwitchRequests = new WeakMap();
 async function switchGalleryImage(image, source) {
   const request = {};
   imageSwitchRequests.set(image, request);
-  image.style.visibility = "hidden";
-  image.setAttribute("aria-busy", "true");
-  const preview = new Image();
-  preview.src = source;
-  try { await preview.decode(); } catch { /* Keep the normal image error behavior. */ }
+  image.loading = 'eager';
+  image.decoding = 'async';
+  const alreadyReady = image.getAttribute('src') === source && image.complete && image.naturalWidth > 0;
+  if (!alreadyReady) {
+    image.style.visibility = 'hidden';
+    image.setAttribute('aria-busy', 'true');
+    image.src = source;
+    let timeout;
+    try {
+      await Promise.race([image.decode(), new Promise(resolve => { timeout = setTimeout(resolve, 1800); })]);
+    } catch { /* Let the native image/alt fallback render on a failed decode. */ }
+    finally { clearTimeout(timeout); }
+  }
   if (imageSwitchRequests.get(image) !== request) return;
-  image.src = source;
-  try { await image.decode(); } catch { /* Reveal the fallback if decoding fails. */ }
-  if (imageSwitchRequests.get(image) !== request) return;
-  image.style.visibility = "visible";
-  image.removeAttribute("aria-busy");
-  balanceStudyPair(image.closest(".peakscape-study-pair"));
+  image.style.visibility = 'visible';
+  image.removeAttribute('aria-busy');
+  balanceStudyPair(image.closest('.peakscape-study-pair'));
+}
+const warmedImages = new Set();
+function warmNextImage(slides, index) {
+  if (slides.length < 2) return;
+  const next = slides[(index + 1) % slides.length];
+  if (next.type === 'video' || warmedImages.has(next.image)) return;
+  warmedImages.add(next.image);
+  const preload = new Image();
+  preload.decoding = 'async';
+  preload.src = next.image;
 }
 
 function showProjectSlide(index) {
@@ -639,6 +691,7 @@ function showProjectSlide(index) {
   const slide = slides[projectSlideIndex];
   const image = dialogContent.querySelector(".dialog-slide-image");
   switchGalleryImage(image, slide.image);
+  warmNextImage(slides, projectSlideIndex);
   image.alt = slide.alt;
   const caption = dialogContent.querySelector(".dialog-image-caption");
   if (caption) caption.textContent = activeProject.captions?.[projectSlideIndex] || slide.alt;
@@ -648,9 +701,9 @@ function showProjectSlide(index) {
 
 const heroSlides = [
   { project: "stickbuilt", image: "assets/timeless-052.jpg", alt: "Penn Smith presenting the Timeless timber installation to visitors", title: "Timeless" },
-  { project: "board", image: "assets/cutting-board-chess.png", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
+  { project: "board", image: "assets/cutting-board-chess-web.jpg", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
   { project: "sanctuary", image: "assets/sanctuary-highlight-front.png", alt: "Front elevation render of Sanctuary of Dreams with the full chair visible", title: "Sanctuary of Dreams" },
-  { project: "shelf", image: "assets/tiered-shelf-hero-wide.png", alt: "Full view of the tiered shelf against a concrete wall", title: "Tiered Shelf" },
+  { project: "shelf", image: "assets/tiered-shelf-hero-wide-web.jpg", alt: "Full view of the tiered shelf against a concrete wall", title: "Tiered Shelf" },
   { project: "peakscape", image: "assets/peakscape-borderless.png", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
   { project: "reframing", image: "assets/reframing-edge-aerial-render.jpg", alt: "Aerial view of Reframing the Edge showing the community center and its site", title: "Reframing the Edge" },
   { project: "gateway", image: "assets/gateway-event-borderless.png", alt: "Evening gathering at Gateway Garden beside the illuminated outdoor pavilion", title: "Gateway Garden" }
@@ -759,11 +812,13 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     if (project.comparisonGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.comparisonGroups, "02 / Light off + on", "Light + form", "lamp-comparisons"));
     if (project.conceptGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.conceptGroups, "02 / Concept", "Transformation + principles", "sanctuary-concept"));
     if (projectId === "peakscape") {
-      dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
+      dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.introDrawingGroups, "02 / Concept + plans", "Form + plans", "peakscape-intro-drawings"));
       dialogContent.insertAdjacentHTML("beforeend", renderPeakscapeStudyPair(project));
     }
     if (projectId === "stickbuilt") dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.detailImages, "02 / Details", "Timber + connections"));
     if (project.finishedDrawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.finishedDrawingGroups, "02 / Finished drawings", "Form + site + elevations", "gateway-finished-drawings"));
+    if (project.modelImages) dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process gateway-model-photos"><div class="reframing-process-heading"><p class="eyebrow">Physical model</p><h3>Model photographs</h3></div>${renderProcessStack(project, {title:"Model photographs", images:project.modelImages})}</section>`);
+    if (project.largeModelImages) dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process gateway-model-photos gateway-large-model-photos"><div class="reframing-process-heading"><p class="eyebrow">Physical model</p><h3>Large model images</h3></div>${renderProcessStack(project, {title:"Large model images", images:project.largeModelImages})}</section>`);
     if (!isReframing && projectId !== "peakscape") dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
     if (project.drawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.drawingGroups, "04 / Drawings + systems", "Plans, sections + systems", "gateway-technical-drawings"));
     if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, [{title:"Plan + sections",layout:"triptych",images:project.dimensionImages}], "04 / Drawings", "Dimensioned drawings", "sanctuary-dimensions"));
@@ -874,6 +929,7 @@ function showLightboxSlide(index) {
   if (!lightboxGallery.length) return;
   lightboxIndex = (index + lightboxGallery.length) % lightboxGallery.length;
   const slide = lightboxGallery[lightboxIndex];
+  warmNextImage(lightboxGallery, lightboxIndex);
   lightboxVideo.pause();
   const isVideo = slide.type === 'video';
   lightboxVideo.hidden = !isVideo;
@@ -927,6 +983,31 @@ document.querySelectorAll("#field-notes .ai-study").forEach((study) => {
     dialog.showModal();
     dialog.scrollTop = 0;
   });
+});
+
+
+document.querySelectorAll('#field-notes .field-note-category').forEach((category,index) => {
+  const heading = category.querySelector('h3');
+  const items = category.querySelector('.field-note-items');
+  const header = category.querySelector('.field-note-category-heading');
+  const title = heading.textContent;
+  items.id = 'field-note-items-'+index;
+  items.hidden = true;
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'field-category-toggle';
+  toggle.textContent = title;
+  toggle.setAttribute('aria-label','Explore '+title);
+  toggle.setAttribute('aria-controls',items.id);
+  toggle.setAttribute('aria-expanded','false');
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded',String(!expanded));
+    items.hidden = expanded;
+  });
+  heading.replaceChildren(toggle);
+  header.classList.add('is-category-toggle');
+  header.addEventListener('click',event=>{if(!event.target.closest('button'))toggle.click();});
 });
 
 function getStandaloneGallery(image) {

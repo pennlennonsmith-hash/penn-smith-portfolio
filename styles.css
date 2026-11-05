@@ -868,3 +868,54 @@ button, a { -webkit-tap-highlight-color: rgba(61,78,66,.14); }
  .craft-grid .project-card:not(.project-card-wide):hover .project-image img,
  .craft-grid .project-card:not(.project-card-wide):focus-visible .project-image img { display: block; width: 100%; height: auto; max-height: none; object-fit: contain; transform: none; }
 }
+
+/* Only project stacks use colored, tightly grouped navigation controls. */
+.dialog-content .process-stack-controls { display: grid; grid-template-columns: 44px minmax(68px,auto) 44px; justify-content: center; gap: 16px; }
+.dialog-content .process-stack-controls button { width: 44px; height: 44px; border-color: #829087; background: #829087; color: #fff; }
+.dialog-content .process-stack-controls button:hover, .dialog-content .process-stack-controls button:focus-visible { border-color: #697e70; background: #697e70; }
+.dialog-content .process-stack-count { text-align: center; font-variant-numeric: tabular-nums; }
+.sanctuary-sketch-comparison .process-stack > img, .sanctuary-sketch-comparison .project-process-grid .reframing-process-image > img { height: clamp(260px,34vw,440px); object-fit: contain; object-position: center bottom; background: #fff; }
+.sanctuary-sketch-comparison .project-process-grid { grid-template-columns: 1fr; margin-top: 24px; }
+.field-category-toggle { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; width: 100%; min-height: 44px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; line-height: inherit; text-align: left; cursor: pointer; }
+.field-category-toggle::after { content: '+'; flex: 0 0 auto; color: var(--green); font-size: 24px; font-weight: 400; }
+.field-category-toggle[aria-expanded="true"]::after { content: '−'; }
+.field-category-toggle:hover { color: var(--rust); }
+.field-note-items[hidden] { display: none !important; }
+.is-category-toggle { cursor: pointer; }
+.modus-visit + .modus-visit { padding-top: 26px; margin-top: 30px; border-top: 1px solid var(--line); }
+.modus-visit h5 { font-size: 18px; margin: 0 0 18px; }
+.modus-visit p { margin: 0 0 18px; }
+.hero-image img[data-project="board"] { object-fit: contain; object-position: center; transform: none; }
+@media(min-width:621px) {
+ .craft-grid .project-card:not(.project-card-wide) .project-image img,
+ .craft-grid .project-card:not(.project-card-wide):hover .project-image img,
+ .craft-grid .project-card:not(.project-card-wide):focus-visible .project-image img { width: 100%; height: 100%; object-fit: contain; object-position: center; transform: none; }
+}
+@media(max-width:620px) {
+ .field-notes-grid { grid-template-columns: 1fr; }
+ .field-note-category:last-child { grid-column: auto; }
+ .field-note-category:last-child .field-note-items { grid-template-columns: 1fr; }
+ .sanctuary-sketch-comparison .process-stack > img, .sanctuary-sketch-comparison .project-process-grid .reframing-process-image > img { height: auto; }
+ .sanctuary-sketch-comparison .project-process-grid { margin-top: 18px; }
+ .lightbox-caption { color: #fff; font-size: 12px; line-height: 1.6; }
+}
+
+/* Long project and study titles wrap within narrow phone dialogs. */
+@media(max-width:620px) {
+ .dialog-content h2 { overflow-wrap: anywhere; }
+}
+
+/* Match the craft-card framing on desktop; trim only the chess photo's empty backdrop. */
+@media(min-width:621px) {
+ .craft-grid .project-card[data-project="board"] .project-image { width:100%; height:auto; max-height:none; aspect-ratio:1 / 1; }
+ .craft-grid .project-card[data-project="shelf"] .project-image,
+ .craft-grid .project-card[data-project="lamp"] .project-image { height:clamp(240px,29vw,390px); max-height:none; aspect-ratio:auto; }
+ .craft-grid .project-card[data-project="board"] .project-image img,
+ .craft-grid .project-card[data-project="board"]:hover .project-image img,
+ .craft-grid .project-card[data-project="board"]:focus-visible .project-image img { width:100%; height:100%; object-fit:cover; object-position:center 60%; transform:none; }
+}
+
+/* One horizontal model-photo stack spans the project panel. */
+.gateway-model-photos { grid-column:1 / -1; width:100%; min-width:0; }
+.gateway-model-photos .process-stack { width:100%; margin:24px 0 0; }
+.gateway-model-photos .process-stack > img { display:block; width:100%; height:auto; aspect-ratio:16 / 9; object-fit:contain; object-position:center; background:#fff; }
