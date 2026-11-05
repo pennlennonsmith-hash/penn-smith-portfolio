@@ -45,7 +45,7 @@ const projects = {
       "assets/gateway-final-wall-section-02.jpg",
       "assets/gateway-final-life-safety.jpg",
       "assets/gateway-final-sprinkler-plan.jpg",
-      "assets/gateway-context-ecology.jpg",
+      "assets/gateway-context-ecology-clean.svg",
       "assets/gateway-context-neighborhood-history.jpg",
       "assets/gateway-roof-form-collage.jpg",
       "assets/gateway-porch-collage.png",
@@ -99,7 +99,7 @@ const projects = {
         "title": "Site ecology + neighborhood history",
         "description": "Early research examined the ecology, sections, and history of the surrounding area to ground the design in its context.",
         "images": [
-          "assets/gateway-context-ecology.jpg",
+          "assets/gateway-context-ecology-clean.svg",
           "assets/gateway-context-neighborhood-history.jpg"
         ],
         "stack": true
@@ -318,13 +318,12 @@ const projects = {
       "assets/sanctuary-material-axon-render.png",
       "assets/sanctuary-material-front-render.png",
       "assets/sanctuary-source-mosaic-elevation.png",
-      "assets/sanctuary-source-four-aspects.png",
+      "assets/sanctuary-four-aspects-caps.png",
       "assets/sanctuary-source-sketch-curves.png",
-      "assets/sanctuary-source-sketch-enclosure.png",
       "assets/sanctuary-source-sketch-wings.png",
       "assets/sanctuary-source-transformation.jpg",
       "assets/sanctuary-source-ai-explorations.png",
-      "assets/sanctuary-dimensioned-plan.png",
+      "assets/sanctuary-dimensioned-plan-scaled.svg",
       "assets/sanctuary-dimensioned-section-01.png",
       "assets/sanctuary-dimensioned-section-02.png"
 ],
@@ -334,7 +333,6 @@ const projects = {
       "Unfolded interior elevation showing the nature-inspired mosaic",
       "Culture, religion, protection, and beauty formed the four pillars of the design, connecting the experience of public seating with symbolic shelter and aspiration.",
       "Early curved studies explored how a sweeping structural line could suggest wings, bringing movement and a sense of enclosure into the chair.",
-      "The enclosing two-seat sketch tests closeness and refuge: a shared place to sit that remains connected to the public setting.",
       "Rising wings refine the balance between an open, inviting entrance and a protected space for conversation or meditation.",
       "The transformation diagram traces the wing metaphor into the chair: protective sweeps become the enclosing shell, then resolve into the final sculptural form.",
       "AI-assisted visual studies explore how the sculptural chair might meet public life in different settings and lighting conditions.",
@@ -344,7 +342,7 @@ const projects = {
 ],
     captions: ["The chair sits within everyday public life while offering a quiet, protected place to pause.", "The bright exterior shell and richly patterned interior express two complementary experiences: protection from outside and warmth within. The material approach draws on the mosaics of Antoni Gaudí’s Park Güell.", "The final form balances openness and enclosure. Two seats bring people close, while the rising wings create a sheltered space for conversation or reflection.", "The unfolded interior reveals a mosaic exploring the abstract relationship between wings, sea, and sky. Flowing colors and tile patterns connect the sea on the left with the sky on the right, expressing wings as a bridge between the two."],
     processIntro: "The design began with wings as a metaphor for transition—from earth to sky and from the present toward the future. Guardian-angel imagery and Psalm 91:4 informed the idea of shelter beneath wings. A mother bird offered a second reading: the wings that protect its young also make flight possible. From this came the central thought that safety supports growth. Culture, religion, protection, and beauty guided the sketches as we balanced an inviting opening with a secluded interior.",
-    dimensionImages: ["assets/sanctuary-dimensioned-plan.png", "assets/sanctuary-dimensioned-section-01.png", "assets/sanctuary-dimensioned-section-02.png"],
+    dimensionImages: ["assets/sanctuary-dimensioned-plan-scaled.svg", "assets/sanctuary-dimensioned-section-01.png", "assets/sanctuary-dimensioned-section-02.png"],
     credits: "Design: Penn Smith + Savannah List · Competition-winning proposal · Rome, Italy"
   },
   stickbuilt: {
@@ -465,12 +463,12 @@ projects.lamp.comparisonGroups = [
 projects.gateway.processStudyGroups[0].images.push('assets/gateway-figure-ground.svg');
 projects.sanctuary.conceptGroups = [
   {title:'Transformation diagram',layout:'full',images:['assets/sanctuary-source-transformation.jpg']},
-  {title:'Culture, religion, protection + beauty',layout:'full',images:['assets/sanctuary-source-four-aspects.png']}
+  {title:'Culture, religion, protection + beauty',layout:'full',images:['assets/sanctuary-four-aspects-caps.png']}
 ];
 projects.sanctuary.processStudyGroups = [{
   title:'Sketches + form studies',
-  description:'Early curved studies developed into an enclosing two-seat form and rising protective wings.',
-  images:['assets/sanctuary-source-sketch-curves.png','assets/sanctuary-source-sketch-enclosure.png','assets/sanctuary-source-sketch-wings.png'],
+  description:'Rising wing studies and early curved sketches explore enclosure and refuge.',
+  images:['assets/sanctuary-source-sketch-wings.png','assets/sanctuary-source-sketch-curves.png'],
   stack:true
 }];
 
@@ -739,6 +737,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     dialogContent.classList.toggle("is-peakscape-project", projectId === "peakscape");
     dialogContent.classList.toggle("is-stickbuilt-project", projectId === "stickbuilt");
     dialogContent.classList.toggle("is-board-project", projectId === "board");
+    dialogContent.classList.toggle("is-shelf-project", projectId === "shelf");
     dialogContent.classList.toggle("is-gateway-project", projectId === "gateway");
     dialogContent.classList.toggle("is-horizontal-project", horizontalProjects.includes(projectId));
     dialogContent.classList.toggle("is-sanctuary-project", projectId === "sanctuary");
