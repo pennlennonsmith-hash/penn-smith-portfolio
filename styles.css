@@ -635,3 +635,37 @@ img { cursor: zoom-in; }
   width: 100%; height: 100%; max-width: 100%; max-height: min(56vh, 480px);
   object-fit: contain; object-position: center; transform: none;
 }
+
+/* Fit complete gallery photographs inside the existing bounded frame. */
+@media (min-width: 621px) {
+  .dialog-content.is-horizontal-project .dialog-slide-image {
+    width: 100%; height: 100%; min-width: 0; min-height: 0;
+    max-width: 100%; max-height: 100%; object-fit: contain;
+    object-position: center; transform: none;
+  }
+}
+/* Keep the entire shelf visible at every card size and during hover. */
+.project-card[data-project="shelf"] .project-image { background: #fff; }
+.project-card[data-project="shelf"] .project-image img,
+.project-card[data-project="shelf"] .project-image:hover img,
+.project-card[data-project="shelf"]:focus-visible .project-image img {
+  width: 100%; height: 100%; object-fit: contain; object-position: center;
+  transform: none;
+}
+/* Compact motion studies; expand only when viewing the videos. */
+.process-motion-studies { margin-top: 12px; font-size: 12px; }
+.process-motion-studies > summary { cursor: pointer; padding: 8px 0; }
+.gateway-process-studies .process-comparison .process-stack > img {
+  height: auto; aspect-ratio: auto; object-fit: contain;
+}
+
+/* Show the complete Sanctuary cover at its natural proportions. */
+.build-grid .project-card[data-project="sanctuary"] .project-image {
+  height: auto; max-height: none; aspect-ratio: auto;
+}
+.project-card[data-project="sanctuary"] .project-image img,
+.project-card[data-project="sanctuary"] .project-image:hover img,
+.project-card[data-project="sanctuary"]:focus-visible .project-image img {
+  display: block; width: 100%; height: auto; max-height: none;
+  object-fit: contain; object-position: center; transform: none;
+}
