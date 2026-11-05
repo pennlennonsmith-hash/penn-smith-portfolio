@@ -1,17 +1,175 @@
 const projects = {
   gateway: {
-    problem: "Create a food learning center that connects teaching, gathering, and growing with the everyday life of Willie George Park, while responding to the neighborhood and coordinating the building’s environmental and structural systems.",
-    number: "01 / Civic + Learning",
-    title: "Gateway Garden",
-    subtitle: "Food learning center · Springdale, Arkansas · 2025",
-    question: "How can architecture integrate people, place, and systems?",
-    description: "Set beside the central pavilion at Willie George Park, Gateway Garden brings food learning into the everyday life of the neighborhood. Its gable-inspired form draws on nearby homes and agricultural buildings, while openings keep the park visually and physically connected through the project. Mass timber, Arkansas stone, clerestory light, and carefully placed service cores shape the building’s material and structural logic.",
-    image: "assets/gateway-garden.jpg",
-    alt: "Gateway Garden food learning center in its meadow setting",
-    gallery: ["assets/gateway-cafe-render.png", "assets/gateway-kitchen-render.png", "assets/gateway-classroom-render.png", "assets/gateway-greenhouse-render.png", "assets/gateway-event.jpg", "assets/gateway-figure-ground.svg", "assets/gateway-base-collage-04.png", "assets/gateway-base-collage-09.png", "assets/gateway-base-collage-15.png", "assets/gateway-massing-base-03.jpg", "assets/gateway-massing-base-02.jpg", "assets/gateway-massing-base-01.jpg", "assets/gateway-massing-physical-model.jpg", "assets/gateway-midjourney-concept-01.png", "assets/gateway-midjourney-concept-05.png", "assets/gateway-midjourney-concept-16.png", "assets/gateway-midjourney-concept-15.png", "assets/gateway-massing-diagram-source.png", "assets/gateway-site-roof-plan-source.jpg", "assets/gateway-final-perspectives.jpg", "assets/gateway-final-zoning-axon.jpg", "assets/gateway-final-floor-plan.jpg", "assets/gateway-final-stormwater.jpg", "assets/gateway-final-structure-plan.jpg", "assets/gateway-final-structural-details.jpg", "assets/gateway-final-detail-callouts-01-02.jpg", "assets/gateway-final-detail-callouts-03-04.jpg", "assets/gateway-final-ceiling-plan.jpg", "assets/gateway-final-mechanical-axon.jpg", "assets/gateway-final-building-sections.jpg", "assets/gateway-final-elevations.jpg", "assets/gateway-final-wall-section-01.jpg", "assets/gateway-final-wall-section-02.jpg", "assets/gateway-final-life-safety.jpg", "assets/gateway-final-sprinkler-plan.jpg", "assets/gateway-context-ecology.jpg", "assets/gateway-context-neighborhood-history.jpg", "assets/gateway-roof-form-collage.jpg", "assets/gateway-porch-collage.png", "assets/gateway-early-design-synthesis.jpg"],
-    galleryAlts: ["Café and gathering space beneath the timber roof", "Teaching kitchen opening onto the park", "Classroom and food learning space", "Greenhouse with planting beds and workshop space", "Evening gathering at the outdoor pavilion", "Figure-ground study of the surrounding neighborhood and stream", "Midjourney base collage · paths, gardens, water, and gathering", "Midjourney base collage · neighborhood edges and shared landscape", "Midjourney base collage · movement, planting, and a community pavilion", "Base massing model · gabled volumes around shared open spaces", "Base massing model · intersecting linear volumes", "Base massing model · alternate arrangement of crossing volumes", "Physical concept model made during the early massing experiments, testing intersecting volumes and roof forms", "Midjourney exploration · gabled clusters and landscaped connections", "Midjourney exploration · illuminated linear volumes and connecting spaces", "Midjourney exploration · roof forms, transparency, and material atmosphere", "Midjourney exploration · intersecting volumes and roof relationships", "Massing diagram showing the development of Gateway Garden’s building form", "Large site and roof plan locating Gateway Garden within the surrounding park and landscape", "Interior and exterior perspectives with a building and site section perspective", "Exploded zoning axon: circulation, site context, and floodway constraints", "Site and floor plan showing the food learning center and surrounding landscape", "Stormwater plan showing water direction and collection", "Structural grid, roof overhang, and typical structural bays", "Structural assembly and connection details", "Construction detail callouts 01 and 02", "Construction detail callouts 03 and 04", "Reflected ceiling plan and roof organization", "Mechanical axonometric showing ventilation, supply and return air, and geothermal connections", "Building and site sections revealing program and timber structure", "South-facing street elevation and west-facing park elevation", "Wall assembly, elevation, and detailed wall section 01", "Wall assembly, elevation, and detailed wall section 02", "Life safety plan and occupancy analysis", "Sprinkler layout and coverage plan", "Site sections and ecology study of the surrounding area", "Neighborhood history and synthesis of the surrounding area", "Roof-form collage exploring gabled buildings and material references", "Porch collage exploring gathering, timber structure, and landscape", "Early sketches combining Penn Smith and Hagen Beck’s individual concepts into a shared program and plan"],
-    processStudyGroups: [{"title": "Site ecology + neighborhood history", "description": "Early research examined the ecology, sections, and history of the surrounding area to ground the design in its context.", "images": ["assets/gateway-context-ecology.jpg", "assets/gateway-context-neighborhood-history.jpg"], "stack": true}, {"title": "Roof + porch collages", "description": "These collages explored neighborhood roof forms and the porch as a space between building, gathering, and landscape.", "images": ["assets/gateway-roof-form-collage.jpg", "assets/gateway-porch-collage.png"], "stack": true}, {"title": "Midjourney base collages + motion studies", "description": "Midjourney studies explored paths, planting, water, and shared public space through collage and motion.", "images": ["assets/gateway-base-collage-04.png", "assets/gateway-base-collage-09.png", "assets/gateway-base-collage-15.png"], "videos": [{"source": "assets/gateway-midjourney-motion-01.mp4", "caption": "Midjourney motion study 1"}, {"source": "assets/gateway-midjourney-motion-02.mp4", "caption": "Midjourney motion study 2"}], "stack": true}, {"title": "Combining individual concepts", "description": "Penn Smith and Hagen Beck brought their individual designs together through these early sketches. The combined arrangement established program relationships and forms that continued into the final project.", "images": ["assets/gateway-early-design-synthesis.jpg"]}, {"title": "Rhino massing studies", "description": "At the beginning of the project, we modeled intersecting volumes and gabled forms as starting points for massing studies with Midjourney.", "images": ["assets/gateway-massing-base-03.jpg", "assets/gateway-massing-base-02.jpg", "assets/gateway-massing-base-01.jpg"], "stack": true, "comparison": {"title": "Midjourney explorations", "description": "We used Midjourney to explore possible spatial, roof, and material directions from the early massing studies. These images document concept exploration, rather than the final design.", "images": ["assets/gateway-midjourney-concept-01.png", "assets/gateway-midjourney-concept-05.png", "assets/gateway-midjourney-concept-16.png", "assets/gateway-midjourney-concept-15.png"], "stack": true}}, {"title": "Physical massing model", "description": "We also built a physical concept model during these early experiments to explore the intersecting volumes and roof forms in three dimensions.", "images": ["assets/gateway-massing-physical-model.jpg"]}],
-    credits: "Team: Penn Smith + Hagen Beck"
+    "problem": "Create a food learning center that connects teaching, gathering, and growing with the everyday life of Willie George Park, while responding to the neighborhood and coordinating the building’s environmental and structural systems.",
+    "number": "01 / Civic + Learning",
+    "title": "Gateway Garden",
+    "subtitle": "Food learning center · Springdale, Arkansas · 2025",
+    "question": "How can architecture integrate people, place, and systems?",
+    "description": "Set beside the central pavilion at Willie George Park, Gateway Garden brings food learning into the everyday life of the neighborhood. Its gable-inspired form draws on nearby homes and agricultural buildings, while openings keep the park visually and physically connected through the project. Mass timber, Arkansas stone, clerestory light, and carefully placed service cores shape the building’s material and structural logic.",
+    "image": "assets/gateway-garden-borderless.png",
+    "alt": "Gateway Garden food learning center in its meadow setting",
+    "gallery": [
+      "assets/gateway-cafe-render.png",
+      "assets/gateway-kitchen-render.png",
+      "assets/gateway-classroom-render.png",
+      "assets/gateway-greenhouse-render.png",
+      "assets/gateway-event-borderless.png",
+      "assets/gateway-figure-ground.svg",
+      "assets/gateway-base-collage-04.png",
+      "assets/gateway-base-collage-09.png",
+      "assets/gateway-base-collage-15.png",
+      "assets/gateway-massing-base-03.jpg",
+      "assets/gateway-massing-base-02.jpg",
+      "assets/gateway-massing-base-01.jpg",
+      "assets/gateway-massing-physical-model.jpg",
+      "assets/gateway-midjourney-concept-01.png",
+      "assets/gateway-midjourney-concept-05.png",
+      "assets/gateway-midjourney-concept-16.png",
+      "assets/gateway-midjourney-concept-15.png",
+      "assets/gateway-massing-diagram-horizontal.png",
+      "assets/gateway-site-roof-plan-source.jpg",
+      "assets/gateway-park-perspective.png",
+      "assets/gateway-site-section-perspective.png",
+      "assets/gateway-final-zoning-axon.jpg",
+      "assets/gateway-final-floor-plan.jpg",
+      "assets/gateway-final-stormwater.jpg",
+      "assets/gateway-final-structure-plan.jpg",
+      "assets/gateway-final-structural-details.jpg",
+      "assets/gateway-final-detail-callouts-01-02.jpg",
+      "assets/gateway-final-detail-callouts-03-04.jpg",
+      "assets/gateway-final-ceiling-plan.jpg",
+      "assets/gateway-final-mechanical-axon.jpg",
+      "assets/gateway-final-building-sections.jpg",
+      "assets/gateway-final-elevations.jpg",
+      "assets/gateway-final-wall-section-01.jpg",
+      "assets/gateway-final-wall-section-02.jpg",
+      "assets/gateway-final-life-safety.jpg",
+      "assets/gateway-final-sprinkler-plan.jpg",
+      "assets/gateway-context-ecology.jpg",
+      "assets/gateway-context-neighborhood-history.jpg",
+      "assets/gateway-roof-form-collage.jpg",
+      "assets/gateway-porch-collage.png",
+      "assets/gateway-early-design-synthesis.jpg"
+    ],
+    "galleryAlts": [
+      "Café and gathering space beneath the timber roof",
+      "Teaching kitchen opening onto the park",
+      "Classroom and food learning space",
+      "Greenhouse with planting beds and workshop space",
+      "Evening gathering at the outdoor pavilion",
+      "Figure-ground study of the surrounding neighborhood and stream",
+      "Midjourney base collage · paths, gardens, water, and gathering",
+      "Midjourney base collage · neighborhood edges and shared landscape",
+      "Midjourney base collage · movement, planting, and a community pavilion",
+      "Base massing model · gabled volumes around shared open spaces",
+      "Base massing model · intersecting linear volumes",
+      "Base massing model · alternate arrangement of crossing volumes",
+      "Physical concept model made during the early massing experiments, testing intersecting volumes and roof forms",
+      "Midjourney exploration · gabled clusters and landscaped connections",
+      "Midjourney exploration · illuminated linear volumes and connecting spaces",
+      "Midjourney exploration · roof forms, transparency, and material atmosphere",
+      "Midjourney exploration · intersecting volumes and roof relationships",
+      "Massing diagram showing the development of Gateway Garden’s building form",
+      "Large site and roof plan locating Gateway Garden within the surrounding park and landscape",
+      "Exterior perspective from the park",
+      "Site section perspective through the building and landscape",
+      "Exploded zoning axon: circulation, site context, and floodway constraints",
+      "Site and floor plan showing the food learning center and surrounding landscape",
+      "Stormwater plan showing water direction and collection",
+      "Structural grid, roof overhang, and typical structural bays",
+      "Structural assembly and connection details",
+      "Construction detail callouts 01 and 02",
+      "Construction detail callouts 03 and 04",
+      "Mechanical plan and reflected ceiling plan (RCP)",
+      "Mechanical axonometric showing ventilation, supply and return air, and geothermal connections",
+      "Building and site sections revealing program and timber structure",
+      "South-facing street elevation and west-facing park elevation",
+      "West-facing elevation with its wall assembly and detailed section",
+      "South-facing elevation with its wall assembly and detailed section",
+      "Life safety plan and occupancy analysis",
+      "Sprinkler layout and coverage plan",
+      "Site sections and ecology study of the surrounding area",
+      "Neighborhood history and synthesis of the surrounding area",
+      "Roof-form collage exploring gabled buildings and material references",
+      "Porch collage exploring gathering, timber structure, and landscape",
+      "Early sketches combining Penn Smith and Hagen Beck’s individual concepts into a shared program and plan"
+    ],
+    "processStudyGroups": [
+      {
+        "title": "Site ecology + neighborhood history",
+        "description": "Early research examined the ecology, sections, and history of the surrounding area to ground the design in its context.",
+        "images": [
+          "assets/gateway-context-ecology.jpg",
+          "assets/gateway-context-neighborhood-history.jpg"
+        ],
+        "stack": true
+      },
+      {
+        "title": "Roof + porch collages",
+        "description": "These collages explored neighborhood roof forms and the porch as a space between building, gathering, and landscape.",
+        "images": [
+          "assets/gateway-roof-form-collage.jpg",
+          "assets/gateway-porch-collage.png"
+        ],
+        "stack": true
+      },
+      {
+        "title": "Midjourney base collages + motion studies",
+        "description": "Midjourney studies explored paths, planting, water, and shared public space through collage and motion.",
+        "images": [
+          "assets/gateway-base-collage-04.png",
+          "assets/gateway-base-collage-09.png",
+          "assets/gateway-base-collage-15.png"
+        ],
+        "videos": [
+          {
+            "source": "assets/gateway-midjourney-motion-01.mp4",
+            "caption": "Midjourney motion study 1"
+          },
+          {
+            "source": "assets/gateway-midjourney-motion-02.mp4",
+            "caption": "Midjourney motion study 2"
+          }
+        ],
+        "stack": true
+      },
+      {
+        "title": "Combining individual concepts",
+        "description": "Penn Smith and Hagen Beck brought their individual designs together through these early sketches. The combined arrangement established program relationships and forms that continued into the final project.",
+        "images": [
+          "assets/gateway-early-design-synthesis.jpg"
+        ]
+      },
+      {
+        "title": "Rhino massing studies",
+        "description": "At the beginning of the project, we modeled intersecting volumes and gabled forms as starting points for massing studies with Midjourney.",
+        "images": [
+          "assets/gateway-massing-base-03.jpg",
+          "assets/gateway-massing-base-02.jpg",
+          "assets/gateway-massing-base-01.jpg"
+        ],
+        "stack": true,
+        "comparison": {
+          "title": "Midjourney explorations",
+          "description": "We used Midjourney to explore possible spatial, roof, and material directions from the early massing studies. These images document concept exploration, rather than the final design.",
+          "images": [
+            "assets/gateway-midjourney-concept-01.png",
+            "assets/gateway-midjourney-concept-05.png",
+            "assets/gateway-midjourney-concept-16.png",
+            "assets/gateway-midjourney-concept-15.png"
+          ],
+          "stack": true
+        }
+      },
+      {
+        "title": "Physical massing model",
+        "description": "We also built a physical concept model during these early experiments to explore the intersecting volumes and roof forms in three dimensions.",
+        "images": [
+          "assets/gateway-massing-physical-model.jpg"
+        ]
+      }
+    ],
+    "credits": "Team: Penn Smith + Hagen Beck"
   },
   peakscape: {
     problem: "Introduce multi-occupancy housing and shared amenities in Mar Vista while responding to the smaller scale of the surrounding homes.",
@@ -20,12 +178,12 @@ const projects = {
     subtitle: "Multi-occupancy housing · Mar Vista, Los Angeles · 2024",
     question: "A neighborhood scale response to a citywide need.",
     description: "Peakscape proposes compact homes with access to shared outdoor social and work spaces, alongside ground-floor retail that can offer neighborhood amenities and jobs. The massing steps down toward the surrounding Mar Vista homes, taking cues from the San Gabriel Mountain Range and easing the transition between denser housing and its lower-scale context.",
-    image: "assets/peakscape.jpg",
+    image: "assets/peakscape-borderless.png",
     captions: ["The project’s tallest corner establishes an urban face along the street.", "A view into one of the shared outdoor communal spaces.", "A view from the adjacent neighborhood shows how the project steps down to respect the scale of nearby homes without dominating them."],
     alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background",
     gallery: [
-      "assets/peakscape-courtyard.jpg",
-      "assets/peakscape-neighborhood.jpg",
+      "assets/peakscape-courtyard-borderless.png",
+      "assets/peakscape-neighborhood-borderless.png",
       "assets/peakscape-concept-original.jpg",
       "assets/peakscape-plans-original.jpg",
       "assets/peakscape-section-original.jpg",
@@ -101,24 +259,23 @@ const projects = {
     credits: "Design: Penn Smith · Columbia University Manhattanville"
   },
   reframing: {
-    problem: "Develop a masterplan for a parish complex at Rome’s urban edge, connecting parish, learning, and gathering spaces with the surrounding landscape and neighborhood.",
-    number: "08 / Parish complex + Masterplan",
-    title: "Reframing the Edge",
-    subtitle: "Masterplan for a parish complex · Team studio project · 2026",
-    question: "How can the edge of a city become a place to gather?",
-    description: "Developed with Grayson Sheffler, Reframing the Edge is a masterplan for a parish complex at the edge of the city. It brings parish, learning, and gathering spaces into a shared landscape. Angular forms organize the complex while opening the grounds to movement, recreation, and views across the site.",
-    image: "assets/reframing-edge-final-render.jpg",
-    alt: "Perspective rendering of the Reframing the Edge community center within its open landscape",
-    gallery: [
+    "problem": "Develop a masterplan for a parish complex at Rome’s urban edge, connecting parish, learning, and gathering spaces with the surrounding landscape and neighborhood.",
+    "number": "08 / Parish complex + Masterplan",
+    "title": "Reframing the Edge",
+    "subtitle": "Masterplan for a parish complex · Team studio project · 2026",
+    "question": "How can the edge of a city become a place to gather?",
+    "description": "Developed with Grayson Sheffler, Reframing the Edge is a masterplan for a parish complex at the edge of the city. It brings parish, learning, and gathering spaces into a shared landscape. Angular forms organize the complex while opening the grounds to movement, recreation, and views across the site.",
+    "image": "assets/reframing-edge-final-render.jpg",
+    "alt": "Perspective rendering of the Reframing the Edge community center within its open landscape",
+    "gallery": [
       "assets/reframing-edge-community-render.jpg",
       "assets/reframing-edge-context-02.jpg",
       "assets/reframing-edge-context-03.jpg",
       "assets/reframing-edge-analysis-04.jpg",
+      "assets/reframing-edge-cartography-parti.jpg",
+      "assets/reframing-edge-master-site-plan.jpg",
       "assets/reframing-edge-precedents-studies.jpg",
       "assets/reframing-edge-urban-edge.jpg",
-      "assets/reframing-edge-cartography-parti.jpg",
-      "assets/reframing-edge-concept-diagram.jpg",
-      "assets/reframing-edge-master-site-plan.jpg",
       "assets/reframing-edge-campus-render.jpg",
       "assets/reframing-edge-entry-render.jpg",
       "assets/reframing-edge-interior-render.jpg",
@@ -128,16 +285,15 @@ const projects = {
       "assets/reframing-edge-long-view.jpg",
       "assets/reframing-edge-aerial-render.jpg"
     ],
-    galleryAlts: [
+    "galleryAlts": [
       "Exterior rendering showing the angular community buildings in the landscape",
       "Site context and architectural image studies",
       "Collage of the surrounding landscape and urban fabric",
-      "Urban site analysis drawing",
+      "Neighborhood circles, urban edges, and views toward the medieval tower, rolling hills, and mountain range",
+      "Cartography map and parti diagram",
+      "Master plan and site plan for the proposal",
       "Precedent images and early structural form studies",
       "Diagram locating the urban edge in its surrounding neighborhood",
-      "Cartography map and parti diagram",
-      "Concept diagram marking the project's organizing axis",
-      "Master plan and site plan for the proposal",
       "Aerial view locating the community center, school parking, and planned park",
       "Perspective rendering of the community center approach",
       "Interior perspective of a quiet gathering space with a cross-shaped opening",
@@ -147,7 +303,7 @@ const projects = {
       "Long perspective view across the project grounds",
       "Aerial rendering showing the proposal within the larger site"
     ],
-    credits: "Team: Penn Smith + Grayson Sheffler"
+    "credits": "Team: Penn Smith + Grayson Sheffler"
   },
   sanctuary: {
     problem: "Respond to an artist-led competition for public seating in Rome. The challenge was to design for the place while interpreting the theme of “wings.”",
@@ -205,20 +361,38 @@ const projects = {
     galleryAlts: ["Penn Smith presenting Timeless and explaining its timber members", "A visitor looking up at the installation beside a tree, seen at human scale", "Visitors leaning against and gathering around the completed Timeless installation", "Recessed dowel connections along the sloping timber members", "Stepped ends and laminated grain of the timber members", "Angled timber members meeting the forest floor", "Close-up of timber dowels within recessed connections", "Rhythm and changing angles of the completed timber assembly", "Discussing hand tools and timber preparation with the team", "Hand-planing a timber member before assembly", "Carrying and positioning a prepared timber member", "Team members raising and aligning the tall timber members", "Checking the assembly as the timber sequence takes shape", "Installing and temporarily bracing the upright members", "Drilling connection holes with the members supported in place", "Driving timber dowels into the connections with a mallet", "Coordinating alignment and bracing during assembly", "Trimming a projecting dowel with a hand saw", "Timeless team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain, and Jeff Jeong."],
     detailImages: ["assets/timeless-061.jpg", "assets/timeless-065.jpg", "assets/timeless-064.jpg", "assets/timeless-060.jpg", "assets/timeless-063.jpg"],
     teamImages: ["assets/timeless-006.jpg"],
-    credits: "Organization: <a href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt ↗</a><br>Team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain + Jeff Jeong"
+    credits: "Organization: <a href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a><br>Team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain + Jeff Jeong"
   },
   lamp: {
-    problem: "Translate a study of color, frame, and composition into a functional bedside light, considering both its appearance and the way it diffuses light.",
-    number: "04 / Object + Fabrication",
-    title: "Composition Lamp",
-    subtitle: "Bedside light · 2025",
-    question: "A small object built from a study of color and frame.",
-    description: "Inspired by Piet Mondrian’s Composition with Red, Blue, and Yellow, the lamp pairs a beech-wood outer frame with a 3D-printed inner frame made from filament mixed with oak. Sanded acrylic panels soften the light and make the grid legible from every side.",
-    image: "assets/lamp-edited-axon-off.png",
-    alt: "Angled view of Composition Lamp with the light off",
-    gallery: ["assets/lamp-edited-elevation-off.png", "assets/lamp-edited-elevation-on.png", "assets/lamp-edited-axon-on.png", "assets/lamp-edited-interior.png", "assets/lamp-edited-skeleton.png", "assets/lamp-edited-clamped.png"],
-    galleryAlts: ["Elevation of the finished lamp with the light off", "Elevation of the finished lamp illuminated", "Angled view of the finished lamp illuminated", "Interior view of the lamp", "The lamp's exposed frame and construction", "Wood frame held in clamps during assembly"],
-    credits: "Materials: Beech, oak-mixed filament + sanded acrylic"
+    "problem": "Translate a study of color, frame, and composition into a functional bedside light, considering both its appearance and the way it diffuses light.",
+    "number": "04 / Object + Fabrication",
+    "title": "Composition Lamp",
+    "subtitle": "Bedside light · 2025",
+    "question": "A small object built from a study of color and frame.",
+    "description": "Inspired by Piet Mondrian’s Composition with Red, Blue, and Yellow, the lamp pairs a beech-wood outer frame with a 3D-printed inner frame made from filament mixed with oak. Sanded acrylic panels soften the light and make the grid legible from every side.",
+    "image": "assets/lamp-edited-axon-off.png",
+    "alt": "Angled view of Composition Lamp with the light off",
+    "gallery": [
+      "assets/lamp-edited-elevation-off.png",
+      "assets/lamp-edited-elevation-on.png",
+      "assets/lamp-edited-axon-on.png",
+      "assets/lamp-edited-interior.png",
+      "assets/lamp-edited-skeleton.png",
+      "assets/lamp-edited-clamped.png"
+    ],
+    "galleryAlts": [
+      "Elevation of the finished lamp with the light off",
+      "Elevation of the finished lamp illuminated",
+      "Angled view of the finished lamp illuminated",
+      "Interior view of the lamp",
+      "The lamp's exposed frame and construction",
+      "Wood frame held in clamps during assembly"
+    ],
+    "credits": "Materials: Beech, oak-mixed filament + sanded acrylic",
+    "nightImages": [
+      "assets/lamp-edited-elevation-on.png",
+      "assets/lamp-edited-axon-on.png"
+    ]
   },
   board: {
     problem: "Bring a cutting surface and a chessboard together in one handmade object, giving each function a clear working face.",
@@ -248,6 +422,46 @@ const projects = {
   }
 };
 
+
+// Explicit drawing layouts keep related sheets together without changing gallery sources.
+projects.gateway.finishedDrawingGroups = [
+  {title:'Massing development', layout:'full', images:['assets/gateway-massing-diagram-horizontal.png']},
+  {title:'Site + roof plan', layout:'full', images:['assets/gateway-site-roof-plan-source.jpg']},
+  {title:'South + west building elevations', layout:'full', images:['assets/gateway-final-elevations.jpg']}
+];
+projects.gateway.drawingGroups = [
+  {title:'Plan + building sections', layout:'row', images:['assets/gateway-final-floor-plan.jpg','assets/gateway-final-building-sections.jpg']},
+  {title:'South + west elevation and wall sections', layout:'row', images:['assets/gateway-final-wall-section-02.jpg','assets/gateway-final-wall-section-01.jpg']},
+  {title:'Stormwater + structure', layout:'row', images:['assets/gateway-final-stormwater.jpg','assets/gateway-final-structure-plan.jpg']},
+  {title:'Life safety + sprinklers', layout:'stack', images:['assets/gateway-final-life-safety.jpg','assets/gateway-final-sprinkler-plan.jpg']},
+  {title:'Mechanical systems + RCP', layout:'stack', images:['assets/gateway-final-mechanical-axon.jpg','assets/gateway-final-ceiling-plan.jpg']},
+  {title:'Construction details', layout:'stack', images:['assets/gateway-final-detail-callouts-01-02.jpg','assets/gateway-final-detail-callouts-03-04.jpg','assets/gateway-final-structural-details.jpg']},
+  {title:'Zoning + circulation', layout:'single', images:['assets/gateway-final-zoning-axon.jpg']}
+];
+projects.peakscape.numberedStudies = [
+  'assets/peakscape-gross-built-area.jpg','assets/peakscape-conditioned-area.jpg','assets/peakscape-dwelling-units.jpg','assets/peakscape-unit-types.jpg',
+  'assets/peakscape-floor-area-ratio.jpg','assets/peakscape-setback-study.jpg','assets/peakscape-street-plan.jpg',
+  'assets/peakscape-building-code.jpg','assets/peakscape-accessibility.jpg'
+];
+projects.lamp.comparisonGroups = [
+  {title:'Elevations · light off + light on', layout:'row', images:['assets/lamp-edited-elevation-off.png','assets/lamp-edited-elevation-on.png']},
+  {title:'Axonometric views · light off + light on', layout:'row', images:['assets/lamp-edited-axon-off.png','assets/lamp-edited-axon-on.png']}
+];
+
+
+// Related context and concept sheets share an ordered stack or full-width row.
+projects.gateway.processStudyGroups[0].images.push('assets/gateway-figure-ground.svg');
+projects.sanctuary.conceptGroups = [
+  {title:'Transformation diagram',layout:'full',images:['assets/sanctuary-source-transformation.jpg']},
+  {title:'Culture, religion, protection + beauty',layout:'full',images:['assets/sanctuary-source-four-aspects.png']}
+];
+projects.sanctuary.processStudyGroups = [{
+  title:'Sketches + form studies',
+  description:'Early curved studies developed into an enclosing two-seat form and rising protective wings.',
+  images:['assets/sanctuary-source-sketch-curves.png','assets/sanctuary-source-sketch-enclosure.png','assets/sanctuary-source-sketch-wings.png'],
+  stack:true
+}];
+
 const dialog = document.querySelector(".project-dialog");
 const dialogContent = document.querySelector(".dialog-content");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -269,19 +483,62 @@ function getProjectSlides(project) {
 
 
 const finalImageNames = {
-  gateway: ["gateway-cafe-render.png", "gateway-kitchen-render.png", "gateway-classroom-render.png", "gateway-greenhouse-render.png", "gateway-event.jpg", "gateway-final-perspectives.jpg"],
-  peakscape: ["peakscape-courtyard.jpg", "peakscape-neighborhood.jpg"],
+  gateway: ["gateway-cafe-render.png", "gateway-kitchen-render.png", "gateway-classroom-render.png", "gateway-greenhouse-render.png", "gateway-event-borderless.png", "gateway-park-perspective.png", "gateway-site-section-perspective.png", "gateway-final-floor-plan.jpg", "gateway-final-building-sections.jpg", "gateway-final-elevations.jpg"],
+  peakscape: ["peakscape-courtyard-borderless.png", "peakscape-neighborhood-borderless.png"],
   nexus: [],
-  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg"],
+  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg", "reframing-edge-analysis-04.jpg", "reframing-edge-cartography-parti.jpg", "reframing-edge-master-site-plan.jpg"],
   sanctuary: ["sanctuary-material-axon-render.png", "sanctuary-material-front-render.png", "sanctuary-source-mosaic-elevation.png"],
   stickbuilt: ["stickbuilt.jpg", "timeless-052.jpg", "timeless-048.jpg"],
-  lamp: ["lamp-edited-elevation-off.png", "lamp-edited-elevation-on.png", "lamp-edited-axon-on.png", "lamp-edited-interior.png"],
+  lamp: ["lamp-edited-elevation-off.png", "lamp-edited-interior.png"],
   board: ["cutting-board-wood.png", "ai-board-top-after.png", "cutting-board-metal.png"],
   shelf: ["tiered-shelf-angle.jpeg", "tiered-shelf-in-use-edited.png"]
 };
 Object.entries(projects).forEach(([id, project]) => {
   project.finalImages = new Set((finalImageNames[id] || []).map(name => "assets/" + name));
 });
+
+// Original drawings and project thumbnails keep their paper margins. Crop only these enlarged renders.
+const enlargedRenderSources = {
+  "assets/reframing-edge-final-render.jpg": "assets/reframing-edge-final-render-borderless.png",
+  "assets/reframing-edge-community-render.jpg": "assets/reframing-edge-community-render-borderless.png",
+  "assets/reframing-edge-entry-render.jpg": "assets/reframing-edge-entry-render-borderless.png",
+  "assets/reframing-edge-interior-render.jpg": "assets/reframing-edge-interior-render-borderless.png",
+  "assets/reframing-edge-long-view.jpg": "assets/reframing-edge-long-view-borderless.png"
+};
+function getEnlargedSlides(project) {
+  const slides = getProjectSlides(project).flatMap(slide => {
+    if (slide.image === 'assets/reframing-edge-perspectives.jpg') {
+      return [1,2,3].map(number => ({source:slide.image, image:'assets/reframing-edge-perspective-'+number+'-borderless.png', alt:'Perspective study '+number+' of Reframing the Edge'}));
+    }
+    return [{...slide, source:slide.image, image:enlargedRenderSources[slide.image] || slide.image}];
+  });
+  if (project === projects.gateway) {
+    // Keep each drawing row or stack together when browsing the full enlarged gallery too.
+    for (const group of [...project.drawingGroups, project.processStudyGroups[0]]) {
+      const indices = group.images.map(source => slides.findIndex(slide => slide.source === source));
+      if (indices.some(index => index < 0)) continue;
+      const first = Math.min(...indices);
+      const grouped = indices.map(index => slides[index]);
+      const remaining = slides.filter(slide => !group.images.includes(slide.source));
+      slides.splice(0, slides.length, ...remaining);
+      slides.splice(first, 0, ...grouped);
+    }
+    const motionStudies = project.processStudyGroups.flatMap(group => group.videos || []).map(video => ({type:'video', source:video.source, image:video.source, alt:video.caption}));
+    const after = slides.findLastIndex(slide => /gateway-midjourney-concept-/.test(slide.source));
+    slides.splice(after + 1, 0, ...motionStudies);
+  }
+  if (project === projects.sanctuary) {
+    const sources = [...project.conceptGroups.flatMap(group => group.images), ...project.processStudyGroups[0].images];
+    const indices = sources.map(source => slides.findIndex(slide => slide.source === source));
+    const first = Math.min(...indices);
+    const grouped = indices.map(index => slides[index]);
+    const remaining = slides.filter(slide => !sources.includes(slide.source));
+    slides.splice(0, slides.length, ...remaining);
+    slides.splice(first, 0, ...grouped);
+  }
+  return slides;
+}
+
 function getFinalSlides(project) {
   return getProjectSlides(project).filter(slide => slide.image === project.image || project.finalImages.has(slide.image));
 }
@@ -294,12 +551,17 @@ function renderProcessStack(project, group) {
 
 function renderProcess(project) {
   const studyPaths = new Set((project.processStudyGroups || []).flatMap(group => [...group.images, ...(group.comparison?.images || [])]));
+  const arrangedPaths = new Set([
+    ...[...(project.finishedDrawingGroups || []), ...(project.drawingGroups || []), ...(project.comparisonGroups || []), ...(project.conceptGroups || [])].flatMap(group => group.images),
+    ...(project.numberedStudies || []),
+    ...(project === projects.peakscape ? ['assets/peakscape-section-original.jpg'] : [])
+  ]);
   const images = getProjectSlides(project).map((slide, index) => ({...slide, index}))
-    .filter(slide => !studyPaths.has(slide.image) && slide.image !== project.image && !project.finalImages.has(slide.image) && !(project.detailImages || []).includes(slide.image) && !(project.teamImages || []).includes(slide.image) && !(project.dimensionImages || []).includes(slide.image));
+    .filter(slide => !arrangedPaths.has(slide.image) && !studyPaths.has(slide.image) && slide.image !== project.image && !project.finalImages.has(slide.image) && !(project.detailImages || []).includes(slide.image) && !(project.teamImages || []).includes(slide.image) && !(project.dimensionImages || []).includes(slide.image) && !(project.nightImages || []).includes(slide.image));
   if (!images.length && !studyPaths.size) return "";
   const allSlides = getProjectSlides(project);
   const renderedStudyGroups = (project.processStudyGroups || []).map((group, groupIndex) => {
-    const renderGroup = item => `<section class="reframing-process-group"><h4>${item.title}</h4><p>${item.description}</p>${item.stack && !(project === projects.gateway && groupIndex === 0) ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
+    const renderGroup = item => `<section class="reframing-process-group"><h4>${item.title}</h4><p>${item.description}</p>${item.stack ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
       const index = allSlides.findIndex(slide => slide.image === path);
       const slide = allSlides[index];
       return `<figure class="reframing-process-image"><img src="${path}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
@@ -309,7 +571,7 @@ function renderProcess(project) {
   const studyGroups = project === projects.gateway
     ? `<div class="gateway-context-studies">${renderedStudyGroups[0]}</div><div class="gateway-process-studies">${renderedStudyGroups.slice(1).join("")}</div>`
     : renderedStudyGroups.join("");
-  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
+  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp || project === projects.gateway || project === projects.sanctuary ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
 }
 
 function renderSupportingImages(project, paths, label, title) {
@@ -320,6 +582,35 @@ function renderSupportingImages(project, paths, label, title) {
     const slide = slides[index];
     return `<figure class="reframing-process-image"><img src="${path}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
   }).join("")}</div></section>`;
+}
+
+
+function renderDrawingFigure(project, source) {
+  const slides = getProjectSlides(project);
+  const index = slides.findIndex(slide => slide.image === source);
+  if (index < 0) throw new Error('Drawing missing from gallery: '+source);
+  const slide = slides[index];
+  return `<figure class="reframing-process-image"><img src="${source}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
+}
+function renderDrawingGroups(project, groups, label, title, extraClass='') {
+  return `<section class="reframing-process drawing-section ${extraClass}"><div class="reframing-process-heading"><p class="eyebrow">${label}</p><h3>${title}</h3></div><div class="drawing-groups">${groups.map(group=>`<section class="drawing-group" data-layout="${group.layout}"><h4>${group.title}</h4>${group.layout==='stack' ? renderProcessStack(project,group) : `<div class="drawing-images">${group.images.map(source=>renderDrawingFigure(project,source)).join('')}</div>`}</section>`).join('')}</div></section>`;
+}
+function balanceStudyPair(pair) {
+  if (!pair) return;
+  const images = [...pair.querySelectorAll('img')];
+  if (images.length !== 2 || images.some(image => !image.naturalWidth || !image.naturalHeight)) return;
+  pair.style.setProperty('--section-weight', (images[0].naturalWidth / images[0].naturalHeight) + 'fr');
+  pair.style.setProperty('--stack-weight', (images[1].naturalWidth / images[1].naturalHeight) + 'fr');
+}
+function initializeStudyPairs(root) {
+  root.querySelectorAll('.peakscape-study-pair').forEach(pair => {
+    pair.querySelectorAll('img').forEach(image => image.addEventListener('load', () => balanceStudyPair(pair)));
+    balanceStudyPair(pair);
+  });
+}
+
+function renderPeakscapeStudyPair(project) {
+  return `<section class="reframing-process peakscape-study-section"><div class="reframing-process-heading"><p class="eyebrow">03 / Section + analysis</p><h3>Section + numbered studies</h3></div><div class="peakscape-study-pair">${renderDrawingFigure(project,'assets/peakscape-section-original.jpg')}${renderProcessStack(project,{title:'Numbered studies · 01–04',images:project.numberedStudies})}</div></section>`;
 }
 
 // Decode each requested image before showing it; discard superseded requests.
@@ -338,6 +629,7 @@ async function switchGalleryImage(image, source) {
   if (imageSwitchRequests.get(image) !== request) return;
   image.style.visibility = "visible";
   image.removeAttribute("aria-busy");
+  balanceStudyPair(image.closest(".peakscape-study-pair"));
 }
 
 function showProjectSlide(index) {
@@ -349,7 +641,8 @@ function showProjectSlide(index) {
   switchGalleryImage(image, slide.image);
   image.alt = slide.alt;
   const caption = dialogContent.querySelector(".dialog-image-caption");
-  if (caption) caption.textContent = activeProject.captions?.[projectSlideIndex] || "";
+  if (caption) caption.textContent = activeProject.captions?.[projectSlideIndex] || slide.alt;
+  image.dataset.projectSlideIndex = getProjectSlides(activeProject).findIndex(item => item.image === slide.image);
   dialogContent.querySelector(".dialog-slide-count").textContent = `${String(projectSlideIndex + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
 }
 
@@ -358,9 +651,9 @@ const heroSlides = [
   { project: "board", image: "assets/cutting-board-chess.png", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
   { project: "sanctuary", image: "assets/sanctuary-highlight-front.png", alt: "Front elevation render of Sanctuary of Dreams with the full chair visible", title: "Sanctuary of Dreams" },
   { project: "shelf", image: "assets/tiered-shelf-hero-wide.png", alt: "Full view of the tiered shelf against a concrete wall", title: "Tiered Shelf" },
-  { project: "peakscape", image: "assets/peakscape.jpg", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
+  { project: "peakscape", image: "assets/peakscape-borderless.png", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
   { project: "reframing", image: "assets/reframing-edge-aerial-render.jpg", alt: "Aerial view of Reframing the Edge showing the community center and its site", title: "Reframing the Edge" },
-  { project: "gateway", image: "assets/gateway-event.jpg", alt: "Evening gathering at Gateway Garden beside the illuminated outdoor pavilion", title: "Gateway Garden" }
+  { project: "gateway", image: "assets/gateway-event-borderless.png", alt: "Evening gathering at Gateway Garden beside the illuminated outdoor pavilion", title: "Gateway Garden" }
 ];
 let heroSlideIndex = 0;
 const heroImage = document.querySelector(".hero-image img");
@@ -389,6 +682,10 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     const projectId = button.dataset.project;
     const horizontalProjects = ["gateway", "peakscape", "reframing", "nexus", "sanctuary", "stickbuilt"];
     const isReframing = projectId === "reframing";
+    dialogContent.className = "dialog-content";
+    dialogContent.classList.toggle("is-peakscape-project", projectId === "peakscape");
+    dialogContent.classList.toggle("is-stickbuilt-project", projectId === "stickbuilt");
+    dialogContent.classList.toggle("is-board-project", projectId === "board");
     dialogContent.classList.toggle("is-gateway-project", projectId === "gateway");
     dialogContent.classList.toggle("is-horizontal-project", horizontalProjects.includes(projectId));
     dialogContent.classList.toggle("is-sanctuary-project", projectId === "sanctuary");
@@ -396,33 +693,34 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     const slides = getFinalSlides(project);
     if (isReframing) {
       const developmentGroups = [
-        {
-          title: "Roman Campagna + Rome",
-          description: "Developing collages that depicted Italy’s Roman Campagna and its relationship to the city of Rome.",
-          images: ["assets/reframing-edge-context-02.jpg", "assets/reframing-edge-context-03.jpg", "assets/reframing-edge-analysis-04.jpg"]
-        },
-        {
-          title: "Pienza + the urban edge",
-          description: "Using Pienza as a precedent to see how it dealt with its edges, then bringing that into our site and context.",
-          images: ["assets/reframing-edge-precedents-studies.jpg", "assets/reframing-edge-urban-edge.jpg"]
-        },
-        {
-          title: "Cartography + parti",
-          description: "Highlighting edges and views at a larger scale as a cartography map, then bringing that reading into the site as a parti diagram.",
-          images: ["assets/reframing-edge-cartography-parti.jpg", "assets/reframing-edge-concept-diagram.jpg"]
-        },
-        {
-          title: "Master plan + site plan",
-          description: "The cartographic and parti studies shaped the master plan and site plan.",
-          images: ["assets/reframing-edge-master-site-plan.jpg"]
-        },
-        {
-          title: "Developed views",
-          description: "Final spatial studies, representations, and rendered views of the proposal.",
-          images: ["assets/reframing-edge-campus-render.jpg", "assets/reframing-edge-entry-render.jpg", "assets/reframing-edge-interior-render.jpg", "assets/reframing-edge-reference-sketches.jpg", "assets/reframing-edge-perspectives.jpg", "assets/reframing-edge-elevations.jpg", "assets/reframing-edge-long-view.jpg", "assets/reframing-edge-aerial-render.jpg"]
-        }
-      ];
-      const processGroups = developmentGroups.filter(group => group.title !== "Developed views").map((group) => {
+  {
+    "title": "Reading the site: circles, edges + views",
+    "description": "The circles locate the surrounding neighborhoods. Boundary lines mark their edges, while rays connect the site to the medieval tower, rolling hills, and mountain range labeled in the drawing. The cartography and parti carry those edges and view directions into the site; the masterplan shows how the proposal sits within that reading.",
+    "images": [
+      "assets/reframing-edge-analysis-04.jpg",
+      "assets/reframing-edge-cartography-parti.jpg",
+      "assets/reframing-edge-master-site-plan.jpg"
+    ]
+  },
+  {
+    "title": "Collages + the natural and urban edge",
+    "description": "The Roman Campagna and Rome collages sit alongside the diagram identifying natural and urban edges.",
+    "images": [
+      "assets/reframing-edge-context-02.jpg",
+      "assets/reframing-edge-context-03.jpg",
+      "assets/reframing-edge-urban-edge.jpg"
+    ]
+  },
+  {
+    "title": "Sketches + precedents",
+    "description": "Architectural reference images and the form sketches developed alongside them.",
+    "images": [
+      "assets/reframing-edge-precedents-studies.jpg",
+      "assets/reframing-edge-reference-sketches.jpg"
+    ]
+  }
+];
+      const processGroups = developmentGroups.map((group) => {
         const images = group.images.map((path) => {
           const galleryIndex = project.gallery.indexOf(path);
           const slideIndex = galleryIndex + 1;
@@ -439,11 +737,11 @@ document.querySelectorAll("[data-project]").forEach((button) => {
         </div>
         <div class="dialog-carousel" aria-label="${project.title} images">
           <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗︎</button></figure>
+          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
           <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
         </div>
         ${renderProjectBrief(project)}
-        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt ? "03" : "02"} / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
+        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp ? "03" : "02"} / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
     } else {
       dialogContent.innerHTML = `
       <div class="dialog-heading">
@@ -453,14 +751,22 @@ document.querySelectorAll("[data-project]").forEach((button) => {
       </div>
       <div class="dialog-carousel" aria-label="${project.title} images">
         <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption><button class="dialog-zoom" type="button" aria-label="Enlarge project image">Enlarge image ↗︎</button></figure>
+        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
         <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
       </div>
       ${renderProjectBrief(project)}`;
     }
+    if (project.comparisonGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.comparisonGroups, "02 / Light off + on", "Light + form", "lamp-comparisons"));
+    if (project.conceptGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.conceptGroups, "02 / Concept", "Transformation + principles", "sanctuary-concept"));
+    if (projectId === "peakscape") {
+      dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
+      dialogContent.insertAdjacentHTML("beforeend", renderPeakscapeStudyPair(project));
+    }
     if (projectId === "stickbuilt") dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.detailImages, "02 / Details", "Timber + connections"));
-    if (!isReframing) dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
-    if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.dimensionImages, "03 / Drawings", "Dimensioned drawings"));
+    if (project.finishedDrawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.finishedDrawingGroups, "02 / Finished drawings", "Form + site + elevations", "gateway-finished-drawings"));
+    if (!isReframing && projectId !== "peakscape") dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
+    if (project.drawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.drawingGroups, "04 / Drawings + systems", "Plans, sections + systems", "gateway-technical-drawings"));
+    if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, [{title:"Plan + sections",layout:"triptych",images:project.dimensionImages}], "04 / Drawings", "Dimensioned drawings", "sanctuary-dimensions"));
     if (projectId === "stickbuilt") {
       dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.teamImages, "04 / Team", "The people behind Timeless"));
     }
@@ -471,10 +777,12 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     } else {
       showProjectSlide(0);
     }
-    if (project.captions) {
-      dialogContent.querySelector(".dialog-carousel").insertAdjacentHTML("afterend", `<p class="dialog-image-caption" aria-live="polite">${project.captions[projectSlideIndex]}</p>`);
-    }
+    dialogContent.querySelector(".dialog-carousel").insertAdjacentHTML("afterend", `<p class="dialog-image-caption" aria-live="polite">${project.captions?.[projectSlideIndex] || slides[projectSlideIndex].alt}</p>`);
+    initializeStudyPairs(dialogContent);
     dialog.showModal();
+    dialog.querySelector(".dialog-close").focus({preventScroll:true});
+    dialog.scrollTop = 0;
+    requestAnimationFrame(() => { dialog.scrollTop = 0; });
   });
 });
 
@@ -500,13 +808,20 @@ dialogContent.addEventListener("click", (event) => {
     showProjectSlide(projectSlideIndex + Number(arrow.dataset.slideStep));
     return;
   }
-  if (event.target.closest(".dialog-zoom, .dialog-slide-image")) {
+  if (event.target.closest(".dialog-slide-image")) {
     const image = dialogContent.querySelector(".dialog-slide-image");
     if (image) showEnlargedImage(image);
   }
 });
 
 dialog.addEventListener("keydown", (event) => {
+  if (event.target.closest('video, input, textarea, select')) return;
+  const stack = event.target.closest('.process-stack');
+  if (stack && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+    event.preventDefault();
+    stack.querySelector('[data-process-step="' + (event.key === 'ArrowLeft' ? '-1' : '1') + '"]').click();
+    return;
+  }
   if (event.key === "ArrowLeft") {
     event.preventDefault();
     showProjectSlide(projectSlideIndex - 1);
@@ -523,17 +838,32 @@ menuToggle.addEventListener("click", () => {
   menuToggle.textContent = isOpen ? "Menu" : "Close";
   nav.classList.toggle("is-open", !isOpen);
 });
-nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+function closeSiteMenu() {
   menuToggle.setAttribute("aria-expanded", "false");
   menuToggle.textContent = "Menu";
   nav.classList.remove("is-open");
-}));
+}
+nav.querySelectorAll("a").forEach(link => link.addEventListener("click", closeSiteMenu));
+document.addEventListener("click", event => {
+  if (nav.classList.contains("is-open") && !event.target.closest(".site-header")) closeSiteMenu();
+});
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && nav.classList.contains("is-open")) {
+    event.preventDefault();
+    closeSiteMenu();
+    menuToggle.focus();
+  }
+});
+matchMedia("(min-width: 621px)").addEventListener("change", event => {
+  if (event.matches) closeSiteMenu();
+});
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 
 const imageLightbox = document.querySelector(".image-lightbox");
 const lightboxImage = document.querySelector(".lightbox-image");
+const lightboxVideo = document.querySelector(".lightbox-video");
 const lightboxCaption = document.querySelector(".lightbox-caption");
 const lightboxPrev = document.querySelector(".lightbox-prev");
 const lightboxNext = document.querySelector(".lightbox-next");
@@ -544,9 +874,21 @@ function showLightboxSlide(index) {
   if (!lightboxGallery.length) return;
   lightboxIndex = (index + lightboxGallery.length) % lightboxGallery.length;
   const slide = lightboxGallery[lightboxIndex];
-  switchGalleryImage(lightboxImage, slide.image);
-  lightboxImage.alt = slide.alt || "Enlarged portfolio image";
-  lightboxCaption.textContent = slide.alt || "";
+  lightboxVideo.pause();
+  const isVideo = slide.type === 'video';
+  lightboxVideo.hidden = !isVideo;
+  lightboxImage.hidden = isVideo;
+  if (isVideo) {
+    lightboxVideo.src = slide.image;
+    lightboxVideo.setAttribute('aria-label', slide.alt);
+    lightboxVideo.play().catch(() => { /* Native controls remain available. */ });
+  } else {
+    lightboxVideo.removeAttribute('src');
+    lightboxVideo.load();
+    switchGalleryImage(lightboxImage, slide.image);
+    lightboxImage.alt = slide.alt || "Enlarged portfolio image";
+  }
+  lightboxCaption.textContent = `${String(lightboxIndex + 1).padStart(2, "0")} / ${String(lightboxGallery.length).padStart(2, "0")} · ${slide.alt || "Portfolio image"}`;
 }
 
 document.querySelectorAll("#field-notes .ai-study").forEach((study) => {
@@ -560,10 +902,7 @@ document.querySelectorAll("#field-notes .ai-study").forEach((study) => {
   button.setAttribute("aria-haspopup", "dialog");
   const heading = document.createElement("span");
   heading.textContent = title;
-  const arrow = document.createElement("span");
-  arrow.textContent = "↗︎";
-  arrow.setAttribute("aria-hidden", "true");
-  button.append(heading, arrow);
+  button.append(heading);
   study.classList.remove("ai-study");
   study.classList.add("ai-topic-card");
   study.replaceChildren(button);
@@ -606,7 +945,8 @@ function getStandaloneGallery(image) {
         candidate !== lightboxImage &&
         !candidate.closest(".project-card") &&
         !candidate.closest(".hero-image") &&
-        !candidate.closest(".dialog-carousel")
+        !candidate.closest(".dialog-carousel") &&
+        !candidate.closest(".project-dialog")
       );
   const gallery = candidates.length ? candidates : [image];
   return {
@@ -616,12 +956,13 @@ function getStandaloneGallery(image) {
 }
 
 function showEnlargedImage(image) {
-  if (activeProject && image.dataset.projectSlideIndex) {
-    lightboxGallery = getProjectSlides(activeProject);
-    lightboxIndex = Number(image.dataset.projectSlideIndex);
-  } else if (image.closest(".dialog-carousel") && activeProject) {
-    lightboxGallery = getProjectSlides(activeProject);
-    lightboxIndex = Math.max(0, lightboxGallery.findIndex(slide => slide.image === image.getAttribute("src")));
+  if (activeProject && image.closest(".dialog-content")) {
+    const sourceSlides = getProjectSlides(activeProject);
+    const source = image.dataset.projectSlideIndex !== undefined
+      ? sourceSlides[Number(image.dataset.projectSlideIndex)].image
+      : image.getAttribute('src');
+    lightboxGallery = getEnlargedSlides(activeProject);
+    lightboxIndex = Math.max(0, lightboxGallery.findIndex(slide => slide.source === source));
   } else {
     const gallery = getStandaloneGallery(image);
     lightboxGallery = gallery.slides;
@@ -630,6 +971,8 @@ function showEnlargedImage(image) {
   showLightboxSlide(lightboxIndex);
   imageLightbox.showModal();
 }
+
+imageLightbox.addEventListener("close", () => lightboxVideo.pause());
 
 lightboxPrev.addEventListener("click", () => showLightboxSlide(lightboxIndex - 1));
 lightboxNext.addEventListener("click", () => showLightboxSlide(lightboxIndex + 1));
@@ -677,3 +1020,5 @@ document.addEventListener("keydown", (event) => {
 
 
 dialog.addEventListener("close", () => { dialogContent.querySelectorAll("video").forEach(video => video.pause()); });
+
+

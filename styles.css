@@ -669,3 +669,202 @@ img { cursor: zoom-in; }
   display: block; width: 100%; height: auto; max-height: none;
   object-fit: contain; object-position: center; transform: none;
 }
+
+/* Clear gallery invitations, with complete images at their natural proportions. */
+.project-card .project-image { position: relative; }
+.project-dialog { width: min(1360px, calc(100% - 48px)); max-height: 94vh; scroll-behavior: auto; }
+.dialog-content { padding-inline: clamp(24px, 4vw, 60px); }
+.dialog-content.is-horizontal-project .dialog-carousel { height: auto; overflow: visible; }
+.dialog-content.is-horizontal-project .dialog-slide { display: flex; align-items: center; justify-content: center; height: auto; padding-bottom: 44px; background: transparent; }
+.dialog-content.is-horizontal-project .dialog-slide-image,
+.dialog-content.is-horizontal-project .dialog-slide-image[src="assets/timeless-048.jpg"] { width: auto; height: auto; min-width: 0; min-height: 0; max-width: 100%; max-height: 68vh; object-fit: contain; object-position: center; background: transparent; transform: none; }
+.dialog-content.is-horizontal-project .dialog-slide-count { bottom: 0; right: 0; }
+.dialog-content.is-horizontal-project .dialog-zoom { bottom: 0; left: 0; }
+.dialog-image-caption { margin-top: 12px; }
+.dialog-content:not(.is-horizontal-project) > .dialog-image-caption { grid-column: 2; grid-row: 3; }
+.has-enlarge-cue { position: relative; }
+.image-enlarge-cue { position: absolute; top: 8px; right: 8px; padding: 5px 8px; border: 1px solid var(--line); background: rgba(255,255,255,.94); color: var(--ink); font: inherit; font-size: 10px; line-height: 1.5; cursor: zoom-in; }
+.image-enlarge-cue:hover, .image-enlarge-cue:focus-visible { border-color: var(--rust); color: var(--rust); }
+.is-reframing-project .reframing-process-groups { grid-template-columns: 1fr; }
+.is-reframing-project .reframing-process-images { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.is-reframing-project .reframing-process-group:first-child .reframing-process-images { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.is-reframing-project .reframing-process-image img { height: auto; max-height: 400px; object-fit: contain; }
+.lightbox-image[src*="sanctuary"][src*="plan"], .reframing-process-image img[src*="sanctuary"][src*="plan"] { background: #fff; }
+.about-resume-details { padding-top: 64px; margin-top: 64px; border-top: 1px solid var(--line); }
+.practice-groups { margin: 0; display: grid; gap: 18px; }
+.practice-groups dt { margin-bottom: 4px; color: var(--ink); font-size: 12px; font-weight: 600; }
+.practice-groups dd { margin: 0; color: #66675f; font-size: 12px; line-height: 1.75; }
+.resume-actions { display: grid; gap: 16px; justify-items: start; }
+.resume-download { display: inline-flex; align-items: center; gap: 16px; padding: 12px 18px; border: 1px solid var(--green); background: var(--green); color: #fff; font-size: 12px; }
+.resume-download:hover, .resume-download:focus-visible { background: var(--ink); border-color: var(--ink); }
+@media (max-width: 620px) {
+  .project-dialog { width: calc(100% - 16px); }
+  .dialog-content { padding-inline: 12px; }
+  .dialog-content .dialog-slide { height: auto; background: transparent; }
+  .dialog-content.is-horizontal-project .dialog-slide-image { max-height: none; width: 100%; height: auto; }
+  .dialog-content.is-horizontal-project .dialog-carousel > .dialog-arrow { top: calc(50% - 42px); }
+  .is-reframing-project .reframing-process-images,
+  .is-reframing-project .reframing-process-group:first-child .reframing-process-images { grid-template-columns: 1fr; }
+  .about-resume-details { padding-top: 36px; margin-top: 36px; }
+  .resume-side-column { margin-top: 32px; }
+  .image-enlarge-cue { top: 6px; right: 6px; font-size: 9px; }
+}
+
+.dialog-content.is-horizontal-project .dialog-slide-image[src*="gateway-park-perspective"], .lightbox-image[src*="gateway-park-perspective"] { width: auto; height: auto; max-width: min(100%, 585px); }
+
+/* Keep enlargement cues beside captions so diagrams stay unobscured. */
+.image-enlarge-cue { position: static; display: block; margin: 8px 0 0 auto; }
+.practice-standalone { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 18px; font-size: 12px; }
+
+/* The full-viewport divider should not add a horizontal scrollbar. */
+body { overflow-x: clip; }
+
+/* Supporting drawings and photographs also retain their complete proportions. */
+.is-peakscape-project .project-process-grid .reframing-process-image img,
+.is-stickbuilt-project .project-process-grid .reframing-process-image img { width: 100%; height: auto; max-height: none; background: transparent; }
+
+/* Fit the actual enlarged media bounds: render/photo edges never get a white frame. */
+.image-lightbox .lightbox-image { display: block; flex: 0 1 auto; width: auto; height: auto; max-width: 100%; max-height: calc(94vh - 100px); object-fit: contain; background: transparent; }
+.image-lightbox .lightbox-video { display: block; flex: 0 1 auto; width: auto; height: auto; max-width: 100%; max-height: calc(94vh - 100px); background: transparent; }
+.image-lightbox [hidden] { display: none !important; }
+.image-lightbox .lightbox-image[src*="sanctuary"][src*="plan"] { background: #fff; }
+.video-enlarge-cue { display: block; margin: 8px 0 0 auto; padding: 5px 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); font: inherit; font-size: 10px; cursor: pointer; }
+@media(max-width:620px) {
+  .image-lightbox .lightbox-image, .image-lightbox .lightbox-video { max-height: calc(92vh - 100px); }
+}
+
+/* Transparent line drawings need white paper behind their full original bounds. */
+.image-lightbox .lightbox-image[src*="sanctuary-dimensioned-"] { background: #fff; }
+
+/* Drawing rows and independent stacks share the existing gallery interactions. */
+.drawing-groups { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px 28px; }
+.drawing-group { min-width: 0; }
+.drawing-group > h4 { margin: 0 0 18px; font-size: 14px; font-weight: 600; }
+.drawing-group[data-layout="row"], .drawing-group[data-layout="full"], .drawing-group[data-layout="triptych"] { grid-column: 1 / -1; }
+.drawing-images { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; align-items: start; }
+.drawing-group[data-layout="full"] .drawing-images, .drawing-group[data-layout="single"] .drawing-images { grid-template-columns: 1fr; }
+.drawing-group[data-layout="triptych"] .drawing-images { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.drawing-images .reframing-process-image img { width: 100%; height: auto; max-height: none; object-fit: contain; background: #fff; }
+.drawing-group .process-stack { margin: 0; }
+.drawing-group .process-stack > img { height: clamp(260px,34vw,440px); }
+.peakscape-study-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; align-items: start; }
+.peakscape-study-pair .process-stack { margin: 0; }
+.peakscape-study-pair .reframing-process-image > img, .peakscape-study-pair .process-stack > img { width: 100%; height: clamp(320px,46vw,620px); max-height: none; object-fit: contain; background: #fff; }
+.sanctuary-dimensions .drawing-images img { height: clamp(240px,29vw,390px); padding: 18px; background: #fff; object-fit: contain; }
+.sanctuary-dimensions .drawing-images img[src*="dimensioned-plan"] { padding: 30px; }
+.image-lightbox .lightbox-image[src*="sanctuary-dimensioned-plan"] { padding: clamp(22px,4vw,44px); background: #fff; }
+.dialog-content.is-board-project .dialog-carousel { height: min(70vh,640px); overflow: visible; }
+.dialog-content.is-board-project .dialog-slide { display: flex; align-items: center; justify-content: center; min-height: 0; padding-bottom: 36px; background: transparent; }
+.dialog-content.is-board-project .dialog-slide-image { width: 100%; height: 100%; min-width: 0; min-height: 0; max-width: 100%; max-height: 100%; object-fit: contain; object-position: center; background: transparent; transform: none; }
+.is-board-project .project-process-grid .reframing-process-image img { height: auto; background: transparent; }
+.project-card[data-project="board"] .project-image { height: auto; max-height: none; aspect-ratio: auto; }
+.project-card[data-project="board"] .project-image img, .project-card[data-project="board"]:hover .project-image img { height: auto; object-fit: contain; transform: none; }
+.lamp-comparisons .drawing-images img { height: clamp(260px,37vw,480px); object-fit: contain; background: transparent; }
+.resume-actions { margin-left: auto; justify-items: end; text-align: right; }
+@media (max-width:620px) {
+  .drawing-groups, .drawing-images, .drawing-group[data-layout="triptych"] .drawing-images, .peakscape-study-pair { grid-template-columns: 1fr; gap: 24px; }
+  .drawing-group[data-layout="row"], .drawing-group[data-layout="full"], .drawing-group[data-layout="triptych"] { grid-column: auto; }
+  .peakscape-study-pair .reframing-process-image > img, .peakscape-study-pair .process-stack > img { height: 360px; }
+  .dialog-content.is-board-project .dialog-carousel { height: auto; }
+  .dialog-content.is-board-project .dialog-slide-image { width: 100%; height: auto; max-height: none; }
+  .resume-actions { align-self: stretch; width: 100%; }
+}
+
+/* Match the actual sheet heights by balancing column widths to their source proportions. */
+.peakscape-study-pair { grid-template-columns: minmax(0,var(--section-weight,.577fr)) minmax(0,var(--stack-weight,1.777fr)); }
+.peakscape-study-pair .reframing-process-image > img, .peakscape-study-pair .process-stack > img { height: auto; }
+@media(max-width:620px) { .peakscape-study-pair { grid-template-columns: 1fr; } }
+
+/* Matched media bottoms and controls for the paired Rhino/Midjourney stacks. */
+.process-comparison { grid-template-rows: auto auto auto; row-gap: 0; align-items: stretch; }
+.process-comparison > .reframing-process-group { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; }
+.process-comparison .process-stack { display: grid; grid-template-rows: auto auto 1fr; margin-bottom: 0; }
+.gateway-process-studies .process-comparison .process-stack > img { width: 100%; height: clamp(260px,34vw,460px); object-fit: contain; object-position: center bottom; background: transparent; }
+.gateway-context-studies .process-stack > img { width: 100%; height: auto; }
+/* Shared rows keep sheet bottoms and captions aligned without cropping their contents. */
+.drawing-images, .is-reframing-project .reframing-process-images { grid-template-rows: auto auto; row-gap: 0; }
+.drawing-images > .reframing-process-image, .is-reframing-project .reframing-process-images > .reframing-process-image { display: grid; grid-row: span 2; grid-template-rows: subgrid; row-gap: 0; align-items: end; }
+.drawing-images > .reframing-process-image > img, .is-reframing-project .reframing-process-images > .reframing-process-image > img { align-self: end; }
+.drawing-images > .reframing-process-image > figcaption, .is-reframing-project .reframing-process-images > .reframing-process-image > figcaption { align-self: start; }
+.is-reframing-project .reframing-process-group:nth-child(2) .reframing-process-images { grid-template-columns: repeat(3,minmax(0,1fr)); }
+/* Keep all three craft thumbnails equal while fitting the complete chessboard photograph. */
+.craft-grid .project-card:not(.project-card-wide) .project-image { height: clamp(240px,29vw,390px); max-height: none; aspect-ratio: auto; }
+.craft-grid .project-card[data-project="board"] .project-image img { width: 100%; height: 100%; object-fit: contain; transform: none; }
+@media(max-width:620px) {
+  .process-comparison { grid-template-rows: none; row-gap: 24px; }
+  .process-comparison > .reframing-process-group { display: block; grid-row: auto; }
+  .process-comparison .process-stack { display: block; }
+  .gateway-process-studies .process-comparison .process-stack > img { height: auto; object-position: center; }
+  .is-reframing-project .reframing-process-group:nth-child(2) .reframing-process-images { grid-template-columns: 1fr; }
+  .craft-grid .project-card:not(.project-card-wide) .project-image { height: 75vw; max-height: 430px; }
+}
+
+/* Align the other two paired study rows by sharing their heading, text, and media tracks. */
+.gateway-process-studies { row-gap: 0; align-items: stretch; }
+.gateway-process-studies > .reframing-process-group { display: grid; grid-template-rows: subgrid; row-gap: 0; }
+.gateway-process-studies > .reframing-process-group:nth-child(1) { grid-column: 1; grid-row: 1 / span 4; }
+.gateway-process-studies > .reframing-process-group:nth-child(2) { grid-column: 2; grid-row: 1 / span 4; }
+.gateway-process-studies > .reframing-process-group:nth-child(3) { grid-column: 1; grid-row: 5 / span 3; margin-top: 28px; }
+.gateway-process-studies > .reframing-process-group:last-child { grid-column: 2; grid-row: 5 / span 3; margin-top: 28px; }
+.gateway-process-studies > .process-comparison { grid-row: 8; margin-top: 28px; align-items: stretch; }
+.gateway-process-studies > .reframing-process-group .process-stack > img { object-position: center bottom; background: transparent; }
+@media(max-width:620px) {
+  .gateway-process-studies { row-gap: 24px; }
+  .gateway-process-studies > .reframing-process-group { display: block; }
+  .gateway-process-studies > .reframing-process-group:nth-child(1),
+  .gateway-process-studies > .reframing-process-group:nth-child(2),
+  .gateway-process-studies > .reframing-process-group:nth-child(3),
+  .gateway-process-studies > .reframing-process-group:last-child,
+  .gateway-process-studies > .process-comparison { grid-column: auto; grid-row: auto; margin-top: 0; }
+}
+
+/* Keep the context stack controls still while changing between differently shaped drawing sheets. */
+.gateway-context-studies .process-stack > img { height: clamp(260px,48vw,600px); object-fit: contain; object-position: center bottom; background: #fff; }
+
+/* Phone refinements preserve the existing typography, colors, and project order. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+button, a { -webkit-tap-highlight-color: rgba(61,78,66,.14); }
+@media(max-width:620px) {
+  .menu-toggle, .dialog-close, .lightbox-close, .hero-arrow,
+  .dialog-arrow, .process-stack-controls button, .lightbox-arrow,
+  .resume-download { min-width: 44px; min-height: 44px; touch-action: manipulation; }
+  .hero-arrow, .dialog-arrow, .process-stack-controls button, .lightbox-arrow { width: 44px; height: 44px; }
+  .menu-toggle { padding: 8px 0 8px 12px; }
+  .site-nav { max-height: calc(100dvh - 74px); overflow-y: auto; }
+  .site-nav a { display: flex; align-items: center; min-height: 44px; padding-block: 10px; }
+  .work-category-links { flex-wrap: wrap; gap: 8px; }
+  .category-heading { flex-wrap: wrap; row-gap: 6px; }
+  .category-heading h3 { flex: 1 1 170px; min-width: 0; font-size: clamp(22px,6.4vw,27px); }
+  .field-note-card h3 { font-size: clamp(23px,6.8vw,29px); overflow-wrap: anywhere; }
+  .project-dialog { max-height: calc(100dvh - 16px); }
+  .project-dialog > form { padding-block: 4px; }
+  .dialog-content { padding-bottom: 32px; }
+  .dialog-image-caption, .reframing-process-image figcaption,
+  .process-stack figcaption, .process-stack-count,
+  .field-note-item p, .lightbox-caption { font-size: 12px; line-height: 1.6; }
+  .image-lightbox { width: calc(100% - 16px); max-height: calc(100dvh - 16px); }
+  .image-lightbox figure { padding: 56px 12px 68px; }
+  .image-lightbox .lightbox-image, .image-lightbox .lightbox-video { min-width: 0; min-height: 0; max-height: calc(100dvh - 200px); }
+  .image-lightbox .lightbox-arrow { top: auto; bottom: 12px; transform: none; }
+  .image-lightbox .lightbox-prev { left: 12px; }
+  .image-lightbox .lightbox-next { right: 12px; }
+  .lightbox-caption { max-width: 100%; overflow-wrap: anywhere; }
+  .lightbox-close { padding: 8px 10px; }
+}
+
+@media(max-width:620px) { .hero { min-height: calc(100svh - 75px); } }
+
+/* Tablet touch controls use the same targets without changing desktop mouse layouts. */
+@media(pointer:coarse) {
+ .menu-toggle, .dialog-close, .lightbox-close, .hero-arrow, .dialog-arrow, .process-stack-controls button, .lightbox-arrow, .resume-download { min-width: 44px; min-height: 44px; touch-action: manipulation; }
+ .hero-arrow, .dialog-arrow, .process-stack-controls button, .lightbox-arrow { width: 44px; height: 44px; }
+ .site-nav > a, .nav-projects > a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
+/* On phones, craft photographs fill the content width at their complete natural proportions. */
+@media(max-width:620px) {
+ .craft-grid .project-card:not(.project-card-wide) .project-image { width: 100%; height: auto; max-height: none; aspect-ratio: auto; }
+ .craft-grid .project-card:not(.project-card-wide) .project-image img,
+ .craft-grid .project-card:not(.project-card-wide):hover .project-image img,
+ .craft-grid .project-card:not(.project-card-wide):focus-visible .project-image img { display: block; width: 100%; height: auto; max-height: none; object-fit: contain; transform: none; }
+}
