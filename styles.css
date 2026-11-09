@@ -961,3 +961,8 @@ button, a { -webkit-tap-highlight-color: rgba(61,78,66,.14); }
   }
   .image-lightbox .lightbox-caption { grid-row: 2; }
 }
+
+/* Avoid spacing for intentionally omitted study captions. */
+.reframing-process-image > figcaption:empty { display: none; }
+
+.process-stack > figcaption:empty { display: none; }
