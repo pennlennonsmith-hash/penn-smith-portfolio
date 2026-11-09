@@ -9,12 +9,21 @@
 
 
 
-  <link rel="stylesheet" href="styles.css?v=20261109-copy-review">
+  <link rel="stylesheet" href="styles.css?v=20261109-psd-tagline">
+  <script>
+    if (performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+      history.scrollRestoration = 'manual';
+      window.addEventListener('pageshow', () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        history.scrollRestoration = 'auto';
+      }, { once: true });
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Penn Smith, home">PENN SMITH<span>Architecture · Making · Place</span></a>
+    <a class="wordmark" href="#top" aria-label="Penn Smith Designs, home"><img src="assets/psd-file-badge.svg?v=05f80592b8" width="48" height="46" alt="" aria-hidden="true"><span class="wordmark-copy"><span>Penn Smith Designs</span><span class="wordmark-tagline">Architecture · Making · Place</span></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
             <div class="nav-projects">
@@ -56,7 +65,7 @@
         <div class="project-grid category-grid architecture-grid">
           <button class="project-card project-card-wide" type="button" data-project="reframing" aria-label="Open Reframing the Edge project details">
             <span class="project-image project-image-landscape"><img src="assets/reframing-edge-final-render.jpg" alt="Perspective rendering of Reframing the Edge community center within an open landscape"></span>
-            <span class="project-meta"><span>Parish complex / Masterplan</span><span>Team project · 2026</span></span>
+            <span class="project-meta"><span>Parish complex / Masterplan</span><span>Rome, Italy · 2026</span></span>
             <span class="project-title">Reframing the Edge </span>
             <span class="project-deck">A masterplan for a parish complex that makes the city’s edge a place to gather.</span>
           </button>
@@ -205,12 +214,8 @@
                 <p>For Reframing the Edge, Grayson Sheffler and I explored AI-assisted postproduction to communicate the atmosphere and intent of our architecture.</p>
                 <p>We modeled in Rhino and rendered and textured in Enscape. Perspective images were refined in Lightroom before controlled ChatGPT adjustments to lighting, texture, and material qualities. For the axon, Google Earth and Photoshop established the site context before the AI refinement.</p>
                 <p>We limited AI to these controlled adjustments, avoiding new objects or unintended elements while maintaining authorship and allowing more time for design development.</p>
-                <div class="ai-study-gallery"><figure><img src="assets/edge-ai-process-axon.jpg" alt="Axon workflow: Rhino and Enscape, Google Earth and Photoshop, then ChatGPT" loading="lazy" decoding="async"><figcaption>Axon workflow · Rhino + Enscape → Google Earth + Photoshop → ChatGPT</figcaption></figure>
-                <figure><img src="assets/edge-ai-process-render.jpg" alt="Perspective workflow: Rhino and Enscape, Lightroom, then ChatGPT" loading="lazy" decoding="async"><figcaption>Perspective workflow · Rhino + Enscape → Lightroom → ChatGPT</figcaption></figure></div>
-                <div class="ai-comparison"><h5>Building the axon</h5><div class="ai-comparison-images">
-                <figure><img src="assets/edge-ai-rendered-axon.png" alt="Reframing the Edge · original Rhino and Enscape rendered axon" loading="lazy" decoding="async"><figcaption>Original rendered axon · Rhino + Enscape</figcaption></figure>
-                <figure><img src="assets/edge-ai-base-axon.jpg" alt="Reframing the Edge · axon composited into the site context" loading="lazy" decoding="async"><figcaption>Site context composite · Google Earth + Photoshop</figcaption></figure>
-                </div></div>
+                <div class="ai-study-gallery"><figure><img src="assets/edge-ai-process-axon.jpg" data-gallery="edge-axon" alt="Axon workflow: Rhino and Enscape, Google Earth and Photoshop, then ChatGPT" loading="lazy" decoding="async"></figure>
+                <figure><img src="assets/edge-ai-process-render.jpg" alt="Perspective workflow: Rhino and Enscape, Lightroom, then ChatGPT" loading="lazy" decoding="async"></figure></div>
               </article>
               <article class="field-note-item ai-study"><h4>Rendering a large chair</h4><p>AI render explorations of the large chair, testing its presence in public space across different settings and lighting conditions.</p><div class="ai-study-gallery"><figure><img src="assets/ai-chair-explorations.jpg" alt="AI render explorations · large chair in public space" loading="lazy"><figcaption>AI render explorations · large chair in public space</figcaption></figure></div></article>
               <article class="field-note-item ai-study"><h4>UDBS rapid design iterations</h4><p>Enscape views used as inputs for ChatGPT renders to explore design directions quickly.</p><div class="ai-comparison"><h5>Kitchen</h5><div class="ai-comparison-images"><figure><img src="assets/ai-udbs-kitchen-before.png" alt="Before · Enscape kitchen view" loading="lazy"><figcaption>Before · Enscape kitchen view</figcaption></figure><figure><img src="assets/ai-udbs-kitchen-after.png" alt="After · ChatGPT kitchen render" loading="lazy"><figcaption>After · ChatGPT kitchen render</figcaption></figure></div></div><div class="ai-comparison"><h5>House exterior</h5><div class="ai-comparison-images"><figure><img src="assets/ai-udbs-house-before.png" alt="Before · Enscape exterior view" loading="lazy"><figcaption>Before · Enscape exterior view</figcaption></figure><figure><img src="assets/ai-udbs-house-after.png" alt="After · ChatGPT exterior render" loading="lazy"><figcaption>After · ChatGPT exterior render</figcaption></figure></div></div><div class="ai-comparison"><h5>Bathroom</h5><div class="ai-comparison-images"><figure><img src="assets/ai-udbs-bathroom-before.png" alt="Before · Enscape bathroom, brighter study" loading="lazy"><figcaption>Before · Enscape bathroom, brighter study</figcaption></figure><figure><img src="assets/ai-udbs-bathroom-after.png" alt="After · ChatGPT bathroom render" loading="lazy"><figcaption>After · ChatGPT bathroom render</figcaption></figure></div></div></article>
@@ -250,7 +255,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><a class="wordmark" href="#top">PENN SMITH<span>Architecture · Making · Place</span></a><span>Copyright <span id="year">2026</span> Penn Smith</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="site-footer"><a class="wordmark" href="#top" aria-label="Penn Smith Designs, home"><img src="assets/psd-file-badge.svg?v=05f80592b8" width="48" height="46" alt="" aria-hidden="true"><span class="wordmark-copy"><span>Penn Smith Designs</span><span class="wordmark-tagline">Architecture · Making · Place</span></span></a><span>Copyright <span id="year">2026</span> Penn Smith</span><a href="#top">Back to top ↑</a></footer>
 
   <dialog class="project-dialog" aria-labelledby="dialog-title">
     <form method="dialog"><button class="dialog-close" aria-label="Close project details">Close <span aria-hidden="true">×</span></button></form>
@@ -259,7 +264,7 @@
   <dialog class="image-lightbox" aria-label="Enlarged portfolio image">
     <form method="dialog"><button class="lightbox-close" aria-label="Close enlarged image">Close <span aria-hidden="true">×</span></button></form>
     <figure><button class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous enlarged image"><span aria-hidden="true">←</span></button><img class="lightbox-image" alt=""><video class="lightbox-video" controls playsinline loop muted preload="metadata" hidden></video><button class="lightbox-arrow lightbox-next" type="button" aria-label="Next enlarged image"><span aria-hidden="true">→</span></button><figcaption class="lightbox-caption" aria-live="polite"></figcaption></figure>
-  </dialog>  <script src="script.js?v=20261109-throne"></script>
+  </dialog>  <script src="script.js?v=20261109-axon-gallery"></script>
 </body>
 </html>
 

@@ -262,7 +262,7 @@ const projects = {
     "problem": "Establish a shared civic and sacred center for an expanding neighborhood at Rome’s urban edge.",
     "number": "08 / Parish complex + Masterplan",
     "title": "Reframing the Edge",
-    "subtitle": "Masterplan for a parish complex · Team studio project · 2026",
+    "subtitle": "Masterplan for a parish complex · Rome, Italy · 2026",
     "question": "How can the edge of a city become a place to gather?",
     "description": "In Città Verde, a gently sloping central piazza draws people into the site, while cantilevering roofs gesture toward this shared center. The church rises highest, establishing its hierarchy within a complex that includes an oratory, outdoor amphitheater, seating areas, and soccer fields.",
     "image": "assets/reframing-edge-final-render.jpg",
@@ -341,7 +341,6 @@ const projects = {
       "Second dimensioned section showing how the seat relates to the backrest."
 ],
     captions: ["View of the chair in its neighborhood setting.", "Oblique material study of the shell and tile finish.", "Front view showing the two seats and their asymmetrical profiles.", "The unfolded interior reveals a mosaic exploring the abstract relationship between wings, sea, and sky. Flowing colors and tile patterns connect the sea on the left with the sky on the right, expressing wings as a bridge between the two."],
-    processIntro: "Psalm 91:4 informed the early studies of shelter beneath wings.",
     dimensionImages: ["assets/sanctuary-dimensioned-plan-scaled.svg", "assets/sanctuary-dimensioned-section-01.png", "assets/sanctuary-dimensioned-section-02.png"],
     credits: "Design: Penn Smith + Savannah List · Professor Vanessa Mingozzi · University of Arkansas Rome Center · Competition-winning proposal"
   },
@@ -467,7 +466,7 @@ projects.sanctuary.conceptGroups = [
 ];
 projects.sanctuary.processStudyGroups = [{
   title:'Sketches + form studies',
-  description:'Rising wing studies and early curved sketches explore enclosure and refuge.',
+  description:'Early sketches tested how the wings could enclose the seats. AI iterations helped visualize the mosaic and study how the chair would look in public settings and under different lighting.',
   images:['assets/sanctuary-source-sketch-wings.png','assets/sanctuary-source-sketch-curves.png'],
   stack:true
 }];
@@ -479,7 +478,7 @@ projects.peakscape.introDrawingGroups = [
 ];
 projects.sanctuary.processStudyGroups[0].comparison = {
   title:'AI iterations',
-  description:'AI supported visualization and iteration of the mosaic concept, alongside studies of the chair in public settings and different lighting conditions.',
+  description:'',
   images:['assets/sanctuary-source-ai-explorations.png']
 };
 
@@ -639,7 +638,7 @@ function renderProcess(project) {
   if (!images.length && !studyPaths.size) return "";
   const allSlides = getProjectSlides(project);
   const renderedStudyGroups = (project.processStudyGroups || []).map((group, groupIndex) => {
-    const renderGroup = item => `<section class="reframing-process-group"><h4>${item.title}</h4><p>${item.description}</p>${item.stack ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
+    const renderGroup = item => `<section class="reframing-process-group"><h4>${item.title}</h4>${item.description ? '<p>'+item.description+'</p>' : ''}${item.stack ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
       const index = allSlides.findIndex(slide => slide.image === path);
       const slide = allSlides[index];
       return `<figure class="reframing-process-image"><img src="${inlineProjectImage(path)}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${visibleStudyCaption(slide)}</figcaption></figure>`;
@@ -727,6 +726,11 @@ function warmNextImage(slides, index) {
 
 
 function visibleStudyCaption(slide) {
+  if (slide.image === 'assets/sanctuary-four-aspects-caps.png') {
+    return 'Culture: paired seating invites conversation in Città Verde. Religion: angelic wings inspire the rising form. Protection: the wings wrap the seats to offer privacy in public. Beauty: a mosaic inspired by Gaudí brings color to the interior, from sea to countryside to sky.';
+  }
+  if (projects.sanctuary.processStudyGroups[0].images.includes(slide.image) ||
+      projects.sanctuary.processStudyGroups[0].comparison.images.includes(slide.image)) return '';
   if (projects.sanctuary.conceptGroups?.some(group => group.images.includes(slide.image))) return "";
   if (slide.image.includes('gateway-final-model-')) return 'Scale: 1′ = 1/32″';
   if (slide.image.includes('gateway-large-model-')) return 'Scale: 1′ = 1/4″';
@@ -890,7 +894,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
       const clickedIndex = slides.findIndex(slide => slide.image === clickedSource);
       showProjectSlide(Math.max(0, clickedIndex));
     } else {
-      showProjectSlide(0);
+      showProjectSlide(projectId === "stickbuilt" && matchMedia("(max-width: 620px)").matches && slides.length >= 3 ? 2 : 0);
     }
     if (project !== projects.stickbuilt) dialogContent.querySelector(".dialog-carousel").insertAdjacentHTML("afterend", `<p class="dialog-image-caption" aria-live="polite">${project.captions?.[projectSlideIndex] || slides[projectSlideIndex].alt}</p>`);
     initializeStudyPairs(dialogContent);
@@ -1074,6 +1078,16 @@ document.querySelectorAll('#field-notes .field-note-category').forEach((category
 });
 
 function getStandaloneGallery(image) {
+  if (image.dataset.gallery === "edge-axon") {
+    return {
+      index: 0,
+      slides: [
+        { image: "assets/edge-ai-rendered-axon.png", alt: "Rhino + Enscape · original rendered axon" },
+        { image: "assets/edge-ai-base-axon.jpg", alt: "Google Earth + Photoshop · site context composite" },
+        { image: "assets/reframing-edge-aerial-render.jpg", alt: "ChatGPT · final axon in its landscape context" }
+      ]
+    };
+  }
   const study = image.closest(".ai-study");
   if (study) {
     const images = [...study.querySelectorAll("img")];
