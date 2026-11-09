@@ -3,7 +3,7 @@ const projects = {
     "problem": "Create a food learning center that connects teaching, gathering, and growing with the everyday life of Willie George Park, while responding to the neighborhood and coordinating the building’s environmental and structural systems.",
     "number": "01 / Civic + Learning",
     "title": "Gateway Garden",
-    "subtitle": "Food learning center · Springdale, Arkansas · 2025",
+    "subtitle": "Food learning center · Springdale, Arkansas · 2025 · Integrative Design Studio",
     "question": "How can architecture integrate people, place, and systems?",
     "description": "Set beside the central pavilion at Willie George Park, Gateway Garden brings food learning into the everyday life of the neighborhood. Its gable-inspired form draws on nearby homes and agricultural buildings, while openings keep the park visually and physically connected through the project. Mass timber, Arkansas stone, clerestory light, and carefully placed service cores shape the building’s material and structural logic.",
     "image": "assets/gateway-garden-borderless.png",
@@ -575,11 +575,54 @@ function getEnlargedSlides(project) {
 function getFinalSlides(project) {
   return getProjectSlides(project).filter(slide => slide.image === project.image || project.finalImages.has(slide.image));
 }
+const gatewayPreviews = {
+  "assets/gateway-base-collage-04.png": "assets/gateway-base-collage-04-preview.jpg",
+  "assets/gateway-base-collage-09.png": "assets/gateway-base-collage-09-preview.jpg",
+  "assets/gateway-base-collage-15.png": "assets/gateway-base-collage-15-preview.jpg",
+  "assets/gateway-cafe-render.png": "assets/gateway-cafe-render-preview.jpg",
+  "assets/gateway-classroom-render.png": "assets/gateway-classroom-render-preview.jpg",
+  "assets/gateway-context-neighborhood-history.jpg": "assets/gateway-context-neighborhood-history-preview.jpg",
+  "assets/gateway-early-design-synthesis.jpg": "assets/gateway-early-design-synthesis-preview.jpg",
+  "assets/gateway-event-borderless.png": "assets/gateway-event-borderless-preview.jpg",
+  "assets/gateway-final-building-sections.jpg": "assets/gateway-final-building-sections-preview.jpg",
+  "assets/gateway-final-ceiling-plan.jpg": "assets/gateway-final-ceiling-plan-preview.jpg",
+  "assets/gateway-final-detail-callouts-01-02.jpg": "assets/gateway-final-detail-callouts-01-02-preview.jpg",
+  "assets/gateway-final-detail-callouts-03-04.jpg": "assets/gateway-final-detail-callouts-03-04-preview.jpg",
+  "assets/gateway-final-elevations.jpg": "assets/gateway-final-elevations-preview.jpg",
+  "assets/gateway-final-floor-plan.jpg": "assets/gateway-final-floor-plan-preview.jpg",
+  "assets/gateway-final-life-safety.jpg": "assets/gateway-final-life-safety-preview.jpg",
+  "assets/gateway-final-mechanical-axon.jpg": "assets/gateway-final-mechanical-axon-preview.jpg",
+  "assets/gateway-final-sprinkler-plan.jpg": "assets/gateway-final-sprinkler-plan-preview.jpg",
+  "assets/gateway-final-stormwater.jpg": "assets/gateway-final-stormwater-preview.jpg",
+  "assets/gateway-final-structural-details.jpg": "assets/gateway-final-structural-details-preview.jpg",
+  "assets/gateway-final-structure-plan.jpg": "assets/gateway-final-structure-plan-preview.jpg",
+  "assets/gateway-final-wall-section-01.jpg": "assets/gateway-final-wall-section-01-preview.jpg",
+  "assets/gateway-final-wall-section-02.jpg": "assets/gateway-final-wall-section-02-preview.jpg",
+  "assets/gateway-final-zoning-axon.jpg": "assets/gateway-final-zoning-axon-preview.jpg",
+  "assets/gateway-garden-borderless.png": "assets/gateway-garden-borderless-preview.jpg",
+  "assets/gateway-greenhouse-render.png": "assets/gateway-greenhouse-render-preview.jpg",
+  "assets/gateway-kitchen-render.png": "assets/gateway-kitchen-render-preview.jpg",
+  "assets/gateway-massing-physical-model.jpg": "assets/gateway-massing-physical-model-preview.jpg",
+  "assets/gateway-midjourney-concept-01.png": "assets/gateway-midjourney-concept-01-preview.jpg",
+  "assets/gateway-midjourney-concept-05.png": "assets/gateway-midjourney-concept-05-preview.jpg",
+  "assets/gateway-midjourney-concept-15.png": "assets/gateway-midjourney-concept-15-preview.jpg",
+  "assets/gateway-midjourney-concept-16.png": "assets/gateway-midjourney-concept-16-preview.jpg",
+  "assets/gateway-park-perspective.png": "assets/gateway-park-perspective-preview.jpg",
+  "assets/gateway-porch-collage.png": "assets/gateway-porch-collage-preview.jpg",
+  "assets/gateway-roof-form-collage.jpg": "assets/gateway-roof-form-collage-preview.jpg",
+  "assets/gateway-site-roof-plan-updated.jpg": "assets/gateway-site-roof-plan-updated-preview.jpg",
+  "assets/gateway-site-section-perspective.png": "assets/gateway-site-section-perspective-preview.jpg"
+};
+
+function inlineProjectImage(source) {
+  return matchMedia("(max-width: 620px)").matches ? gatewayPreviews[source] || source : source;
+}
+
 function renderProcessStack(project, group) {
   const slides = getProjectSlides(project);
   const indices = group.images.map(path => slides.findIndex(slide => slide.image === path));
   const slide = slides[indices[0]];
-  return `<figure class="process-stack" data-stack-indices="${indices.join(',')}" data-stack-position="0" aria-label="${group.title}"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${indices[0]}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><div class="process-stack-controls"><button type="button" data-process-step="-1" aria-label="Previous image in ${group.title}">←</button><span class="process-stack-count" aria-live="polite">01 / ${String(indices.length).padStart(2, '0')}</span><button type="button" data-process-step="1" aria-label="Next image in ${group.title}">→</button></div><figcaption>${slide.alt}</figcaption></figure>`;
+  return `<figure class="process-stack" data-stack-indices="${indices.join(',')}" data-stack-position="0" aria-label="${group.title}"><img src="${inlineProjectImage(slide.image)}" alt="${slide.alt}" data-project-slide-index="${indices[0]}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><div class="process-stack-controls"><button type="button" data-process-step="-1" aria-label="Previous image in ${group.title}">←</button><span class="process-stack-count" aria-live="polite">01 / ${String(indices.length).padStart(2, '0')}</span><button type="button" data-process-step="1" aria-label="Next image in ${group.title}">→</button></div><figcaption>${slide.alt}</figcaption></figure>`;
 }
 
 function renderProcess(project) {
@@ -599,14 +642,14 @@ function renderProcess(project) {
     const renderGroup = item => `<section class="reframing-process-group"><h4>${item.title}</h4><p>${item.description}</p>${item.stack ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
       const index = allSlides.findIndex(slide => slide.image === path);
       const slide = allSlides[index];
-      return `<figure class="reframing-process-image"><img src="${path}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
-    }).join("")}</div>`}${item.videos?.length ? `<details class="process-motion-studies"><summary>View the two motion studies</summary><div class="project-process-grid process-video-grid">${item.videos.map(video => `<figure class="reframing-process-image"><video class="process-video" controls playsinline preload="metadata" aria-label="${video.caption}"><source src="${video.source}" type="video/mp4">Your browser does not support this video. <a href="${video.source}">Open video</a></video><figcaption>${video.caption}</figcaption></figure>`).join("")}</div></details>` : ""}</section>`;
+      return `<figure class="reframing-process-image"><img src="${inlineProjectImage(path)}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${slide.alt}</figcaption></figure>`;
+    }).join("")}</div>`}${item.videos?.length ? `<details class="process-motion-studies"><summary>View the two motion studies</summary><div class="project-process-grid process-video-grid">${item.videos.map(video => `<figure class="reframing-process-image"><video class="process-video" controls playsinline preload="none" aria-label="${video.caption}"><source src="${video.source}" type="video/mp4">Your browser does not support this video. <a href="${video.source}">Open video</a></video><figcaption>${video.caption}</figcaption></figure>`).join("")}</div></details>` : ""}</section>`;
     return group.comparison ? `<div class="process-comparison ${project === projects.sanctuary ? "sanctuary-sketch-comparison" : ""}">${renderGroup(group)}${renderGroup(group.comparison)}</div>` : renderGroup(group);
   });
   const studyGroups = project === projects.gateway
     ? `<div class="gateway-context-studies">${renderedStudyGroups[0]}</div><div class="gateway-process-studies">${renderedStudyGroups.slice(1).join("")}</div>`
     : renderedStudyGroups.join("");
-  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp || project === projects.gateway || project === projects.sanctuary ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${slide.image}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
+  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp || project === projects.gateway || project === projects.sanctuary ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${inlineProjectImage(slide.image)}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${slide.alt}</figcaption></figure>`).join("")}</div></section>`;
 }
 
 function renderSupportingImages(project, paths, label, title, extraClass = "") {
@@ -615,7 +658,7 @@ function renderSupportingImages(project, paths, label, title, extraClass = "") {
   return `<section class="reframing-process ${extraClass}"><div class="reframing-process-heading"><p class="eyebrow">${label}</p><h3>${title}</h3></div><div class="project-process-grid">${paths.map(path => {
     const index = slides.findIndex(slide => slide.image === path);
     const slide = slides[index];
-    return `<figure class="reframing-process-image"><img src="${path}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
+    return `<figure class="reframing-process-image"><img src="${inlineProjectImage(path)}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${slide.alt}</figcaption></figure>`;
   }).join("")}</div></section>`;
 }
 
@@ -625,7 +668,7 @@ function renderDrawingFigure(project, source) {
   const index = slides.findIndex(slide => slide.image === source);
   if (index < 0) throw new Error('Drawing missing from gallery: '+source);
   const slide = slides[index];
-  return `<figure class="reframing-process-image"><img src="${source}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy"><figcaption>${slide.alt}</figcaption></figure>`;
+  return `<figure class="reframing-process-image"><img src="${inlineProjectImage(source)}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${slide.alt}</figcaption></figure>`;
 }
 function renderDrawingGroups(project, groups, label, title, extraClass='') {
   return `<section class="reframing-process drawing-section ${extraClass}"><div class="reframing-process-heading"><p class="eyebrow">${label}</p><h3>${title}</h3></div><div class="drawing-groups">${groups.map(group=>`<section class="drawing-group" data-layout="${group.layout}"><h4>${group.title}</h4>${group.layout==='stack' ? renderProcessStack(project,group) : `<div class="drawing-images">${group.images.map(source=>renderDrawingFigure(project,source)).join('')}</div>`}</section>`).join('')}</div></section>`;
@@ -688,8 +731,10 @@ function showProjectSlide(index) {
   projectSlideIndex = (index + slides.length) % slides.length;
   const slide = slides[projectSlideIndex];
   const image = dialogContent.querySelector(".dialog-slide-image");
-  switchGalleryImage(image, slide.image);
-  warmNextImage(slides, projectSlideIndex);
+  switchGalleryImage(image, inlineProjectImage(slide.image));
+  if (activeProject !== projects.gateway || !matchMedia("(max-width: 620px)").matches) {
+    warmNextImage(slides, projectSlideIndex);
+  }
   image.alt = slide.alt;
   const caption = dialogContent.querySelector(".dialog-image-caption");
   if (caption) caption.textContent = activeProject.captions?.[projectSlideIndex] || slide.alt;
@@ -789,7 +834,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
         </div>
         <div class="dialog-carousel" aria-label="${project.title} images">
           <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
+          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${inlineProjectImage(slides[0].image)}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
           <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
         </div>
         ${renderProjectBrief(project)}
@@ -803,7 +848,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
       </div>
       <div class="dialog-carousel" aria-label="${project.title} images">
         <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${slides[0].image}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
+        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${inlineProjectImage(slides[0].image)}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
         <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
       </div>
       ${renderProjectBrief(project)}`;
@@ -849,7 +894,7 @@ dialogContent.addEventListener("click", (event) => {
     stack.dataset.stackPosition = position;
     const slide = getProjectSlides(activeProject)[indices[position]];
     const image = stack.querySelector('img');
-    switchGalleryImage(image, slide.image);
+    switchGalleryImage(image, inlineProjectImage(slide.image));
     image.alt = slide.alt;
     image.dataset.projectSlideIndex = indices[position];
     image.setAttribute('aria-label', `Enlarge image: ${slide.alt}`);
@@ -928,7 +973,7 @@ function showLightboxSlide(index) {
   if (!lightboxGallery.length) return;
   lightboxIndex = (index + lightboxGallery.length) % lightboxGallery.length;
   const slide = lightboxGallery[lightboxIndex];
-  warmNextImage(lightboxGallery, lightboxIndex);
+  if (!matchMedia("(max-width: 620px)").matches) warmNextImage(lightboxGallery, lightboxIndex);
   lightboxVideo.pause();
   const isVideo = slide.type === 'video';
   lightboxVideo.hidden = !isVideo;
@@ -940,7 +985,10 @@ function showLightboxSlide(index) {
   } else {
     lightboxVideo.removeAttribute('src');
     lightboxVideo.load();
-    switchGalleryImage(lightboxImage, slide.image);
+    lightboxImage.loading = "eager";
+    lightboxImage.src = slide.image === "assets/gateway-greenhouse-render.png"
+      ? gatewayPreviews[slide.image]
+      : slide.image;
     lightboxImage.alt = slide.alt || "Enlarged portfolio image";
   }
   lightboxCaption.textContent = `${String(lightboxIndex + 1).padStart(2, "0")} / ${String(lightboxGallery.length).padStart(2, "0")} · ${slide.alt || "Portfolio image"}`;
