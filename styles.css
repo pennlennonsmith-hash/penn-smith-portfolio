@@ -990,3 +990,16 @@ button, a { -webkit-tap-highlight-color: rgba(61,78,66,.14); }
 .gateway-context-studies .process-stack > img { aspect-ratio: 4500 / 1456; object-fit: contain; }
 
 .project-reference { text-decoration: underline; text-underline-offset: .2em; }
+
+/* Share the same image row despite the single caption above the sketches. */
+@media (min-width: 621px) {
+  .sanctuary-sketch-comparison .process-stack,
+  .sanctuary-sketch-comparison .project-process-grid {
+    grid-row: 3;
+    margin-top: 24px;
+    align-self: start;
+  }
+}
+.timeless-team-photo .project-process-grid {
+  grid-template-columns: minmax(0, 1fr);
+}

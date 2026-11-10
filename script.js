@@ -273,7 +273,6 @@ const projects = {
       "assets/reframing-edge-context-03.jpg",
       "assets/reframing-edge-analysis-04.jpg",
       "assets/reframing-edge-cartography-parti.jpg",
-      "assets/reframing-edge-master-site-plan.jpg",
       "assets/reframing-edge-precedents-studies.jpg",
       "assets/reframing-edge-urban-edge.jpg",
       "assets/reframing-edge-campus-render.jpg",
@@ -283,8 +282,10 @@ const projects = {
       "assets/reframing-edge-perspectives.jpg",
       "assets/reframing-edge-elevations.jpg",
       "assets/reframing-edge-long-view.jpg",
+      "assets/reframing-edge-building-sections.jpg",
       "assets/reframing-edge-aerial-render.jpg",
-      "assets/reframing-edge-building-sections.jpg"
+      "assets/reframing-edge-labeled-axon.png",
+      "assets/reframing-edge-master-site-plan.jpg"
     ],
     "galleryAlts": [
       "Exterior rendering showing the angular community buildings in the landscape",
@@ -292,7 +293,6 @@ const projects = {
       "Collage of the surrounding landscape and urban fabric",
       "Neighborhood circles, urban edges, and views toward the medieval tower, rolling hills, and mountain range",
       "Cartography map and parti diagram",
-      "Master plan and site plan for the proposal",
       "Precedent images and early structural form studies",
       "Diagram locating the urban edge in its surrounding neighborhood",
       "Aerial view locating the community center, school parking, and planned park",
@@ -302,8 +302,10 @@ const projects = {
       "Three perspective studies of the proposal",
       "Architectural elevations of the project's folded roof and civic spaces",
       "Long perspective view across the project grounds",
+      "Two rendered sections showing the parish complex and surrounding landscape",
       "Aerial rendering showing the proposal within the larger site",
-      "Two rendered sections showing the parish complex and surrounding landscape"
+      "Labeled axonometric drawing explaining the parish complex",
+      "Master plan and site plan for the proposal"
     ],
     "credits": "Team: Penn Smith + Grayson Sheffler · Professor Vanessa Mingozzi · University of Arkansas Rome Center"
   },
@@ -523,7 +525,7 @@ const finalImageNames = {
   gateway: ["gateway-cafe-render.png", "gateway-kitchen-render.png", "gateway-classroom-render.png", "gateway-greenhouse-render.png", "gateway-event-borderless.png", "gateway-park-perspective.png", "gateway-site-section-perspective.png", "gateway-final-floor-plan.jpg", "gateway-final-building-sections.jpg", "gateway-final-elevations.jpg"],
   peakscape: ["peakscape-courtyard-borderless.png", "peakscape-neighborhood-borderless.png"],
   nexus: [],
-  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-building-sections.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg", "reframing-edge-master-site-plan.jpg"],
+  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-building-sections.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg", "reframing-edge-labeled-axon.png", "reframing-edge-master-site-plan.jpg"],
   sanctuary: ["sanctuary-material-axon-render.png", "sanctuary-material-front-render.png", "sanctuary-source-mosaic-elevation.png"],
   stickbuilt: ["stickbuilt.jpg", "timeless-052.jpg", "timeless-048.jpg"],
   lamp: ["lamp-edited-elevation-off-web.jpg", "lamp-edited-interior-web.jpg"],
@@ -867,12 +869,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
           <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
         </div>
         ${renderProjectBrief(project)}
-        ${renderDrawingGroups(project, [
-          { title: "Plan", layout: "full", images: ["assets/reframing-edge-master-site-plan.jpg"] },
-          { title: "Building sections", layout: "full", images: ["assets/reframing-edge-building-sections.jpg"] },
-          { title: "Elevations", layout: "full", images: ["assets/reframing-edge-elevations.jpg"] }
-        ], "02 / Finished drawings", "Plan + Building Sections + Elevations")}
-        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">03 / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
+        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">02 / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
     } else {
       dialogContent.innerHTML = `
       <div class="dialog-heading">
@@ -904,7 +901,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     if (project.drawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.drawingGroups, "04 / Drawings + systems", "Plans, sections + systems", "gateway-technical-drawings"));
     if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, [{title:"Plan + sections",layout:"triptych",images:project.dimensionImages}], "04 / Drawings", "Dimensioned drawings", "sanctuary-dimensions"));
     if (projectId === "stickbuilt") {
-      dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.teamImages, "04 / Team", "The people behind Timeless"));
+      dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.teamImages, "04 / Team", "The people behind Timeless", "timeless-team-photo"));
     }
     if (button.closest(".hero-image")) {
       const clickedSource = button.getAttribute("src");
