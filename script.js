@@ -283,7 +283,8 @@ const projects = {
       "assets/reframing-edge-perspectives.jpg",
       "assets/reframing-edge-elevations.jpg",
       "assets/reframing-edge-long-view.jpg",
-      "assets/reframing-edge-aerial-render.jpg"
+      "assets/reframing-edge-aerial-render.jpg",
+      "assets/reframing-edge-building-sections.jpg"
     ],
     "galleryAlts": [
       "Exterior rendering showing the angular community buildings in the landscape",
@@ -301,7 +302,8 @@ const projects = {
       "Three perspective studies of the proposal",
       "Architectural elevations of the project's folded roof and civic spaces",
       "Long perspective view across the project grounds",
-      "Aerial rendering showing the proposal within the larger site"
+      "Aerial rendering showing the proposal within the larger site",
+      "Two rendered sections showing the parish complex and surrounding landscape"
     ],
     "credits": "Team: Penn Smith + Grayson Sheffler · Professor Vanessa Mingozzi · University of Arkansas Rome Center"
   },
@@ -350,23 +352,23 @@ const projects = {
     title: "Timeless",
     subtitle: "Full-scale glulam installation · Birmingham, Alabama · 2025",
     question: "How can a team design and build a thoughtful installation in about three days?",
-    description: "Created during Stickbuilt, Timeless is a collaborative, full-scale glulam installation developed and assembled in about three days. We kept changes to the supplied members minimal, focusing on their arrangement and dowel connections. A small concept model helped test the idea before assembly. The resulting curve through the forest traces the life cycle of a tree, connecting the material to its woodland setting.",
-    processIntro: "Stickbuilt combined hands-on construction and team design with guidance from practicing architects. The wider workshop explored stick framing, glulam timber, solid sawn wood, and parallel strand lumber, including mass-timber connection learning through Simpson Strong-Tie. Poetry, music, and painting complemented studies of Alabama biodiversity with the Painted Rock Forest Research Center.",
+    description: "Created during <a class='project-reference' href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a>, Timeless is a collaborative, full-scale glulam installation developed and assembled in about three days. We kept changes to the supplied members minimal, focusing on their arrangement and dowel connections. A small concept model helped test the idea before assembly. The resulting curve through the forest traces the life cycle of a tree, connecting the material to its woodland setting.",
+    processIntro: "<a class='project-reference' href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a> combined hands-on construction and team design with guidance from practicing architects. The wider workshop explored stick framing, glulam timber, solid sawn wood, and parallel strand lumber, including mass-timber connection learning through Simpson Strong-Tie. Poetry, music, and painting complemented studies of Alabama biodiversity with the Painted Rock Forest Research Center.",
     image: "assets/timeless-002.jpg",
     alt: "Glulam design-build installation among trees",
     gallery: ["assets/timeless-052.jpg", "assets/timeless-048.jpg", "assets/stickbuilt.jpg", "assets/timeless-061.jpg", "assets/timeless-065.jpg", "assets/timeless-064.jpg", "assets/timeless-060.jpg", "assets/timeless-063.jpg", "assets/timeless-build-044.jpg", "assets/timeless-build-033.jpg", "assets/timeless-build-011.jpg", "assets/timeless-build-056.jpg", "assets/timeless-build-059.jpg", "assets/timeless-build-087.jpg", "assets/timeless-build-088.jpg", "assets/timeless-build-101.jpg", "assets/timeless-build-135.jpg", "assets/timeless-build-144.jpg", "assets/timeless-006.jpg"],
-    galleryAlts: ["Penn Smith presenting Timeless and explaining its timber members", "A visitor looking up at the installation beside a tree, seen at human scale", "Visitors leaning against and gathering around the completed Timeless installation", "Recessed dowel connections along the sloping timber members", "Stepped ends and laminated grain of the timber members", "Angled timber members meeting the forest floor", "Close-up of timber dowels within recessed connections", "Rhythm and changing angles of the completed timber assembly", "Discussing hand tools and timber preparation with the team", "Hand-planing a timber member before assembly", "Carrying and positioning a prepared timber member", "Team members raising and aligning the tall timber members", "Checking the assembly as the timber sequence takes shape", "Installing and temporarily bracing the upright members", "Drilling connection holes with the members supported in place", "Driving timber dowels into the connections with a mallet", "Coordinating alignment and bracing during assembly", "Trimming a projecting dowel with a hand saw", "Timeless team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain, and Jeff Jeong."],
+    galleryAlts: ["Penn Smith presenting Timeless and explaining its timber members", "A visitor looking up at the installation beside a tree, seen at human scale", "Visitors leaning against and gathering around the completed Timeless installation", "Recessed dowel connections along the sloping timber members", "Stepped ends and laminated grain of the timber members", "Angled timber members meeting the forest floor", "Close-up of timber dowels within recessed connections", "Rhythm and changing angles of the completed timber assembly", "Discussing hand tools and timber preparation with the team", "Hand-planing a timber member before assembly", "Carrying and positioning a prepared timber member", "Team members raising and aligning the tall timber members", "Checking the assembly as the timber sequence takes shape", "Installing and temporarily bracing the upright members", "Drilling connection holes with the members supported in place", "Driving timber dowels into the connections with a mallet", "Coordinating alignment and bracing during assembly", "Trimming a projecting dowel with a hand saw", "From left to right: Jeff, Penn, Asher, Callie, Taylor, and Carley."],
     detailImages: ["assets/timeless-061.jpg", "assets/timeless-065.jpg", "assets/timeless-064.jpg", "assets/timeless-060.jpg", "assets/timeless-063.jpg"],
     teamImages: ["assets/timeless-006.jpg"],
-    credits: "Organization: <a href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a><br>Team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain + Jeff Jeong"
+    credits: "Organization: <a class='project-reference' href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a><br>Team: Penn Smith, Asher Miller, Callie McMillen, Carley Chastain + Jeff Jeong"
   },
   lamp: {
     "problem": "Translate a study of color, frame, and composition into a functional bedside light, considering both its appearance and the way it diffuses light.",
     "number": "04 / Object + Fabrication",
     "title": "Composition Lamp",
     "subtitle": "Bedside light · 2025",
-    "question": "A small object built from a study of color and frame.",
-    "description": "Inspired by Piet Mondrian’s Composition with Red, Blue, and Yellow, the lamp pairs a beech-wood outer frame with a 3D-printed inner frame made from filament mixed with oak. Sanded acrylic panels soften the light and make the grid legible from every side.",
+    "question": "From painting to bedside light",
+    "description": "I began with the grid in Piet Mondrian’s <em>Composition with Red, Blue, and Yellow</em> and carried it around the sides of a bedside lamp. I built the outer frame in beech and 3D-printed the inner frame in oak-mixed filament. Sanded acrylic panels soften the light while keeping the grid visible when the lamp is on.",
     "image": "assets/lamp-edited-axon-off-web.jpg",
     "alt": "Angled view of Composition Lamp with the light off",
     "gallery": [
@@ -396,8 +398,8 @@ const projects = {
     "number": "05 / Wood + metal + epoxy",
     "title": "Chessboard Cutting Board",
     "subtitle": "Two-sided object · Wood, metal + epoxy",
-    "question": "One board, two ways to use it.",
-    "description": "This two sided wood, metal, and epoxy piece pairs an end grain hardwood cutting surface with a metal chessboard epoxied into the reverse. Contrasting inlay lines and a routed perimeter groove give the cutting face its own pattern and working edge. The reverse turns the same object into a board for play.",
+    "question": "One board, two uses",
+    "description": "I explored how wood, metal, and epoxy could come together in an object for both cooking and play. On one face, contrasting inlays interrupt the end-grain pattern, and a routed perimeter groove catches juices. I used a Shaper to route the chessboard pattern and epoxy to set the metal chessboard into the reverse.",
     "image": "assets/cutting-board-chess-web.jpg",
     "alt": "End-grain cutting board with a metal chessboard inset and chess pieces",
     "gallery": [
@@ -490,9 +492,9 @@ projects.gateway.galleryAlts.push(...gatewayModelPhotos.map(([,caption]) => capt
 
 // Large model photographs, ordered by the supplied file numbers.
 const gatewayLargeModelCaptions = ["Large model · oblique view of the timber frame and roof","Large model · reverse oblique view with translucent roof panels","Large model · sectional elevation of the gabled frame","Large model · central column, roof frame, and suspended fixtures","Large model · translucent wall panel and column connection","Large model · end view of the translucent enclosure","Large model · end view of the metal roof","Large model · column, glazing edge, and foundation detail","Large model · roof overhang, column, and base connection"];
-projects.gateway.largeModelImages = gatewayLargeModelCaptions.map((_, index) => 'assets/gateway-large-model-'+(index+1)+'.jpg');
+projects.gateway.largeModelImages = gatewayLargeModelCaptions.flatMap((_, index) => index === 7 ? [] : ['assets/gateway-large-model-'+(index+1)+'.jpg']);
 projects.gateway.gallery.push(...projects.gateway.largeModelImages);
-projects.gateway.galleryAlts.push(...gatewayLargeModelCaptions);
+projects.gateway.galleryAlts.push(...gatewayLargeModelCaptions.filter((_, index) => index !== 7));
 
 const dialog = document.querySelector(".project-dialog");
 const dialogContent = document.querySelector(".dialog-content");
@@ -503,6 +505,9 @@ let activeProject = null;
 let projectSlideIndex = 0;
 
 function renderProjectBrief(project) {
+  if (project === projects.lamp || project === projects.board) {
+    return `<div class="dialog-copy project-brief"><h3>${project.question}</h3><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div>`;
+  }
   return `<div class="dialog-copy project-brief"><div><p class="brief-label">Problem</p><h3>${project.question}</h3><p>${project.problem}</p></div><div><p class="brief-label">Proposed solution</p><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>`;
 }
 
@@ -518,7 +523,7 @@ const finalImageNames = {
   gateway: ["gateway-cafe-render.png", "gateway-kitchen-render.png", "gateway-classroom-render.png", "gateway-greenhouse-render.png", "gateway-event-borderless.png", "gateway-park-perspective.png", "gateway-site-section-perspective.png", "gateway-final-floor-plan.jpg", "gateway-final-building-sections.jpg", "gateway-final-elevations.jpg"],
   peakscape: ["peakscape-courtyard-borderless.png", "peakscape-neighborhood-borderless.png"],
   nexus: [],
-  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg", "reframing-edge-analysis-04.jpg", "reframing-edge-cartography-parti.jpg", "reframing-edge-master-site-plan.jpg"],
+  reframing: ["reframing-edge-community-render.jpg", "reframing-edge-entry-render.jpg", "reframing-edge-interior-render.jpg", "reframing-edge-perspectives.jpg", "reframing-edge-elevations.jpg", "reframing-edge-building-sections.jpg", "reframing-edge-long-view.jpg", "reframing-edge-aerial-render.jpg", "reframing-edge-master-site-plan.jpg"],
   sanctuary: ["sanctuary-material-axon-render.png", "sanctuary-material-front-render.png", "sanctuary-source-mosaic-elevation.png"],
   stickbuilt: ["stickbuilt.jpg", "timeless-052.jpg", "timeless-048.jpg"],
   lamp: ["lamp-edited-elevation-off-web.jpg", "lamp-edited-interior-web.jpg"],
@@ -638,11 +643,14 @@ function renderProcess(project) {
   if (!images.length && !studyPaths.size) return "";
   const allSlides = getProjectSlides(project);
   const renderedStudyGroups = (project.processStudyGroups || []).map((group, groupIndex) => {
-    const renderGroup = item => `<section class="reframing-process-group"><h4>${item.title}</h4>${item.description ? '<p>'+item.description+'</p>' : ''}${item.stack ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
+    const renderGroup = item => {
+      const description = item.description ? '<p>'+item.description+'</p>' : '';
+      return `<section class="reframing-process-group"><h4>${item.title}</h4>${project === projects.gateway ? '' : description}${item.stack ? renderProcessStack(project, item) : `<div class="project-process-grid">${item.images.map(path => {
       const index = allSlides.findIndex(slide => slide.image === path);
       const slide = allSlides[index];
       return `<figure class="reframing-process-image"><img src="${inlineProjectImage(path)}" alt="${slide.alt}" data-project-slide-index="${index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${visibleStudyCaption(slide)}</figcaption></figure>`;
-    }).join("")}</div>`}${item.videos?.length ? `<details class="process-motion-studies"><summary>View the two motion studies</summary><div class="project-process-grid process-video-grid">${item.videos.map(video => `<figure class="reframing-process-image"><video class="process-video" controls playsinline preload="none" aria-label="${video.caption}"><source src="${video.source}" type="video/mp4">Your browser does not support this video. <a href="${video.source}">Open video</a></video><figcaption>${video.caption}</figcaption></figure>`).join("")}</div></details>` : ""}</section>`;
+    }).join("")}</div>`}${project === projects.gateway ? description : ''}${item.videos?.length ? `<details class="process-motion-studies"><summary>View the two motion studies</summary><div class="project-process-grid process-video-grid">${item.videos.map(video => `<figure class="reframing-process-image"><video class="process-video" controls playsinline preload="none" aria-label="${video.caption}"><source src="${video.source}" type="video/mp4">Your browser does not support this video. <a href="${video.source}">Open video</a></video><figcaption>${video.caption}</figcaption></figure>`).join("")}</div></details>` : ""}</section>`;
+    };
     return group.comparison ? `<div class="process-comparison ${project === projects.sanctuary ? "sanctuary-sketch-comparison" : ""}">${renderGroup(group)}${renderGroup(group.comparison)}</div>` : renderGroup(group);
   });
   const studyGroups = project === projects.gateway
@@ -726,6 +734,7 @@ function warmNextImage(slides, index) {
 
 
 function visibleStudyCaption(slide) {
+  if (slide.image === "assets/peakscape-plans-original.jpg") return "";
   if (slide.image === 'assets/sanctuary-four-aspects-caps.png') {
     return 'Culture: paired seating invites conversation in Città Verde. Religion: angelic wings inspire the rising form. Protection: the wings wrap the seats to offer privacy in public. Beauty: a mosaic inspired by Gaudí brings color to the interior, from sea to countryside to sky.';
   }
@@ -764,11 +773,11 @@ function showProjectSlide(index) {
 
 const heroSlides = [
   { project: "stickbuilt", image: "assets/timeless-052.jpg", alt: "Penn Smith presenting the Timeless timber installation to visitors", title: "Timeless" },
-  { project: "board", image: "assets/cutting-board-chess-web.jpg", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
+  { project: "reframing", image: "assets/reframing-edge-aerial-render.jpg", alt: "Aerial view of Reframing the Edge showing the community center and its site", title: "Reframing the Edge" },
   { project: "sanctuary", image: "assets/sanctuary-highlight-front.png", alt: "Front elevation render of A Throne for Conversation with the full chair visible", title: "A Throne for Conversation" },
   { project: "shelf", image: "assets/tiered-shelf-hero-wide-web.jpg", alt: "Full view of the tiered shelf against a concrete wall", title: "Tiered Shelf" },
+  { project: "board", image: "assets/cutting-board-chess-web.jpg", alt: "End-grain cutting board with a metal chessboard inset and chess pieces", title: "Chessboard Cutting Board" },
   { project: "peakscape", image: "assets/peakscape-borderless.png", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
-  { project: "reframing", image: "assets/reframing-edge-aerial-render.jpg", alt: "Aerial view of Reframing the Edge showing the community center and its site", title: "Reframing the Edge" },
   { project: "gateway", image: "assets/gateway-event-borderless.png", alt: "Gateway Garden during a concert at the neighboring pavilion", title: "Gateway Garden" }
 ];
 let heroSlideIndex = 0;
@@ -858,7 +867,12 @@ document.querySelectorAll("[data-project]").forEach((button) => {
           <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
         </div>
         ${renderProjectBrief(project)}
-        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp ? "03" : "02"} / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
+        ${renderDrawingGroups(project, [
+          { title: "Plan", layout: "full", images: ["assets/reframing-edge-master-site-plan.jpg"] },
+          { title: "Building sections", layout: "full", images: ["assets/reframing-edge-building-sections.jpg"] },
+          { title: "Elevations", layout: "full", images: ["assets/reframing-edge-elevations.jpg"] }
+        ], "02 / Finished drawings", "Plan + Building Sections + Elevations")}
+        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">03 / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
     } else {
       dialogContent.innerHTML = `
       <div class="dialog-heading">
@@ -874,6 +888,9 @@ document.querySelectorAll("[data-project]").forEach((button) => {
       ${renderProjectBrief(project)}`;
     }
     if (project.comparisonGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.comparisonGroups, "02 / Light off + on", "Light + form", "lamp-comparisons"));
+    if (project === projects.sanctuary) {
+      dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process"><div class="reframing-process-heading"><h3>UARK Rome Center Chair Competition</h3></div><div class="reframing-process-group"><p>A Throne for Conversation, designed with Savannah List in 2026, was selected for realization through the University of Arkansas Rome Center workshop and competition for public seating in Città Verde. Conceived by artist Marko Guglielmi Reimmortal, the initiative explored urban thrones inspired by wings and roots.</p><p>Students were guided by faculty Francesca Riccardo and Vanessa Mingozzi, with contributions from Davide Vitali and artistic direction by Marko Guglielmi. Six student projects were selected for planned permanent installation in the neighborhood, using low-CO₂-emission eco-concrete and recycled ceramic finishes.</p></div></section>`);
+    }
     if (project.conceptGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.conceptGroups, "02 / Concept", "Transformation + principles", "sanctuary-concept"));
     if (projectId === "peakscape") {
       dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.introDrawingGroups, "02 / Concept + plans", "Form + plans", "peakscape-intro-drawings"));
