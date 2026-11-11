@@ -1,11 +1,11 @@
 const projects = {
   gateway: {
     "problem": "Create a food learning center that connects teaching, gathering, and growing with the everyday life of Luther George Park, while responding to the neighborhood and coordinating the building’s environmental and structural systems.",
-    "number": "01 / Civic + Learning",
+    "number": "Civic + Learning",
     "title": "Gateway Garden",
     "subtitle": "Food learning center · Springdale, Arkansas · 2025 · Integrative Design Studio",
     "question": "How can architecture integrate people, place, and systems?",
-    "description": "Developed with Hagen Beck in Integrative Design Studio, Gateway Garden brings food learning into the everyday life of Luther George Park. Its form draws on neighborhood gables and industrial chicken houses, responding to the nearby Tyson headquarters. Opening up a portion of the building preserves physical and visual connections to the central pavilion monument. Mass timber was selected to reduce carbon emissions, while stone cladding draws on Arkansas stonework traditions. Solid stone walls and clerestory windows balance daylight and glare control in spaces such as the offices. Two mechanical cores supply HVAC while keeping the timber structure exposed in prominent spaces such as the lobby; drop ceilings accommodate services in the kitchen, bathrooms, and hallways.",
+    "description": "Developed with Hagen Beck, the building draws on neighborhood gables and industrial chicken houses, responding to the nearby Tyson headquarters. Opening up a portion of the building preserves physical and visual connections to the central pavilion monument. Mass timber was selected to reduce carbon emissions, while stone cladding draws on Arkansas stonework traditions. Solid stone walls and clerestory windows balance daylight and glare control in spaces such as the offices. Two mechanical cores supply HVAC while keeping the timber structure exposed in prominent spaces such as the lobby; drop ceilings accommodate services in the kitchen, bathrooms, and hallways.",
     "image": "assets/gateway-garden-borderless.png",
     "alt": "Gateway Garden food learning center in its meadow setting",
     "gallery": [
@@ -173,7 +173,7 @@ const projects = {
   },
   peakscape: {
     problem: "Introduce multi-occupancy housing and shared amenities in Mar Vista while responding to the smaller scale of the surrounding homes.",
-    number: "02 / Housing",
+    number: "Housing",
     title: "Peakscape",
     subtitle: "Multi-occupancy housing · Mar Vista, Los Angeles · 2024",
     question: "A neighborhood scale response to a citywide need.",
@@ -217,7 +217,7 @@ const projects = {
   },
   nexus: {
     problem: "Bring academic work, fabrication, and public life together at Columbia University’s Manhattanville campus within a building that responds to its urban setting.",
-    number: "09 / Academic + Civic",
+    number: "Academic + Civic",
     title: "Shifted Timber Nexus",
     subtitle: "Academic + community building · Columbia Manhattanville · 2025",
     question: "How can an academic building serve both campus and city?",
@@ -260,7 +260,7 @@ const projects = {
   },
   reframing: {
     "problem": "Establish a shared civic and sacred center for an expanding neighborhood at Rome’s urban edge.",
-    "number": "08 / Parish complex + Masterplan",
+    "number": "Parish complex + Masterplan",
     "title": "Reframing the Edge",
     "subtitle": "Masterplan for a parish complex · Rome, Italy · 2026",
     "question": "How can the edge of a city become a place to gather?",
@@ -311,11 +311,11 @@ const projects = {
   },
   sanctuary: {
     problem: "Design public seating for Città Verde through the University of Arkansas Rome Center workshop and competition, interpreting the theme of wings and roots.",
-    number: "07 / Competition + Public Space",
+    number: "Competition + Public Space",
     title: "A Throne for Conversation",
     subtitle: "Città Verde, Rome · 2026 · Competition winner",
     question: "How can wings become a place of refuge within the neighborhood?",
-    description: "A Throne for Conversation is a two-seat public chair designed with Savannah List for Città Verde in Rome. Inspired by angelic imagery and the protective qualities of winged animals, its enclosing forms create a sheltered place for conversation within a busy public setting. A minimal white exterior surrounds an expressive mosaic interior inspired by Antoni Gaudí, moving from ocean imagery below to the Roman countryside at its center and the sun and sky above. The competition-winning proposal was selected for realization through a Rome Center initiative to reimagine neighborhood public spaces. Planned installations will use low-CO₂-emission eco-concrete and recycled ceramic finishes.",
+    description: "A Throne for Conversation is a two-seat public chair designed with Savannah List for Città Verde in Rome. Inspired by angelic imagery and the protective qualities of winged animals, its enclosing forms create a sheltered place for conversation within a busy public setting. A minimal white exterior surrounds an expressive mosaic interior inspired by Antoni Gaudí, moving from ocean imagery below to the Roman countryside at its center and the sun and sky above.",
     image: "assets/sanctuary-main-collage.png",
     alt: "A Throne for Conversation chair with protective wing forms and mosaic interior in its neighborhood setting",
     gallery: [
@@ -350,11 +350,11 @@ const projects = {
   },
   stickbuilt: {
     problem: "Our team had about three days to design and build a full-scale installation using the glulam members provided. We needed a thoughtful response to the prompt “Timeless” that we could develop and assemble together within that short window.",
-    number: "03 / Design-build",
+    number: "Design-build",
     title: "Timeless",
     subtitle: "Full-scale glulam installation · Birmingham, Alabama · 2025",
     question: "How can a team design and build a thoughtful installation in about three days?",
-    description: "Created during <a class='project-reference' href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a>, Timeless is a collaborative, full-scale glulam installation developed and assembled in about three days. We kept changes to the supplied members minimal, focusing on their arrangement and dowel connections. A small concept model helped test the idea before assembly. The resulting curve through the forest traces the life cycle of a tree, connecting the material to its woodland setting.",
+    description: "Created during <a class='project-reference' href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a>, Timeless is a collaborative, full-scale glulam installation. We kept changes to the supplied members minimal, focusing on their arrangement and dowel connections. A small concept model helped test the idea before assembly. The resulting curve through the forest traces the life cycle of a tree, connecting the material to its woodland setting.",
     processIntro: "<a class='project-reference' href='https://stickbuilt.squarespace.com/' target='_blank' rel='noopener noreferrer'>Stickbuilt</a> combined hands-on construction and team design with guidance from practicing architects. The wider workshop explored stick framing, glulam timber, solid sawn wood, and parallel strand lumber, including mass-timber connection learning through Simpson Strong-Tie. Poetry, music, and painting complemented studies of Alabama biodiversity with the Painted Rock Forest Research Center.",
     image: "assets/timeless-002.jpg",
     alt: "Glulam design-build installation among trees",
@@ -366,7 +366,7 @@ const projects = {
   },
   lamp: {
     "problem": "Translate a study of color, frame, and composition into a functional bedside light, considering both its appearance and the way it diffuses light.",
-    "number": "04 / Object + Fabrication",
+    "number": "Object + Fabrication",
     "title": "Composition Lamp",
     "subtitle": "Bedside light · 2025",
     "question": "From painting to bedside light",
@@ -397,7 +397,7 @@ const projects = {
   },
   board: {
     "problem": "Bring a cutting surface and a chessboard together in one handmade object, giving each function a clear working face.",
-    "number": "05 / Wood + metal + epoxy",
+    "number": "Wood + metal + epoxy",
     "title": "Chessboard Cutting Board",
     "subtitle": "Two-sided object · Wood, metal + epoxy",
     "question": "One board, two uses",
@@ -421,12 +421,12 @@ const projects = {
     "credits": "Materials: Wood, metal + epoxy<br>Design + fabrication: Penn Smith"
   },
   shelf: {
-    problem: "Create freestanding storage for books and everyday objects that remains visually light beside a bed or wall.",
-    number: "06 / Object + Craft",
+    problem: "I had very little space beside my bed and nowhere within reach to set my phone or water bottle.",
+    number: "Object + Craft",
     title: "Tiered Shelf",
     subtitle: "Freestanding storage · Woodwork + furniture",
-    question: "An open frame with shelves that shift in length.",
-    description: "This freestanding shelf uses vertical wood panels and alternating shelf lengths to create an open, asymmetrical profile. Its simple planes make room for books and everyday objects while keeping the piece visually light beside a bed or wall.",
+    solutionTitle: "An open, thin frame with shelves that shift in length.",
+    description: "I built the shelf from soft maple and finished it with Danish oil to bring out the grain. The horizontal surfaces extend half an inch beyond the vertical supports, giving the simple form a little more depth.",
     image: "assets/tiered-shelf-front-web.jpg",
     alt: "Pale wood tiered shelf against a concrete wall",
     gallery: ["assets/tiered-shelf-angle-web.jpg", "assets/tiered-shelf-in-use-edited-web.jpg"],
@@ -464,6 +464,20 @@ projects.lamp.comparisonGroups = [
 
 // Related context and concept sheets share an ordered stack or full-width row.
 projects.gateway.processStudyGroups[0].images.push('assets/gateway-figure-ground.svg');
+const shelfSketches = [
+  ["assets/tiered-shelf-sketch-4.jpg", "Side view studying the shelf beside a bed"],
+  ["assets/tiered-shelf-sketch-2.jpg", "Two elevations comparing shelf proportions"],
+  ["assets/tiered-shelf-sketch-3.jpg", "Perspective sketches comparing tier arrangements"],
+  ["assets/tiered-shelf-sketch-1.jpg", "Perspective sketch with projecting shelves"]
+];
+projects.shelf.gallery.push(...shelfSketches.map(([image]) => image));
+projects.shelf.galleryAlts.push(...shelfSketches.map(([, caption]) => caption));
+projects.shelf.processStudyGroups = [{
+  title: "Sketches",
+  images: shelfSketches.map(([image]) => image),
+  stack: true
+}];
+
 projects.sanctuary.conceptGroups = [
   {title:'Transformation diagram',layout:'full',images:['assets/sanctuary-source-transformation.jpg']},
   {title:'Culture, religion, protection + beauty',layout:'full',images:['assets/sanctuary-four-aspects-caps.png']}
@@ -510,7 +524,7 @@ function renderProjectBrief(project) {
   if (project === projects.lamp || project === projects.board) {
     return `<div class="dialog-copy project-brief"><h3>${project.question}</h3><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div>`;
   }
-  return `<div class="dialog-copy project-brief"><div><p class="brief-label">Problem</p><h3>${project.question}</h3><p>${project.problem}</p></div><div><p class="brief-label">Proposed solution</p><p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>`;
+  return `<div class="dialog-copy project-brief"><div><p class="brief-label">Problem</p>${project.question ? `<h3>${project.question}</h3>` : ""}<p>${project.problem}</p></div><div><p class="brief-label">Proposed solution</p>${project.solutionTitle ? `<h3>${project.solutionTitle}</h3>` : ""}<p>${project.description}</p><p class="dialog-subtitle">${project.credits}</p></div></div>`;
 }
 
 function getProjectSlides(project) {
@@ -628,7 +642,7 @@ function renderProcessStack(project, group) {
   const slides = getProjectSlides(project);
   const indices = group.images.map(path => slides.findIndex(slide => slide.image === path));
   const slide = slides[indices[0]];
-  return `<figure class="process-stack" data-stack-indices="${indices.join(',')}" data-stack-position="0" aria-label="${group.title}"><img src="${inlineProjectImage(slide.image)}" alt="${slide.alt}" data-project-slide-index="${indices[0]}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><div class="process-stack-controls"><button type="button" data-process-step="-1" aria-label="Previous image in ${group.title}">←</button><span class="process-stack-count" aria-live="polite">01 / ${String(indices.length).padStart(2, '0')}</span><button type="button" data-process-step="1" aria-label="Next image in ${group.title}">→</button></div><figcaption>${visibleStudyCaption(slide)}</figcaption></figure>`;
+  return `<figure class="process-stack" data-stack-indices="${indices.join(',')}" data-stack-position="0" aria-label="${group.title}"><img src="${inlineProjectImage(slide.image)}" alt="${slide.alt}" data-project-slide-index="${indices[0]}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><div class="process-stack-controls"><button type="button" data-process-step="-1" aria-label="Previous image in ${group.title}"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button><span class="process-stack-count" aria-live="polite">01 / ${String(indices.length).padStart(2, '0')}</span><button type="button" data-process-step="1" aria-label="Next image in ${group.title}"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button></div><figcaption>${visibleStudyCaption(slide)}</figcaption></figure>`;
 }
 
 function renderProcess(project) {
@@ -658,7 +672,7 @@ function renderProcess(project) {
   const studyGroups = project === projects.gateway
     ? `<div class="gateway-context-studies">${renderedStudyGroups[0]}</div><div class="gateway-process-studies">${renderedStudyGroups.slice(1).join("")}</div>`
     : renderedStudyGroups.join("");
-  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">${project === projects.stickbuilt || project === projects.lamp || project === projects.gateway || project === projects.sanctuary ? "03" : "02"} / How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${inlineProjectImage(slide.image)}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${visibleStudyCaption(slide)}</figcaption></figure>`).join("")}</div></section>`;
+  return `<section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">How it developed</p><h3>Process + studies</h3></div>${project.processIntro ? `<p class="project-process-intro">${project.processIntro}</p>` : ""}${studyGroups}<div class="project-process-grid">${images.map(slide => `<figure class="reframing-process-image"><img src="${inlineProjectImage(slide.image)}" alt="${slide.alt}" data-project-slide-index="${slide.index}" tabindex="0" role="button" aria-label="Enlarge image: ${slide.alt}" loading="lazy" decoding="async"><figcaption>${visibleStudyCaption(slide)}</figcaption></figure>`).join("")}</div></section>`;
 }
 
 function renderSupportingImages(project, paths, label, title, extraClass = "") {
@@ -697,32 +711,65 @@ function initializeStudyPairs(root) {
 }
 
 function renderPeakscapeStudyPair(project) {
-  return `<section class="reframing-process peakscape-study-section"><div class="reframing-process-heading"><p class="eyebrow">03 / Section + analysis</p><h3>Section + numbered studies</h3></div><div class="peakscape-study-pair">${renderDrawingFigure(project,'assets/peakscape-section-original.jpg')}${renderProcessStack(project,{title:'Numbered studies · 01–04',images:project.numberedStudies})}</div></section>`;
+  return `<section class="reframing-process peakscape-study-section"><div class="reframing-process-heading"><h3>Section + numbered studies</h3></div><div class="peakscape-study-pair">${renderDrawingFigure(project,'assets/peakscape-section-original.jpg')}${renderProcessStack(project,{title:'Numbered studies',images:project.numberedStudies})}</div></section>`;
 }
 
-// Decode each requested image before showing it; discard superseded requests.
+// Keep the current image visible until the requested image has decoded.
 const imageSwitchRequests = new WeakMap();
-async function switchGalleryImage(image, source) {
+const carouselLoads = new Map();
+function loadCarouselImage(source, priority = "auto", responsive = null) {
+  const key = responsive?.srcset || source;
+  if (!carouselLoads.has(key)) {
+    const preload = new Image();
+    const promise = new Promise((resolve, reject) => {
+      preload.decoding = "async";
+      preload.fetchPriority = priority;
+      if (responsive) {
+        preload.sizes = responsive.sizes;
+        preload.srcset = responsive.srcset;
+      }
+      preload.onload = async () => {
+        try { await preload.decode(); } catch { /* Loaded images remain usable. */ }
+        resolve(preload);
+      };
+      preload.onerror = () => reject(new Error("Image failed to load: " + source));
+      preload.src = source;
+    });
+    promise.image = preload;
+    carouselLoads.set(key, promise);
+    promise.catch(() => carouselLoads.delete(key));
+  }
+  const pending = carouselLoads.get(key);
+  if (priority === "high") pending.image.fetchPriority = "high";
+  return pending;
+}
+async function switchGalleryImage(image, source, responsive = null) {
   const request = {};
   imageSwitchRequests.set(image, request);
-  image.loading = 'eager';
-  image.decoding = 'async';
-  const alreadyReady = image.getAttribute('src') === source && image.complete && image.naturalWidth > 0;
-  if (!alreadyReady) {
-    image.style.visibility = 'hidden';
-    image.setAttribute('aria-busy', 'true');
-    image.src = source;
-    let timeout;
-    try {
-      await Promise.race([image.decode(), new Promise(resolve => { timeout = setTimeout(resolve, 1800); })]);
-    } catch { /* Let the native image/alt fallback render on a failed decode. */ }
-    finally { clearTimeout(timeout); }
+  image.setAttribute("aria-busy", "true");
+  try {
+    await loadCarouselImage(source, "high", responsive);
+  } catch {
+    if (imageSwitchRequests.get(image) === request) image.removeAttribute("aria-busy");
+    return false;
   }
-  if (imageSwitchRequests.get(image) !== request) return;
-  image.style.visibility = 'visible';
-  image.removeAttribute('aria-busy');
-  balanceStudyPair(image.closest('.peakscape-study-pair'));
+  if (imageSwitchRequests.get(image) !== request) return false;
+  if (responsive) {
+    image.sizes = responsive.sizes;
+    image.srcset = responsive.srcset;
+  }
+  image.src = source;
+  image.removeAttribute("aria-busy");
+  balanceStudyPair(image.closest(".peakscape-study-pair"));
+  return true;
 }
+function initializeCarousel(slides, firstIndex = 0) {
+  slides.forEach((slide, index) => {
+    if (slide.type === "video") return;
+    loadCarouselImage(inlineProjectImage(slide.image), index === firstIndex ? "high" : "auto").catch(() => {});
+  });
+}
+
 const warmedImages = new Set();
 function warmNextImage(slides, index) {
   if (slides.length < 2) return;
@@ -756,13 +803,13 @@ function visibleStudyCaption(slide) {
   return slide.alt;
 }
 
-function showProjectSlide(index) {
+async function showProjectSlide(index) {
   if (!activeProject) return;
   const slides = getFinalSlides(activeProject);
   projectSlideIndex = (index + slides.length) % slides.length;
   const slide = slides[projectSlideIndex];
   const image = dialogContent.querySelector(".dialog-slide-image");
-  switchGalleryImage(image, inlineProjectImage(slide.image));
+  if (!await switchGalleryImage(image, inlineProjectImage(slide.image))) return;
   if (activeProject !== projects.gateway || !matchMedia("(max-width: 620px)").matches) {
     warmNextImage(slides, projectSlideIndex);
   }
@@ -782,15 +829,52 @@ const heroSlides = [
   { project: "peakscape", image: "assets/peakscape-borderless.png", alt: "Stepped Peakscape housing proposal with the San Gabriel Mountains in the background", title: "Peakscape" },
   { project: "gateway", image: "assets/gateway-event-borderless.png", alt: "Gateway Garden during a concert at the neighboring pavilion", title: "Gateway Garden" }
 ];
+
+const heroResponsive = {
+  "stickbuilt": {
+    "srcset": "assets/timeless-052.jpg",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  },
+  "reframing": {
+    "srcset": "assets/hero-reframing-640.webp 640w, assets/hero-reframing-1280.webp 1280w",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  },
+  "sanctuary": {
+    "srcset": "assets/hero-sanctuary-640.webp 640w",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  },
+  "shelf": {
+    "srcset": "assets/hero-shelf-640.webp 640w",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  },
+  "board": {
+    "srcset": "assets/hero-board-640.webp 640w",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  },
+  "peakscape": {
+    "srcset": "assets/peakscape-borderless.png",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  },
+  "gateway": {
+    "srcset": "assets/gateway-event-borderless.png",
+    "sizes": "(max-width: 620px) calc(100vw - 40px), 55vw"
+  }
+};
+heroSlides.forEach(slide => {
+  slide.responsive = heroResponsive[slide.project];
+  slide.image = slide.responsive.srcset.split(", ").at(-1).split(" ")[0];
+  loadCarouselImage(slide.image, slide.project === "stickbuilt" ? "high" : "auto", slide.responsive).catch(() => {});
+});
+
 let heroSlideIndex = 0;
 const heroImage = document.querySelector(".hero-image img");
 const heroCaption = document.querySelector("#hero-caption");
 const heroCount = document.querySelector("#hero-count");
 
-function showHeroSlide(index) {
+async function showHeroSlide(index) {
   heroSlideIndex = (index + heroSlides.length) % heroSlides.length;
   const slide = heroSlides[heroSlideIndex];
-  switchGalleryImage(heroImage, slide.image);
+  if (!await switchGalleryImage(heroImage, slide.image, slide.responsive)) return;
   heroImage.alt = slide.alt;
   heroImage.dataset.project = slide.project;
   heroCaption.textContent = slide.title;
@@ -822,21 +906,21 @@ document.querySelectorAll("[data-project]").forEach((button) => {
     if (isReframing) {
       const developmentGroups = [
   {
-    "title": "Reading the site: circles, edges + views",
-    "description": "Collages and cartographic studies traced three surrounding neighborhoods and the Campagna Romana. Circles locate the neighborhoods; black represents the countryside and red identifies transitional spaces. View lines converge at the site and extend toward the medieval tower of Cecchignola Castle, the northern plains, and the Monti Simbruini. These connections informed the organization of the complex and its relationship to the western street edge, future northern park, and southeastern community center.",
-    "images": [
-      "assets/reframing-edge-analysis-04.jpg",
-      "assets/reframing-edge-cartography-parti.jpg",
-      "assets/reframing-edge-master-site-plan.jpg"
-    ]
-  },
-  {
     "title": "Collages + the natural and urban edge",
     "description": "Collages explored the Campagna Romana and the surrounding urban fabric, helping us interpret the site before developing the cartographic study. The edge diagram identifies the transition between these landscapes.",
     "images": [
       "assets/reframing-edge-context-02.jpg",
       "assets/reframing-edge-context-03.jpg",
       "assets/reframing-edge-urban-edge.jpg"
+    ]
+  },
+  {
+    "title": "Reading the site: circles, edges + views",
+    "description": "Circles locate three surrounding neighborhoods; black represents the countryside and red identifies transitional spaces. View lines converge at the site and extend toward the medieval tower of Cecchignola Castle, the northern plains, and the Monti Simbruini. These connections informed the organization of the complex and its relationship to the western street edge, future northern park, and southeastern community center.",
+    "images": [
+      "assets/reframing-edge-analysis-04.jpg",
+      "assets/reframing-edge-cartography-parti.jpg",
+      "assets/reframing-edge-master-site-plan.jpg"
     ]
   },
   {
@@ -864,12 +948,12 @@ document.querySelectorAll("[data-project]").forEach((button) => {
           <p class="dialog-subtitle">${project.subtitle}</p>
         </div>
         <div class="dialog-carousel" aria-label="${project.title} images">
-          <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${inlineProjectImage(slides[0].image)}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
-          <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
+          <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+          <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" fetchpriority="high" loading="eager" decoding="async" src="${inlineProjectImage(slides[0].image)}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
+          <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
         </div>
         ${renderProjectBrief(project)}
-        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">02 / How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
+        <section class="reframing-process"><div class="reframing-process-heading"><p class="eyebrow">How it developed</p><h3>From context to plan.</h3></div><div class="reframing-process-groups">${processGroups}</div></section>`;
     } else {
       dialogContent.innerHTML = `
       <div class="dialog-heading">
@@ -878,30 +962,30 @@ document.querySelectorAll("[data-project]").forEach((button) => {
         <p class="dialog-subtitle">${project.subtitle}</p>
       </div>
       <div class="dialog-carousel" aria-label="${project.title} images">
-        <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
-        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" src="${inlineProjectImage(slides[0].image)}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
-        <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><span aria-hidden="true">→</span></button>
+        <button class="dialog-arrow" type="button" data-slide-step="-1" aria-label="Previous project image"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+        <figure class="dialog-slide"><img role="button" tabindex="0" aria-label="Enlarge project image" class="dialog-slide-image" fetchpriority="high" loading="eager" decoding="async" src="${inlineProjectImage(slides[0].image)}" alt="${slides[0].alt}"><figcaption class="dialog-slide-count" aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</figcaption></figure>
+        <button class="dialog-arrow" type="button" data-slide-step="1" aria-label="Next project image"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
       </div>
       ${renderProjectBrief(project)}`;
     }
-    if (project.comparisonGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.comparisonGroups, "02 / Light off + on", "Light + form", "lamp-comparisons"));
+    if (project.comparisonGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.comparisonGroups, "Light off + on", "Light + form", "lamp-comparisons"));
     if (project === projects.sanctuary) {
-      dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process"><div class="reframing-process-heading"><h3>UARK Rome Center Chair Competition</h3></div><div class="reframing-process-group"><p>A Throne for Conversation, designed with Savannah List in 2026, was selected for realization through the University of Arkansas Rome Center workshop and competition for public seating in Città Verde. Conceived by artist Marko Guglielmi Reimmortal, the initiative explored urban thrones inspired by wings and roots.</p><p>Students were guided by faculty Francesca Riccardo and Vanessa Mingozzi, with contributions from Davide Vitali and artistic direction by Marko Guglielmi. Six student projects were selected for planned permanent installation in the neighborhood, using low-CO₂-emission eco-concrete and recycled ceramic finishes.</p></div></section>`);
+      dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process"><div class="reframing-process-heading"><h3>UARK Rome Center Chair Competition</h3></div><div class="reframing-process-group"><p>The University of Arkansas Rome Center held a workshop and competition for public seating in Città Verde. Conceived by artist Marko Guglielmi Reimmortal, the initiative explored urban thrones inspired by wings and roots.</p><p>Students were guided by faculty Francesca Riccardo and Vanessa Mingozzi, with contributions from Davide Vitali and artistic direction by Marko Guglielmi. A Throne for Conversation was one of six projects selected for planned permanent installation in the neighborhood. The installations will use low-CO₂-emission eco-concrete and recycled ceramic finishes.</p></div></section>`);
     }
-    if (project.conceptGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.conceptGroups, "02 / Concept", "Transformation + principles", "sanctuary-concept"));
+    if (project.conceptGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.conceptGroups, "Concept", "Transformation + principles", "sanctuary-concept"));
     if (projectId === "peakscape") {
-      dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.introDrawingGroups, "02 / Concept + plans", "Form + plans", "peakscape-intro-drawings"));
+      dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.introDrawingGroups, "Concept + plans", "Form + plans", "peakscape-intro-drawings"));
       dialogContent.insertAdjacentHTML("beforeend", renderPeakscapeStudyPair(project));
     }
-    if (projectId === "stickbuilt") dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.detailImages, "02 / Details", "Timber + connections"));
-    if (project.finishedDrawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.finishedDrawingGroups, "02 / Finished drawings", "Form + site + elevations", "gateway-finished-drawings"));
+    if (projectId === "stickbuilt") dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.detailImages, "Details", "Timber + connections"));
+    if (project.finishedDrawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.finishedDrawingGroups, "Finished drawings", "Form + site + elevations", "gateway-finished-drawings"));
     if (project.modelImages) dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process gateway-model-photos"><div class="reframing-process-heading"><h3>Model photographs</h3></div>${renderProcessStack(project, {title:"Model photographs", images:project.modelImages})}</section>`);
     if (project.largeModelImages) dialogContent.insertAdjacentHTML("beforeend", `<section class="reframing-process gateway-model-photos gateway-large-model-photos"><div class="reframing-process-heading"><h3>Large model images</h3></div>${renderProcessStack(project, {title:"Large model images", images:project.largeModelImages})}</section>`);
     if (!isReframing && projectId !== "peakscape") dialogContent.insertAdjacentHTML("beforeend", renderProcess(project));
-    if (project.drawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.drawingGroups, "04 / Drawings + systems", "Plans, sections + systems", "gateway-technical-drawings"));
-    if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, [{title:"Plan + sections",layout:"triptych",images:project.dimensionImages}], "04 / Drawings", "Dimensioned drawings", "sanctuary-dimensions"));
+    if (project.drawingGroups) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, project.drawingGroups, "Drawings + systems", "Plans, sections + systems", "gateway-technical-drawings"));
+    if (project.dimensionImages) dialogContent.insertAdjacentHTML("beforeend", renderDrawingGroups(project, [{title:"Plan + sections",layout:"triptych",images:project.dimensionImages}], "Drawings", "Dimensioned drawings", "sanctuary-dimensions"));
     if (projectId === "stickbuilt") {
-      dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.teamImages, "04 / Team", "The people behind Timeless", "timeless-team-photo"));
+      dialogContent.insertAdjacentHTML("beforeend", renderSupportingImages(project, project.teamImages, "Team", "The people behind Timeless", "timeless-team-photo"));
     }
     if (button.closest(".hero-image")) {
       const clickedSource = button.getAttribute("src");
@@ -911,6 +995,7 @@ document.querySelectorAll("[data-project]").forEach((button) => {
       showProjectSlide(projectId === "stickbuilt" && matchMedia("(max-width: 620px)").matches && slides.length >= 3 ? 2 : 0);
     }
     if (project !== projects.stickbuilt) dialogContent.querySelector(".dialog-carousel").insertAdjacentHTML("afterend", `<p class="dialog-image-caption" aria-live="polite">${project.captions?.[projectSlideIndex] || slides[projectSlideIndex].alt}</p>`);
+    initializeCarousel(slides, projectSlideIndex);
     initializeStudyPairs(dialogContent);
     dialog.showModal();
     dialog.querySelector(".dialog-close").focus({preventScroll:true});
@@ -965,6 +1050,52 @@ dialog.addEventListener("keydown", (event) => {
 });
 
 dialog.addEventListener("close", () => lastTrigger?.focus());
+
+const projectsNav = document.querySelector(".nav-projects");
+const projectsToggle = document.querySelector(".projects-toggle");
+let suppressProjectHover = false;
+function setProjectMenu(open) {
+  projectsNav.classList.toggle("is-expanded", open);
+  projectsToggle.setAttribute("aria-expanded", String(open));
+  projectsToggle.setAttribute("aria-label", open ? "Hide project categories" : "Show project categories");
+}
+projectsNav.addEventListener("pointerenter", event => {
+  if (event.pointerType === "mouse" && matchMedia("(min-width: 1001px)").matches && !suppressProjectHover) setProjectMenu(true);
+});
+projectsNav.addEventListener("pointerleave", event => {
+  suppressProjectHover = false;
+  if (event.pointerType === "mouse" && !projectsNav.contains(document.activeElement)) setProjectMenu(false);
+});
+projectsNav.addEventListener("focusin", event => {
+  if (event.target.closest(".nav-project-menu")) setProjectMenu(true);
+});
+projectsNav.addEventListener("focusout", () => {
+  requestAnimationFrame(() => {
+    if (!projectsNav.contains(document.activeElement) && !projectsNav.matches(":hover")) setProjectMenu(false);
+  });
+});
+projectsToggle.addEventListener("click", () => setProjectMenu(projectsToggle.getAttribute("aria-expanded") !== "true"));
+projectsNav.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    event.preventDefault();
+    event.stopPropagation();
+    suppressProjectHover = true;
+    setProjectMenu(false);
+    projectsToggle.focus();
+  } else if (event.key === "ArrowDown" && !event.target.closest(".nav-project-menu")) {
+    event.preventDefault();
+    setProjectMenu(true);
+    projectsNav.querySelector(".nav-project-menu a").focus();
+  }
+});
+document.addEventListener("pointerdown", event => {
+  if (!projectsNav.contains(event.target)) setProjectMenu(false);
+});
+const siteHeader = document.querySelector(".site-header");
+new ResizeObserver(() => {
+  document.documentElement.style.setProperty("--header-height", siteHeader.offsetHeight + "px");
+}).observe(siteHeader);
+
 menuToggle.addEventListener("click", () => {
   const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -972,6 +1103,7 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("is-open", !isOpen);
 });
 function closeSiteMenu() {
+  setProjectMenu(false);
   menuToggle.setAttribute("aria-expanded", "false");
   menuToggle.textContent = "Menu";
   nav.classList.remove("is-open");
@@ -987,7 +1119,7 @@ document.addEventListener("keydown", event => {
     menuToggle.focus();
   }
 });
-matchMedia("(min-width: 621px)").addEventListener("change", event => {
+matchMedia("(min-width: 1001px)").addEventListener("change", event => {
   if (event.matches) closeSiteMenu();
 });
 
