@@ -1068,3 +1068,6 @@ body { font-size: 1.0625rem; line-height: 1.7; }
 .menu-toggle { flex-shrink: 0; }
 .section-heading > div, .category-heading h3 { min-width: 0; }
 main { overflow-wrap: anywhere; }
+/* Keep the introductory heading's words intact. */
+.hero h1 { overflow-wrap: normal; word-break: normal; }
+@media (min-width: 1001px) { .hero h1 { font-size: clamp(48px, 6.4vw, 98px); } }
